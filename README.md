@@ -7,3 +7,12 @@ Being hosted by different communities, The mod can be "Innovated" or modify into
 Promod also have different settings. Including increased sound, Gravity of 75% therefore increasing the player's jump distance and height. Increased time to scope in on a sniper, and also he inability to run after a jump, scoping out on a sniper automatically after fired, Not able to "Double switch on bolt action snipers to skip the process of pulling the bolt back and into its original position, etc...
 Promod limits the weapons, equipment, perks, etc..but can be changed depending on the community hosting the mod. Some changes includes No attachments for weapons except for silencer, limited weapons, Perks only of Stopping Power, Bandoiler, and Deep Impact.
 Promod also does not have any soundtrack or music playing, does not have victory and defeat music, and in Search and Destroy mode, the player planting/defusing the bomb does not see the bomb in front of them. However, there is a narrator for bomb planting and defusing but in a different voice.
+
+## Features:
+* Brand new hardpoint system
+
+## Requirements:
+* Latest version of CoD4X server modification, available on [Github repo](https://github.com/callofduty4x/CoD4x_Server)
+
+## Optional:
+* Maxmind geoIP database, available on [MaxMind.com](http://dev.maxmind.com/geoip/legacy/install/country/)
