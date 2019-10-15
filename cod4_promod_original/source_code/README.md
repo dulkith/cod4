@@ -1,14 +1,15 @@
-Promod LIVE V2.20 EU - README
+
+# Promod LIVE V2.20 EU - README
 http://www.codpromod.com
-2014-05-13 <promod [at] codpromod.com>
+2014-05-13 <promod@codpromod.com>
 #codpromod @ QuakeNet
 
-Maintained by Ingram
+##### *Maintained by Ingram*
 
 Sponsored by FragNet
 http://www.fragnet.net
 
-Zip-package (promodlive220_eu.zip) contains:
+**Zip-package (promodlive220_eu.zip) contains:**
 
 LICENSE
 pml220\mod.ff
@@ -21,47 +22,48 @@ readme.txt
 server_setup.txt
 server.cfg
 
-LIVE V2.20:
+**LIVE V2.20:**
 - Fixed issues with vehicle damage source being different compared to previous releases
 
-LIVE V2.19:
+**LIVE V2.19:**
 - Fixed a server crash related to damage inflicted via exploding barrels
 - Re-implemented vehicle handling. This fixes two known issues:
   1) Cars would keep burning and not explode after a while
   2) Throwing a grenade to one of the headlights would explode the car
 
-LIVE V2.18:
+**LIVE V2.18:**
 - Fixed the exploit where players could hide behind floodlights (solution found by Gunner)
 - Removed the flashbang blinding effect during kniferound
 
-LIVE V2.17:
+**LIVE V2.17:**
 - Shortened file and folder names in order to fix (or avoid) "file sum/name mismatch" error. Please note that fs_game naming scheme is slighly different from now on.
 - Added timer to pre-match ready up period.
 
 Public server owners should rename their z_custom_ruleset.iwd to the new shorter version of z_c_r.iwd, nothing inside is changed.
 
-LIVE V2.16:
+**LIVE V2.16:**
 - Fixed a small bug that appeared during 2.15. We're sorry about that!
 
-LIVE V2.15:
+**LIVE V2.15:**
 - Fixed a bug where players could fall silently by holding down a grenade key and not having any grenades in inventory
 - Reworked damage logic, no changes in damage values, but minimal performance boost
 - Included a reworked version of damage and accuracy statistics (B-4-6), counters will reset after displaying current values
 - Included new log prints:
-    Accuracy and damage: P_A;<player guid>;<player entity number>;<player name>;<shots fired>;<shots hit>;<damage done>;<damage taken>;<friendly damage done>;<friendly damage taken>
-    Bomb plants (SD & SAB): P_P;<player guid>;<player entity number>;<player name>
-    Bomb defuses (SD & SAB): P_D;<player guid>;<player entity number>;<player name>
-    Flag captures (DOM): P_F;<player guid>;<player entity number>;<player name>
-    Headquarters captures (KOTH): P_HQC;<player guid>;<player entity number>;<player name>
-    Headquarters destroys (KOTH): P_HQD;<player guid>;<player entity number>;<player name>
 
-LIVE V2.14:
+Accuracy and damage: P_A;<player guid>;<player entity number>;<player name>;<shots fired>;<shots hit>;<damage done>;<damage taken>;<friendly damage done>;<friendly damage taken>
+Bomb plants (SD & SAB): P_P;<player guid>;<player entity number>;<player name>
+Bomb defuses (SD & SAB): P_D;<player guid>;<player entity number>;<player name>
+Flag captures (DOM): P_F;<player guid>;<player entity number>;<player name>
+Headquarters captures (KOTH): P_HQC;<player guid>;<player entity number>;<player name>
+Headquarters destroys (KOTH): P_HQD;<player guid>;<player entity number>;<player name>
+
+**LIVE V2.14:**
 - Fixed boosting with modified g_knockback value
 - Game will message all players if any serverside DVars are being modified
 - Added comp_public_lan, comp_public_hc_lan and custom_public_lan modes
 - Fixed an issue with scorebot messages being generated incorrectly
 
-LIVE V2.13:
+**LIVE V2.13:**
 
 - Implemented MOTD (message of the day), can be set via dvar "scr_motd"
 - Various fixes and improvements to the shoutcaster UI
@@ -78,7 +80,7 @@ LIVE V2.13:
 - Fixed ready-up messages
 - Other various UI tweaks and improvements
 
-LIVE V2.12:
+**LIVE V2.12:**
 
 - Protection against clientside executable modification
 - Fixed knife-round to always remove the weapons and ammo, all other damage than from the knife is disabled as an extra measure
@@ -86,7 +88,7 @@ LIVE V2.12:
 - Fixed choosing team menu on custom maps
 - Various fixes which improve server performance
 
-LIVE V2.11:
+**LIVE V2.11:**
 
 - Soften smoke edges (also known as r_zfeather) is back to being forced off
 - Dead chat is no longer automatically handled in public-modes
@@ -117,7 +119,7 @@ LIVE V2.11:
 - Added a record-menu which will popup once a player is ready, this menu can optionally be disabled in the quickmessage menu: B-4-5
 - Added a sound notification to the last player to ready-up
 
-LIVE V2.10:
+**LIVE V2.10:**
 
 - Game code optimizations which reduce the size of mod over 50% compared to V2.04
 - Killspec mode. Commits suicide, releases current class spot and does not respawn the player before a class is selected again. Can be activated through quickmessage menu: B-4-4 or by console command openscriptmenu quickpromod killspec
@@ -140,13 +142,13 @@ LIVE V2.10:
 
 Plus many other visual, non-gameplay related improvements.
 
-LIVE V2.04:
+**LIVE V2.04:**
 
 - Reintroduced "cl_maxpackets" enforcement to "100"
 - Small fix in the scorebot
 - Weapon class availability fixed on halftime
 
-FAQ
+***FAQ***
 
 Q: What about the hardcore, and support for all gametypes, how do I use them?
 A: For a complete list of "promod_modes", see below.
@@ -206,12 +208,12 @@ To enable scorebot, add this line to the server-config:
 
 seta promod_enable_scorebot "1"
 
-Static info:
+*Static info:*
 
 attack_score "SOH" player_name "SOH" player_alive "SOH" player_kills "SOH" player_assists "SOH" player_deaths "SOH" player_bombcarrier
 defence_score "SOH" player_name "SOH" player_alive "SOH" player_kills "SOH" player_assists "SOH" player_deaths "SOH" player_bombcarrier
 
-Ticker events:
+*Ticker events:*
 
 "SOH" "round_winner" "SOH" winners "SOH" attack_score "SOH" defence_score
 "SOH" "map_complete" "SOH" "attack" "SOH" attack_score "SOH" "defence" "SOH" defence_score
@@ -232,7 +234,7 @@ Ticker events:
 "SOH" "bomb_exploded" //sab, sd
 "SOH" "planted_by" "SOH" player_name // sab, sd
 
-Definitions:
+*Definitions:*
 
 attack_score = score of the attacking side, integer
 defence_score = score of the defending side, integer
@@ -254,7 +256,7 @@ rdy_text = 1st_half_ready_up, 2nd_half_ready_up, timeout_ready_up
 timeout_team = the team of the player who made a timeout
 label = A, B, C etc
 
-Broadcasted dvars:
+*Broadcasted dvars:*
 
 __promod_attack_score
 __promod_defence_score
@@ -262,7 +264,7 @@ __promod_mode
 __promod_ticker
 __promod_version
 
-FORCED COMMANDS
+***FORCED COMMANDS***
 
 All these dvars are forced by Promod (automatically), make sure they stay untouched/within range to avoid being punished!
 Note that these does not apply in Shoutcaster mode.
@@ -292,7 +294,7 @@ cl_maxpackets 60 - 100
 compassplayerwidth EQUAL TO compassplayerheight
 compassfriendlywidth EQUAL TO compassfriendlyheight
 
-DEMO VIEWING
+***DEMO VIEWING***
 
 There are some special dvars made to control hud-elements for demo/movie purposes.
 They will only work in maps loaded with cheats (devmap). Don't forget the "set" prefix to add new dvars in the console.
@@ -302,14 +304,14 @@ These include:
 promod_movie_hidescorebar // [0-1] (hides the mini-scorebar completely including timer)
 promod_centermessage_position // [x+-] (overrides default Y-position of the "You killed..." text)
 
-CLASS BINDS
+***CLASS BINDS***
 
 It is possible to bind these via the in-game menu (Controls - Multiplayer Controls...).
 Alternatively you can manually bind them in the console/config.
 
 bind [KEY] [COMMAND]
 
-Commands:
+***Commands:***
 
 openscriptmenu quickpromod assault
 openscriptmenu quickpromod specops
@@ -318,14 +320,14 @@ openscriptmenu quickpromod sniper
 openscriptmenu quickpromod silencer
 openscriptmenu quickpromod grenade
 
-SHOUTCASTER BINDS
+***SHOUTCASTER BINDS***
 
 You can bind them via the in-game menu (Shoutcast Setup).
 Alternatively you can manually bind them in the console/config.
 
 bind [KEY] [COMMAND]
 
-Commands:
+***Commands:***
 
 openscriptmenu shoutcast_setup number
 openscriptmenu shoutcast_setup assault
@@ -339,12 +341,12 @@ Number being 1-10 for players, it's very easy to understand which player corresp
 
 Setting a class (lowercase) instead of a number will cycle through players using that class.
 
-CUSTOM MAPS
+***CUSTOM MAPS***
 
 In case Promod is throwing an error while playing on custom maps, make sure the IWD-files inside "usermaps/mapname" folder have the same map name in them.
 For example map "mp_dahman_b3" contains a file called "mp_dahman_b3.iwd" and therefore it is not marked as a violation.
 
-NOTES FOR SERVER-ADMINS AND SERVER-HOSTING COMPANIES
+**NOTES FOR SERVER-ADMINS AND SERVER-HOSTING COMPANIES**
 
 The dvar fs_game "mods/pml220" is forced for match-servers and do not rename any files or modify contents of them.
 However custom servers with skins etc. must use something else than "mods/pml220" for example "mods/pml220_custom", it's not restricted and you are free to add additional iwd files or modify existing ones.
