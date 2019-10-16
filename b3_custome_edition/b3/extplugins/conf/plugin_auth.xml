@@ -1,0 +1,12 @@
+<configuration plugin="auth">
+	<settings name="commands">
+		<set name="auth">2</set>
+	</settings>
+
+	<!-- Set passwords for groups that need them -->
+	<settings name="passwords">
+		<set name="60">sles60xxx741</set>
+		<set name="80">sles80dgg64</set>
+		<set name="100">sles60iuo488</set>
+	</settings>
+</configuration>

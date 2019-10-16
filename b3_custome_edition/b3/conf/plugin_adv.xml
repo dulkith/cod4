@@ -1,0 +1,82 @@
+<configuration plugin="adv">
+	<!--
+		Note: within ads, you can use the following variables : @nextmap @time
+		or rules as defined in the admin plugin config file. ie: /spam#rule1
+	-->
+	<settings name="settings">
+		<!-- rate in minutes. 
+		  If you want a rate faster than once 
+		  per minutes, then you can add a 's' as a suffix for seconds.
+		  i.e. : <set name="rate">30s</set> 
+		-->
+		<set name="rate">30s</set>
+		<!--
+			you can either set here a text file that will contain one ad per line
+			or fill the <ads> section below
+		-->
+		<!-- <set name="ads">c:/somewhere/my_ads.txt</set> -->
+	</settings>
+  <settings name="newsfeed">
+		<!--
+			you can include newsitems in your adds by setting the section below
+			you can add feeditems in the adds like this:
+			@feed   (will pick the next newsitem each time it is included in the rotation,
+               rotating until 'items' is reached and then start over.)
+			@feed 0 (will pick the latest newsitem available from the feed and add it in the rotation)
+			@feed 1 (will pick the second latest item in line)
+			etc.
+		-->
+		<set name="url"><![CDATA[http://forum.bigbrotherbot.net/news-2/?type=rss;action=.xml]]></set>
+		<set name="items">5</set>
+		<set name="pretext">News: </set>
+	</settings>
+	<ads>
+    <!-- you can use the following keywords in your messages :
+      /spam#rule1 - rule 1 as defined in you admin plugin config file
+      @time - the server time
+      @feed - the next RSS feed item
+      @feed 0 - the lastest RSS feed item
+      @feed 1 - the 2nd lastest RSS feed item
+      @nextmap - the next map in your game server rotation list (if available)
+      @topstats - the top stats from XLRstats (if the plugin is enabled)
+      @admins - connected admins' names. You can change the message format in your admin plugin config
+      @regulars - connected players from the regular grout. You can change the message format in your admin plugin config
+    -->
+		 <!--<ad>^2Big Brother Bot is watching you... www.BigBrotherBot.net</ad>
+		<ad>@feed</ad>
+		<ad>server watched by @admins</ad>
+		<ad>/spam#rule1</ad>
+		<ad>@time</ad>
+		<ad>@admins</ad>
+		<ad>@feed</ad>
+		<ad>^2Do you like B3? Consider donating to the project at www.BigBrotherBot.net</ad>
+		<ad>@nextmap</ad>
+		<ad>@topstats</ad>-->
+
+         <!--<ad>^7For a list of your command type ^3!help</ad>-->
+		<!--<ad>^7List of rules type ^3!rules</ad>-->
+		<!--<ad>^7JOIN WITH OUR [SD] SERVER^0-^1158.69.223.47:28930</ad>
+		<ad>^7JOIN WITH OUR [TDM] SERVER^0-^1158.69.223.47:28960</ad>
+        <ad>^7JOIN WITH OUR [TDM] SERVER^0-^1slescod4.tk:28961</ad>-->
+
+		<ad>^7Type ^3!h ^7to view availabale commands.</ad>
+		<ad>^7List of rules type ^3!r </ad>
+		<ad>@nextmap</ad>
+		<ad>^7You still can't find ^2Game ID, ^3Type ^1!id</ad>
+		<ad>^7Press ^18 ^7or Type ^1!fps ^7to change ^3FPS</ad>
+		<ad>^7Press ^19 ^7or Type ^1!fov ^7to change ^3FOV</ad>
+		<ad>@time</ad>
+		<ad>^6Report ^7suspected hackers ^3Quietly via ^2Admin ^7on teamchat.</ad>
+		<ad>^7Type ^1!reg ^2then ^1!xlr ^7to view ^3stat.s</ad>
+		<ad>^7Teams will ^1Auto Balance ^7during ^3Round Start</ad>
+		<ad>^7End Map vote ^1only enable, ^3Minimum 10 players ^7in server.</ad>
+		<ad>@admins</ad>
+        <ad>^6Report ^7suspected hackers ^3Quietly via ^2Admin ^7 on teamchat.</ad>
+		<ad>^6JOIN WITH OUR GROUP : ^5www.facebook.com/groups/slesport</ad>
+		<ad>@regulars</ad>
+		<ad>^6Thank you for playing in ^1SLeSPORTS ^2Gaming ^3Server</ad>
+		<ad>@topstats</ad>
+		<ad>^7Type ^1!ss player_name ^7to take player's ^3screenshots</ad>
+		<ad>^3TS3^7:^5slescod4.tk</ad>
+	</ads>
+</configuration>

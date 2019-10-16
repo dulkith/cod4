@@ -1,0 +1,12 @@
+<configuration plugin="masteradmin">
+	<settings name="commands">
+		<set name="maprestart">60</set>
+                <set name="fastrestart">60</set>
+                <set name="hardcore">60</set>
+                <set name="gametype">60</set>
+                <set name="killcam">60</set>
+                <set name="ff">60</set>
+                <set name="spectate">60</set>
+                <set name="mag">60</set>
+	</settings>
+</configuration>

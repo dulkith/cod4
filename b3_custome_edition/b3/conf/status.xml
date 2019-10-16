@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<B3Status Time="Thu Jun 13 12:47:02 2019">
+        <Game CaptureLimit="" FragLimit="" Ip="209.58.172.57" Map="mp_killhouse" MapTime="4190372" Name="cod4" OnlinePlayers="5" Port="28960" RoundTime="4188873" Rounds="735" TimeLimit="" Type="sd">
+                <Data Name="protocol" Value="17"/>
+                <Data Name="gameName" Value="cod4"/>
+                <Data Name="sv_privateClients" Value="0"/>
+                <Data Name="_ModUpdate" Value="Yes"/>
+                <Data Name="sv_maxRate" Value="25000"/>
+                <Data Name="_mapTimeStart" Value="1556219850"/>
+                <Data Name="rounds" Value="735"/>
+                <Data Name="_mapName" Value="mp_killhouse"/>
+                <Data Name="sv_disableClientConsole" Value="0"/>
+                <Data Name="uptime" Value="17 hours"/>
+                <Data Name="_Email" Value="dulkith@outlook.com"/>
+                <Data Name="console" Value="&lt;b3.parsers.cod4x18.Cod4X18Parser object at 0x7f1978994b50&gt;"/>
+                <Data Name="gamename" Value="Call of Duty 4"/>
+                <Data Name="fs_game" Value="mods/sles_promod_snd"/>
+                <Data Name="version" Value="CoD4 X - linux-i386 build 0 Sep 19 2018"/>
+                <Data Name="build" Value="0"/>
+                <Data Name="branch" Value="no-branch"/>
+                <Data Name="sv_pure" Value="1"/>
+                <Data Name="_roundTimeStart" Value="1556221349"/>
+                <Data Name="_Mod" Value="PROMOD LK"/>
+                <Data Name="_CoD4 X Site" Value="http://cod4x.me"/>
+                <Data Name="revision" Value="no-revision"/>
+                <Data Name="sv_voice" Value="1"/>
+                <Data Name="modName" Value="mods/sles_promod_snd"/>
+                <Data Name="_ModVer" Value="v4.0"/>
+                <Data Name="sv_minPing" Value="0"/>
+                <Data Name="fs_homepath" Value="/home/ogp_agent/cod4_promod_snd"/>
+                <Data Name="_TeamSpeak3" Value="ts.slesports.TK"/>
+                <Data Name="_Type" Value="Search and Destroy"/>
+                <Data Name="sv_maxclients" Value="34"/>
+                <Data Name="sv_hostname" Value="^1SLeSPORTS ^5SnD ^3Promod ^2|REMASTERED|^0 - ^1Attack^5: ^710 ^0^4Defence^5: ^76"/>
+                <Data Name="sv_floodprotect" Value="4"/>
+                <Data Name="_Location" Value="SRI LANKA"/>
+                <Data Name="fs_basepath" Value="/home/ogp_agent/cod4_promod_snd"/>
+                <Data Name="g_compassShowEnemies" Value="0"/>
+                <Data Name="g_mapStartTime" Value="Fri Apr 26 00:47:29 2019"/>
+                <Data Name="_Website" Value="www.slesports.TK"/>
+                <Data Name="gameType" Value="sd"/>
+                <Data Name="_Admin" Value="|SLeS|null"/>
+                <Data Name="shortversion" Value="-"/>
+                <Data Name="g_logTimeStampInSeconds" Value="0"/>
+                <Data Name="sv_maxPing" Value="600"/>
+                <Data Name="_Maps" Value="COD4 Stock"/>
+        </Game>
+        <Clients Total="5">
+                <Client CID="1" ColorName="Dr.Edward^7" Connections="1" DBID="6342" GUID="2310346615616267363" IP="176.45.253.12" Joined="Fri Apr 26 00:55:04 2019" Level="0" Name="Dr.Edward" PBID="" Score="" State="1" Team="2" Updated="Fri Apr 26 00:55:04 2019">
+                        <Data Name="codguid" Value="2310346615616267363"/>
+                </Client>
+                <Client CID="3" ColorName="sorry^7" Connections="12" DBID="5495" GUID="2310346614975003718" IP="175.157.103.119" Joined="Fri Mar 29 07:51:17 2019" Level="1" Name="sorry" PBID="" Score="" State="1" Team="2" Updated="Fri Apr 26 00:38:26 2019">
+                        <Data Name="codguid" Value="2310346614975003718"/>
+                </Client>
+                <Client CID="2" ColorName="Cowboy^7" Connections="12" DBID="4939" GUID="2310346613524876585" IP="103.255.6.255" Joined="Wed Mar  6 15:24:09 2019" Level="0" Name="Cowboy" PBID="" Score="" State="2" Team="3" Updated="Fri Apr 26 01:10:28 2019">
+                        <Data Name="codguid" Value="2310346613524876585"/>
+                </Client>
+                <Client CID="4" ColorName="XyZ^7" Connections="50" DBID="6070" GUID="2310346616595916672" IP="123.231.104.67" Joined="Thu Apr 18 19:27:47 2019" Level="60" Name="XyZ" PBID="" Score="" State="2" Team="3" Updated="Fri Apr 26 00:38:38 2019">
+                        <Data Name="codguid" Value="2310346616595916672"/>
+                </Client>
+                <Client CID="6" ColorName="|rA|P|a$iYa^7" Connections="16" DBID="4098" GUID="2310346613232094035" IP="175.157.229.129" Joined="Sat Feb  9 13:42:10 2019" Level="0" Name="|rA|P|a$iYa" PBID="" Score="" State="1" Team="3" Updated="Fri Apr 26 00:41:36 2019">
+                        <Data Name="codguid" Value="2310346613232094035"/>
+                </Client>
+        </Clients>
+</B3Status>

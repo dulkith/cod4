@@ -1,0 +1,18 @@
+<configuration plugin="chatter">
+  <settings name="commands">
+    <set name="say">80</set>
+    <set name="s">80</set>
+    <set name="tell">80</set>
+    <set name="set">100</set>
+    <set name="map_rotate">80</set>
+    <set name="loadplugin">100</set>
+    <set name="unloadplugin">100</set>
+    <set name="ss">1</set>
+    <set name="ssall">2</set>
+    <set name="record">100</set>
+    <set name="stoprecord">100</set>
+    <set name="undercover">100</set>
+    <set name="advert">100</set>
+    <set name="deladvert">100</set>
+  </settings>
+</configuration>

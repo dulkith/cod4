@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VQIHU1RTABACVlVSAwgEVQ=="};window.NREUM||(NREUM={}),__nr_require=function(t,n,e){function r(e){if(!n[e]){var o=n[e]={exports:{}};t[e][0].call(o.exports,function(n){var o=t[e][1][n];return r(o||n)},o,o.exports)}return n[e].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<e.length;o++)r(e[o]);return r}({1:[function(t,n,e){function r(t){try{s.console&&console.log(t)}catch(n){}}var o,i=t("ee"),a=t(16),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,n,e){r(e.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,n){return t}).join(", ")))},{}],2:[function(t,n,e){function r(t,n,e,r,s){try{p?p-=1:o(s||new UncaughtException(t,n,e),!0)}catch(f){try{i("ierr",[f,c.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,n,e){this.message=t||"Uncaught error with no additional information",this.sourceURL=n,this.line=e}function o(t,n){var e=n?null:c.now();i("err",[t,e])}var i=t("handle"),a=t(17),s=t("ee"),c=t("loader"),f=t("gos"),u=window.onerror,d=!1,l="nr@seenError",p=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(8),t(7),"addEventListener"in window&&t(5),c.xhrWrappable&&t(9),d=!0)}s.on("fn-start",function(t,n,e){d&&(p+=1)}),s.on("fn-err",function(t,n,e){d&&!e[l]&&(f(e,l,function(){return!0}),this.thrown=!0,o(e))}),s.on("fn-end",function(){d&&!this.thrown&&p>0&&(p-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})},{}],3:[function(t,n,e){t("loader").features.ins=!0},{}],4:[function(t,n,e){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),s=t(7),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,v="fn"+h,w="bstTimer",y="pushState",g=t("loader");g.features.stn=!0,t(6);var b=NREUM.o.EV;o.on(m,function(t,n){var e=t[0];e instanceof b&&(this.bstStart=g.now())}),o.on(v,function(t,n){var e=t[0];e instanceof b&&i("bst",[e,n,this.bstStart,g.now()])}),a.on(m,function(t,n,e){this.bstStart=g.now(),this.bstType=e}),a.on(v,function(t,n){i(w,[n,this.bstStart,g.now(),this.bstType])}),s.on(m,function(){this.bstStart=g.now()}),s.on(v,function(t,n){i(w,[n,this.bstStart,g.now(),"requestAnimationFrame"])}),o.on(y+p,function(t){this.time=g.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,n,e){function r(t){for(var n=t;n&&!n.hasOwnProperty(u);)n=Object.getPrototypeOf(n);n&&o(n)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,n){return t[1]}var a=t("ee").get("events"),s=t(19)(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";n.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,n){var e=t[1],r=c(e,"nr@wrapped",function(){function t(){if("function"==typeof e.handleEvent)return e.handleEvent.apply(e,arguments)}var n={object:t,"function":e}[typeof e];return n?s(n,"fn-",null,n.name||"anonymous"):e});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,n,e){var r=t("ee").get("history"),o=t(19)(r);n.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,n,e){var r=t("ee").get("raf"),o=t(19)(r),i="equestAnimationFrame";n.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,n,e){function r(t,n,e){t[0]=a(t[0],"fn-",null,e)}function o(t,n,e){this.method=e,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,e)}var i=t("ee").get("timer"),a=t(19)(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";n.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],9:[function(t,n,e){function r(t,n){d.inPlace(n,["onreadystatechange"],"fn-",s)}function o(){var t=this,n=u.context(t);t.readyState>3&&!n.resolved&&(n.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,y,"fn-",s)}function i(t){g.push(t),h&&(x?x.then(a):v?v(a):(E=-E,O.data=E))}function a(){for(var t=0;t<g.length;t++)r([],g[t]);g.length&&(g=[])}function s(t,n){return n}function c(t,n){for(var e in t)n[e]=t[e];return n}t(5);var f=t("ee"),u=f.get("xhr"),d=t(19)(u),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,v=l.SI,w="readystatechange",y=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],g=[];n.exports=u;var b=window.XMLHttpRequest=function(t){var n=new p(t);try{u.emit("new-xhr",[n],n),n.addEventListener(w,o,!1)}catch(e){try{u.emit("internal-error",[e])}catch(r){}}return n};if(c(p,b),b.prototype=p.prototype,d.inPlace(b.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,n){r(t,n),i(n)}),u.on("open-xhr-start",r),h){var x=m&&m.resolve();if(!v&&!m){var E=1,O=document.createTextNode(E);new h(a).observe(O,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===w||a()})},{}],10:[function(t,n,e){function r(t){var n=this.params,e=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!n.aborted){if(e.duration=a.now()-this.startTime,4===t.readyState){n.status=t.status;var i=o(t,this.lastSize);if(i&&(e.rxSize=i),this.sameOrigin){var c=t.getResponseHeader("X-NewRelic-App-Data");c&&(n.cat=c.split(", ").pop())}}else n.status=0;e.cbTime=this.cbTime,f.emit("xhr-done",[t],t),s("xhr",[n,e,this.startTime])}}}function o(t,n){var e=t.responseType;if("json"===e&&null!==n)return n;var r="arraybuffer"===e||"blob"===e||"json"===e?t.response:t.responseText;return h(r)}function i(t,n){var e=c(n),r=t.params;r.host=e.hostname+":"+e.port,r.pathname=e.pathname,t.sameOrigin=e.sameOrigin}var a=t("loader");if(a.xhrWrappable){var s=t("handle"),c=t(11),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,l=t("id"),p=t(14),h=t(13),m=window.XMLHttpRequest;a.features.xhr=!0,t(9),f.on("new-xhr",function(t){var n=this;n.totalCbs=0,n.called=0,n.cbTime=0,n.end=r,n.ended=!1,n.xhrGuids={},n.lastSize=null,p&&(p>34||p<10)||window.opera||t.addEventListener("progress",function(t){n.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,n){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&n.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,n){var e=this.metrics,r=t[0],o=this;if(e&&r){var i=h(r);i&&(e.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof n.onload))&&o.end(n)}catch(e){try{f.emit("internal-error",[e])}catch(r){}}};for(var s=0;s<d;s++)n.addEventListener(u[s],this.listener,!1)}),f.on("xhr-cb-time",function(t,n,e){this.cbTime+=t,n?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof e.onload||this.end(e)}),f.on("xhr-load-added",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&!this.xhrGuids[e]&&(this.xhrGuids[e]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&this.xhrGuids[e]&&(delete this.xhrGuids[e],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],n)}),f.on("removeEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],n)}),f.on("fn-start",function(t,n,e){n instanceof m&&("onload"===e&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),f.on("fn-end",function(t,n){this.xhrCbStart&&f.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,n],n)})}},{}],11:[function(t,n,e){n.exports=function(t){var n=document.createElement("a"),e=window.location,r={};n.href=t,r.port=n.port;var o=n.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=n.hostname||e.hostname,r.pathname=n.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!n.protocol||":"===n.protocol||n.protocol===e.protocol,a=n.hostname===document.domain&&n.port===e.port;return r.sameOrigin=i&&(!n.hostname||a),r}},{}],12:[function(t,n,e){function r(){}function o(t,n,e){return function(){return i(t,[f.now()].concat(s(arguments)),n?null:this,e),n?void 0:this}}var i=t("handle"),a=t(16),s=t(17),c=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,n){u[n]=o(l+n,!0,"api")}),u.addPageAction=o(l+"addPageAction",!0),u.setCurrentRouteName=o(l+"routeName",!0),n.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,n){var e={},r=this,o="function"==typeof n;return i(p+"tracer",[f.now(),t,e],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],e),o)try{return n.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],e),t}finally{c.emit("fn-end",[f.now()],e)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,n){h[n]=o(p+n)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now()])}},{}],13:[function(t,n,e){n.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(n){return}}}},{}],14:[function(t,n,e){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),n.exports=r},{}],15:[function(t,n,e){function r(t,n){if(!o)return!1;if(t!==o)return!1;if(!n)return!0;if(!i)return!1;for(var e=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==e[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var s=navigator.userAgent,c=s.match(a);c&&s.indexOf("Chrome")===-1&&s.indexOf("Chromium")===-1&&(o="Safari",i=c[1])}n.exports={agent:o,version:i,match:r}},{}],16:[function(t,n,e){function r(t,n){var e=[],r="",i=0;for(r in t)o.call(t,r)&&(e[i]=n(r,t[r]),i+=1);return e}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],17:[function(t,n,e){function r(t,n,e){n||(n=0),"undefined"==typeof e&&(e=t?t.length:0);for(var r=-1,o=e-n||0,i=Array(o<0?0:o);++r<o;)i[r]=t[n+r];return i}n.exports=r},{}],18:[function(t,n,e){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],19:[function(t,n,e){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(17),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;n.exports=function(t,n){function e(t,n,e,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof e?e(r,a):e||{}}catch(f){l([f,"",[r,a,o],s])}u(n+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(d){throw u(n+"err",[r,a,d],s),d}finally{u(n+"end",[r,a,c],s)}}return r(t)?t:(n||(n=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function u(e,r,o){if(!c||n){var i=c;c=!0;try{t.emit(e,r,o,n)}catch(a){l([a,e,r,o])}c=i}}function d(t,n){if(Object.defineProperty&&Object.keys)try{var e=Object.keys(t);return e.forEach(function(e){Object.defineProperty(n,e,{get:function(){return t[e]},set:function(n){return t[e]=n,n}})}),n}catch(r){l([r])}for(var o in t)s.call(t,o)&&(n[o]=t[o]);return n}function l(n){try{t.emit("internal-error",n)}catch(e){}}return t||(t=o),e.inPlace=f,e.flag=a,e}},{}],ee:[function(t,n,e){function r(){}function o(t){function n(t){return t&&t instanceof r?t:t?c(t,s,i):i()}function e(e,r,o,i){if(!l.aborted||i){t&&t(e,r,o);for(var a=n(o),s=m(e),c=s.length,f=0;f<c;f++)s[f].apply(a,r);var d=u[g[e]];return d&&d.push([b,e,r,a]),a}}function p(t,n){y[t]=m(t).concat(n)}function h(t,n){var e=y[t];if(e)for(var r=0;r<e.length;r++)e[r]===n&&e.splice(r,1)}function m(t){return y[t]||[]}function v(t){return d[t]=d[t]||o(e)}function w(t,n){f(t,function(t,e){n=n||"feature",g[e]=n,n in u||(u[n]=[])})}var y={},g={},b={on:p,addEventListener:p,removeEventListener:h,emit:e,get:v,listeners:m,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var s="nr@context",c=t("gos"),f=t(16),u={},d={},l=n.exports=o();l.backlog=u},{}],gos:[function(t,n,e){function r(t,n,e){if(o.call(t,n))return t[n];var r=e();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(t,n,e){function r(t,n,e,r){o.buffer([t],r),o.emit(t,n,e)}var o=t("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(t,n,e){function r(t){var n=typeof t;return!t||"object"!==n&&"function"!==n?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");n.exports=r},{}],loader:[function(t,n,e){function r(){if(!E++){var t=x.info=NREUM.info,n=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&n))return u.abort();f(g,function(n,e){t[n]||(t[n]=e)}),c("mark",["onload",a()+x.offset],null,"api");var e=p.createElement("script");e.src="https://"+t.agent,n.parentNode.insertBefore(e,n)}}function o(){"complete"===p.readyState&&i()}function i(){c("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(s=Math.max((new Date).getTime(),s))-x.offset}var s=(new Date).getTime(),c=t("handle"),f=t(16),u=t("ee"),d=t(15),l=window,p=l.document,h="addEventListener",m="attachEvent",v=l.XMLHttpRequest,w=v&&v.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:v,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var y=""+location,g={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1099.min.js"},b=v&&w&&w[h]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:s,now:a,origin:y,features:{},xhrWrappable:b,userAgent:d};t(12),p[h]?(p[h]("DOMContentLoaded",i,!1),l[h]("load",r,!1)):(p[m]("onreadystatechange",o),l[m]("onload",r)),c("mark",["firstbyte",s],null,"api");var E=0,O=t(18)},{}]},{},["loader",2,10,4,3]);</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google-site-verification" content="JjIIrCF_eCsbHg1LQu-bOSp4X7vrw6w3OWCGoQ0CDVk" />
+<meta name="google" value="notranslate" />
+
+<title>RulesOfCombat.com is available at DomainMarket.com</title>
+<meta name="description" content="Domain for Sale. RulesOfCombat.com. Request Price. What Are the Advantages of a Super Premium
+.Com Domain? Increased Traffic. Search Engine Ranking. Brand Recognition. Immediate Presence. Higher
+Profits. Great Investment. #1 in Premium Domains. 300,000 of the World's Best .Com Domains." />
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KHRNW38');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Fonts -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
+<link href='//fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+<!-- Google Fonts embed code -->
+<script>
+    (function () {
+        var link_element = document.createElement("link"),
+                s = document.getElementsByTagName("script")[0];
+        if (window.location.protocol !== "http:" && window.location.protocol !== "https:") {
+            link_element.href = "http:";
+        }
+        link_element.href += "//fonts.googleapis.com/css?family=Lato:100italic,100,300italic,300,400italic,400,700italic,700,900italic,900";
+        link_element.rel = "stylesheet";
+        link_element.type = "text/css";
+        s.parentNode.insertBefore(link_element, s);
+    })();
+</script>
+
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-21240577-1', 'auto');
+    ga('send', 'pageview');
+
+    // Event Tracking for live chat clicks
+    document.getElementById("livechat-compact-container").addEventListener("click", function(e) {
+        ga('send', { 'hitType': 'pageview', 'page': '/pageviews/page/live-chat'});
+    }, false);
+</script>
+
+<!-- Open Graph -->
+<link rel="canonical" href="https://www.domainmarket.com/buynow/rulesofcombat.com">
+<meta property="og:title" content="RulesOfCombat.com is available at DomainMarket.com"/>
+<meta property="og:site_name" content="RulesOfCombat.com is available at DomainMarket.com"/>
+<meta property="og:description" content="Domain for Sale. RulesOfCombat.com. Request Price. What Are the
+Advantages of a Super Premium .Com Domain? Increased Traffic. Search Engine Ranking. Brand Recognition.
+Immediate Presence. Higher Profits. Great Investment. #1 in Premium Domains. 300,000 of the World's Best .Com
+Domains."/>
+<meta property="og:image" content="https://www.domainmarket.com/images/dmfb.jpg" />
+<meta property="fb:app_id" content="412489962426889" />
+<meta property="og:image:width" content="218" />
+<meta property="og:image:height" content="218" />
+<meta property="og:url" content="https://www.domainmarket.com/buynow/rulesofcombat.com"/>
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="/favicon.ico">
+
+<!-- Styles -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<link href="//www.domainmarket.com/css/app.css?v=11b5525fe56b1501c8fcb16c89a5c8e00c96c9af" rel="stylesheet">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js" integrity="sha384-I6F5OKECLVtK/BL+8iSLDEHowSAfUo76ZL9+kGAgTRdiByINKJaqTPH/QVNS1VDb" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script>$.noConflict();</script>
+
+
+<script>
+    var _prum = [['id', '57337cb5abe53d355a05dabf'],
+                 ['mark', 'firstbyte', (new Date()).getTime()]];
+    (function() {
+        var s = document.getElementsByTagName('script')[0]
+          , p = document.createElement('script');
+        p.async = 'async';
+        p.src = '//rum-static.pingdom.net/prum.min.js';
+        s.parentNode.insertBefore(p, s);
+    })();
+</script>
+                                                <!-- Start of LiveChat (www.livechatinc.com) code -->
+                <script type="text/javascript">
+                    window.__lc = window.__lc || {};
+                    window.__lc.license = 7768051;
+                    (function() {
+                    var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+                    lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+                    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+                    })();
+                </script>
+                <!-- End of LiveChat code -->
+                        </head>
+    <body id="app-layout">
+        <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KHRNW38"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+        <div class="alert-banner background accent">
+        <div class="text-center">
+            <span class="text">
+                <span>
+                    Ask About Special November Deals!
+                </span>
+            </span>
+            <button class="hide-button" aria-label="Hide Banner"
+                title="Hide Banner" onclick="hideAlertBanner()">
+                <i class="glyphicon glyphicon-remove" aria-hidden="true"></i>
+            </button>
+        </div>
+    </div>
+        <nav class="navbar navbar-default navbar-static-top">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="nav-top text-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 logo-padding">
+                            <a href="https://www.domainmarket.com"><img src="//www.domainmarket.com/images/logo.png" border="0" alt="domain market logo premium domain" class="logopart img-responsive"></a>
+                        </div>
+                        <div class="col-sm-6 col-md-6 text-right">
+                            <div class="contact">
+                                <strong>Customer Support:</strong>
+                                <div>
+                                    <a href="tel:+18886946735">(888) 694-6735</a>
+                                </div>
+                                <div class="contact-info-email">
+                                    <a href="/cdn-cgi/l/email-protection#761f1802130413050213123612191b171f181b17041d13025815191b">
+                                        <span class="__cf_email__" data-cfemail="bed7d0cadbccdbcdcadbdafedad1d3dfd7d0d3dfccd5dbca90ddd1d3">[email&#160;protected]</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar-header">
+                <!-- Collapsed Hamburger -->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="app-navbar-collapse">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <ul class="nav navbar-nav">
+                                <li><a href="https://www.domainmarket.com/learn">Learn</a></li>
+                                <li><a href="https://www.domainmarket.com/search">Search</a></li>
+                                <li><a href="https://www.domainmarket.com/categories">Categories</a></li>
+                                <li><a href="https://www.domainmarket.com/about-us">About</a></li>
+                                <li><a href="https://www.domainmarket.com/contact">Contact</a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                        Resources <span class="caret"></span>
+                                    </a>
+
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="https://www.domainmarket.com/brandable-domains">Brandable Domains</a></li>
+                                        <li><a href="https://www.domainmarket.com/best-domains-list">Best Domains</a></li>
+                                        <li><a href="https://www.domainmarket.com/reasons">Reasons</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="https://www.domainmarket.com/testimonials">Testimonials</a></li>
+                                                                                                                                                                                                                <li><a href="http://www.accurateappraisals.com/" target="_blank">Appraisals</a></li>
+                                <li><a href="http://blog.domainmarket.com" target="_blank">Blog</a></li>
+                                <li>
+                                    <a href="https://www.domainmarket.com/learn?print=1"
+                                        target="_blank">
+                                        Print
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+        
+        
+        <a  id="buy-now-button"
+    class="buynow-hover-button"
+    href="#"
+    aria-label=""
+    title="">
+    <i class="fa fa-usd" aria-hidden="true"></i>
+</a>
+        <div class="container-fluid">
+            <div class="row">
+                
+                    <div id="lander">
+    <section class="lander-header text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="pad-vertical-lg">
+                        <h3 class="bold">Domain for Sale</h3>
+                        <h1 class="bold ">
+                            RulesOfCombat.com
+                        </h1>
+                                                <h3 style="margin-top: 0;">
+                            $19,888 USD
+                        </h3>
+                        
+                                                <div class="pad-vertical-lg">
+                            <a href="https://www.domainmarket.com/cart/rulesofcombat.com"
+                                class="btn btn-warning btn-lg uppercase"
+                                title="Prices rise daily based on demand; this domain is now available to the general public; first come, first served.">
+                                Buy Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-one">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 left-section-one">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2 class="font-secondary bold" style="margin-top: 0;">What Are the Advantages of a Super Premium .Com Domain?</h2>
+                            <div class="arrow-list">
+                                <h2 class="arrow-item">
+                                    <span class="fa-container">
+                                        <i class="fa fa-line-chart font-primary"></i>
+                                    </span>
+                                    Increased Traffic
+                                </h2>
+                                <h2 class="arrow-item">
+                                    <span class="fa-container">
+                                        <i class="fa fa-search font-primary"></i>
+                                    </span>
+                                    Search Engine Ranking
+                                </h2>
+                                <h2 class="arrow-item">
+                                    <span class="fa-container">
+                                        <i class="fa fa-star font-primary"></i>
+                                    </span>
+                                    Brand Recognition
+                                </h2>
+                                <h2 class="arrow-item">
+                                    <span class="fa-container">
+                                        <i class="fa fa-desktop font-primary"></i>
+                                    </span>
+                                    Immediate Presence
+                                </h2>
+                                <h2 class="arrow-item">
+                                    <span class="fa-container">
+                                        <i class="fa fa-money font-primary"></i>
+                                    </span>
+                                    Higher Profits
+                                </h2>
+                                <h2 class="arrow-item">
+                                    <span class="fa-container">
+                                        <i class="fa fa-bank font-primary"></i>
+                                    </span>
+                                    Great Investment
+                                </h2>
+                            </div>
+                            <div>
+                                <a href="#read-track-container" class="orange-link">
+                                    Read More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 right-section-one">
+                    <div class="grey-section background quadrenary lander-buy-section">
+                        <div class="background primary pad-vertical text-center">
+                            <h2 style="margin: 0;" class="bold">#1 in Premium Domains</h2>
+                        </div>
+                        <div class="text-center pad-vertical right-section-one-content">
+                            <div class="text-left checklist">
+                                <ul class="fa-ul">
+                                    <li><i class="fa-li fa fa-check"></i>300,000 of the World's Best .Com Domains</li>
+                                    <li><i class="fa-li fa fa-check"></i>Available For Immediate Purchase</li>
+                                    <li><i class="fa-li fa fa-check"></i>Safe &amp; Secure Transactions</li>
+                                    <li><i class="fa-li fa fa-check"></i>100% Satisfaction Guaranteed</li>
+                                    <li>
+                                        <a href="https://www.domainmarket.com/testimonials">
+                                            <i class="fa-li fa fa-check"></i>Testimonials
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="text-center pad-vertical-lg">
+                                <a href="https://www.domainmarket.com/cart/rulesofcombat.com" class="btn btn-warning btn-md uppercase">Buy this domain</a>
+                                                                    <div class="text-center">
+                                        <a href="https://www.domainmarket.com/cart/makeoffer/rulesofcombat.com">
+                                            Make an Offer
+                                        </a>
+                                    </div>
+                                                            </div>
+                            <img class="img-responsive margin-auto" src="//www.domainmarket.com/images/paymentoptions.png">
+                            <h3>24/7 Customer Support: <a href="tel:+18886946735">888-694-6735</a></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="lander-search background secondary">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="text-center">
+                        <h2 class="bold">Search For a Premium Domain</h2>
+                        <span>
+                            <a class="underline small-font" href="http://www.accurateappraisals.com/" target="_blank">
+                                or Click Here To Get Your Own Domains Appraised
+                            </a>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <form action="https://www.domainmarket.com/search" method="GET" class="pad-vertical">
+    <div class="input-group input-group-lg">
+        <input placeholder="Enter Keywords..." class="form-control" name="searchInput" type="text">
+        <input name="type" type="hidden" value="c">
+        <input name="search" type="hidden" value="true">
+        <span class="input-group-btn">
+            <button class="btn btn-success" type="submit">
+                <span class="fa fa-search"></span>
+            </button>
+        </span>
+    </div>
+    <div class="text-left">
+        <div class="search-links-advanced">
+            <span>
+                <a href="https://www.domainmarket.com/search" class="underline">
+                    <i class="fa fa-search icon" aria-hidden="true"></i>Advanced Search
+                </a>
+            </span>
+            <span>
+                <a href="https://www.domainmarket.com/categories" class="underline">
+                    <i class="fa fa-search icon" aria-hidden="true"></i>Category Search
+                </a>
+            </span>
+        </div>
+        <div class="search-links">
+            <span>
+                <a href="https://www.domainmarket.com/download/all_domains" class="underline">
+                    <img class="icon" src="//www.domainmarket.com/images/excel_icon.gif" alt="Excel CSV file - complete domain list">Entire List
+                </a>
+            </span>
+            <span>
+                <a href="https://www.domainmarket.com/download/under_500" class="underline">
+                    <img class="icon" src="//www.domainmarket.com/images/excel_icon.gif" alt="Excel CSV file - domains under $500">Domains Under $500
+                </a>
+            </span>
+        </div>
+    </div>
+</form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="buynow-ajax-container">
+        <section class="lander-similar-domains background quadrenary">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="text-center title bold font-secondary">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                    <a href="https://www.domainmarket.com/similar/RulesOfCombat.com">
+                        Find more domains similar to RulesOfCombat.com...
+                    </a>
+                </h3>
+        </div>
+    </div>
+</section>
+
+<section class="lander-truth-in-numbers">
+    <h2 class="text-center title bold">Truth in Numbers</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="info-wrapper">
+                    <p class="text-center">
+                        We are constantly expanding our inventory to give you
+                        the best domains available for purchase!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <a class="number-box"
+                    href="https://www.domainmarket.com/search?search=1&amp;recent=1">
+                    <div class="amount" data-number-name="recentDomainsCount">
+                        1,878
+                    </div>
+                    <div class="description">
+                        Domains Added in the Past Month
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a class="number-box" href="https://www.domainmarket.com/recent/appraised">
+                    <div class="amount" data-number-name="recentlyAppraisedCount">
+                        52,025
+                    </div>
+                    <div class="description">
+                        Recently Appraised Domains
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a class="number-box" href="https://www.domainmarket.com/recent/sold">
+                    <div class="amount" data-number-name="recentlySoldCount">
+                        80
+                    </div>
+                    <div class="description">
+                        Recently Sold Domains
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <a class="number-box" href="https://www.domainmarket.com/search">
+                    <div class="amount" data-number-name="averagePrice">
+                        $10,801
+                    </div>
+                    <div class="description">
+                        Average Price
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a class="number-box" href="https://www.domainmarket.com/search">
+                    <div class="amount" data-number-name="totalPrice">
+                        $3,586,730,102
+                    </div>
+                    <div class="description">
+                        Total Domains Value
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a class="number-box" href="https://www.domainmarket.com/search">
+                    <div class="amount" data-number-name="availableDomainCount">
+                        332,079
+                    </div>
+                    <div class="description">
+                        Available Domains
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="text-center top-space">
+                    <span>
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                        <a href="https://www.domainmarket.com/numbers">
+                            View All Truth in Numbers
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div id="read-track-container">
+
+    <section class="lander-in-domain">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class='pad-vertical'>
+                        <h2 class='font-primary bold'>What's in your Domain Name? <button type='button' class='print-btn' onclick='printPage("Buynow Ajax", "Shortcode Button")'>Print</button></h2>
+<p>A super premium .Com domain name from DomainMarket.com means instant branding, search engine, and marketing benefits. We make it safe, easy and affordable for you to own RulesOfCombat.com right away. DomainMarket.com is the only authorized pricing agent for this domain name, anyone else is a third party seller.&nbsp;Every domain price on this site is completed by top world experts from AccurateAppraisals.com.</p>
+<h3><a href='https://www.domainmarket.com/cart/rulesofcombat.com' class='font-primary bold'>Click here to purchase RulesOfCombat.com</a></h3>
+<p>DomainMarket.com&nbsp;domains are carefully selected for branding excellence by the world's top domain name appraisers, so you will only find the most prized and premium assets for sale.</p>
+<p>For serious companies and marketing executives, attracting just one new lifetime customer, business partner, or employee, leveraging a premium domain, will justify this&nbsp;excellent long-term investment. But in fact, your DomainMarket.com sourced super premium domain is likely to rake in many valuable new customers and opportunities in the long run that normally couldn't or wouldn&rsquo;t find you. Compared to the risk and sunk costs of traditional advertising channels, or newer online advertising methods, this is clearly a huge home run. Other types of advertising are not resellable assets like domains, with long term investment opportunity; other advertising investments are all very risky comparatively, and are mostly wasted if you think about it.</p>
+<p>Would you really consider shortchanging your permanent global brand by skipping the perfect .Com and letting someone else dominate online forever, and potentially offline? That would be a very costly mistake for your family's future and for the other stakeholders of your entity; everyone similarly situated regrets it.</p>
+<p>The world's best companies and smartest professionals always rely&nbsp;on DomainMarket.com and our super-premium, contextual .Com domains to leverage their branding opportunities. 500 out of 500 of the 'Fortune 500' corporations use .Com, and all of the world's best salespeople and marketers; they aren&rsquo;t going anywhere.</p>
+<p>Dozens of others could use your trade name or trademark in a variety of industries, but only one of you can be smart enough to control the .Com customer traffic forever. If you don't own the exact match .Com premium domain best suited for your offerings then over time your brand and site is likely to get lost in Google and in the minds of potential customers; rendered irrelevant. Plus, it would be super embarassing and costly for your customers or prospects to land on this site when they are actually looking to purchase from you instead.</p>
+<p>Plus you may be able to profit from the consumer traffic, "eyeballs", and sell advertising space or use Google AdWords on the domain site, to your financial advantage. Our partner SEO.com are a team of world class digital marketing experts and select Google Partners. We recommend you contact them for any assistance with online advertising, marketing, SEO, PPC, landing page optimization, ecommerce, conversion optimization, web design, Facebook ads and more.&nbsp;</p>
+<p>Super premium .com domain names from DomainMarket.com are the start and top of the economic food chain, in order to create the best on and offline 'unicorn' corporations. Pick the wrong domain and you deserve the consequences of your competitors rolling you. Next you need the rest of the best of modern digital marketing if you want to compete with serious players in your industry.</p>
+<p>"Ring.com [sold for $1B] was previously called DoorBot, His tenacity, and the decision to stick with the product he originally built [but with better domain], has paid off in a big way."</p>
+<p>Almost all decent TV ads now use premium generic .Com too, and radio ads, plus sides of trucks, billboards, bumper stickers, boats, planes, tshirts, blogs, etc. You may be one of these 'Fortune 500' mega corporations ready to dominate the world, or just a regular granny&nbsp;in your underwear, but either way you can look the same with RulesOfCombat.com.</p>
+<p>First come, first served. Don't miss this once in a lifetime opportunity to be #1. The first person or company to secure RulesOfCombat.com&nbsp;from this site can&nbsp;control it forever, to the exclusion of all others. It will become out of our control. Get it first; and get ranked first in Google! All that matters online is Location Location Location! Your Domain is Your Location! and brand, and future profits; dont shortchange it obviously! You can redirect your new domain traffic to your existing internet assets until you are done with&nbsp;development, or indefinitely, if you prefer.</p>
+<p>It's critical to secure your domain today if you want to control the world class branding and recognition before your competitors who are eyeing it. They might outcompete you forever if they get it first and get all the traffic, conversions, and branding value compounded endlessly. A premium domain could easily add 20% compounding yearly to a company's bottom line profits if deployed properly, which for most companies would prevent them from going out of business.</p>
+<p>This domain is offered for sale by its owner currently at the "buy it now" price listed "BIN"&nbsp;<a href='https://www.domainmarket.com/cart/rulesofcombat.com' class='font-primary bold'>Click here to purchase RulesOfCombat.com</a>, but could be withdrawn at any time or its price potentially substantially raised. Also, once sold,&nbsp;the next owner, your domain competitor, would likely never re-sell it again, especially to his competitor; and would instead try to take all your customers and potential customers, year after year, to the extent possible, which you should do to them by purchasing the domain first.</p>
+<p>You may find a Make Offer button on certain higher value domains; but beware, expressing demand in a domain or visiting a URL usually raises its price. You can buy at the current price at any time, as long as you are first, and its still being offered for sale. The issue to recognize is that the current price naturally trends&nbsp;upwards over time, then additionally based on traffic, expressed interest, and other apparent demand. So time is of the essence, especially right now, with prices escalating precipitously.</p>
+<p>Would you seriously consider letting someone else control your best possible name, Internet branding, and Google positioning forever if you could avoid it? You can control it right now. There is extreme marketing power behind the perfect domain to promote your products and services. Owning a popular English expression and brand online is the Holy Grail for perpetually converting lower cost new customers.</p>
+<p>Super premium domains from our marketplace generally rise in resale value, and can be reused or resold at any price if you are ever done capitalizing on them, or if you are a domain investor. Sales prices at our market have doubled over the last few years, and likely will again due to worldwide Internet growth, prestige, the general scarcity of super premium .Com&nbsp;domains, historically high demand,&nbsp;and the failure of all competing "gTLDs".&nbsp;We have been in business for over 10 years and have sold more of our premium domains than any of our competitors. At our previous company (BuyDomains.com) we launched the whole online premium domain trading industry in 1998.</p>
+<p>Waiting to purchase your favorite domain is a financial mistake, or, even worse, you may never be able to get it at all, at any price, if someone buys it first. It's much less risky to purchase a super premium domain and name your business accordingly, than any other choices; or at least redirect the free customer traffic to your site. Why would anyone choose to increase their business risks with inferior branding and domains? The ever increasing demand for internet sourced information and services, and premium domain investments is the very bandwagon you need to hop on. The trend is your friend! You may own all the tradenames, trademarks, logos, and social sites in the world, but exact match .Com possession ranking in Google is ten tenths of marketing/branding 'law'.</p>
+<p>You need to control the keywords and keyword combination strings relevant to your company and industry, forever if possible; bidding on words and paying over and over for advertising is a considerable risk, but buying the .Com is a certainty. The perfect domain, without compromising yourself and your brand, has to come first for a serious business, in order to set yourself apart from all wannabe competitors, and create long term leverage with your other communications and potential advertising. If you pick this&nbsp;domain you may not need expensive, super risky advertising at all, or at least not as much.&nbsp;</p>
+<p>If the value of one new lifelong customer and its references makes up for the domain cost, imagine how a great domain from DomainMarket.com will benefit when it helps you attract multitudes of unexpected new customers (whose value far surpasses the rising domain investment).&nbsp;<a href="https://www.google.com/search?num=100&amp;site=&amp;source=hp&amp;q=Domain+Bias+in+Web+Search&amp;oq=Domain+Bias+in+Web+Search" target="_blank" rel="noopener noreferrer">Google the Microsoft study proving this phenomenon: "Domain Bias in Web Search"</a></p>
+<p>You also need properly branded professional email if you want to appear professional and convert the highest number of customers at the highest profits. Using Gmail,&nbsp;Yahoo, Outlook, AOL, instead of your own properly branded email address is foolish and unprofessional and fails to add leverage to your brand, or use the leverage from your brand, which should have been professionally built from day one. But no time like the present.&nbsp;</p>
+<p>Premium domains will keep going up in price due to a "flight to quality", millions of global companies, people and projects requiring great branding perpetually. Domain names lower in branding quality than the Super Premium .Com level DomainMarket.com specializes in are far too risky to be considered investments, like all the new &ldquo;gTLD&rdquo; domains, or very low level .Coms. They are hobbies at best and more likely just a complete waste. But the right .Com is the ideal investment and marketing vehicle for anyone with ambition.</p>
+<p>Speaking of ambition; your boss and coworkers will love you; and you may just get a raise, if you improve the URL, email addresses and branding for everyone, forever. Anybody who might have told you that .Com domains would go away, lose value, be replaced by other domain extensions or technologies was totally wrong, or worse.</p>
+<p>In some cases a premium domain&nbsp;can be effective in helping with your tax strategy too (please ask your accountant for details); or can work as an alternative asset (like Bitcoin),&nbsp;a way to store investment value in "the cloud" forever, that is easy, anonymous, and cheap to control and move around (ask a pro).</p>
+<p>Each domain in our marketplace is individually valued based on a series of attributes, developed by professionals for over two decades. We are the primary dealer for every single fabulous .Com&nbsp;domain listed on our site. Any other legitimate sellers are secondary.</p>
+<p>A delayed costly escrow process is not necessary to complete your transaction, as we have been the trusted dealer for tens of thousands of domain transactions and transfers, without a glitch. DomainMarket.com is the best known and most trusted competitor in the premium domain name industry. In any event, if it makes you feel even more comfortable, Escrow.com is a purchase option for large transactions.</p>
+<p>The asking price for RulesOfCombat.com is based on a careful and professional appraisal by the world's leading experts on domain valuations, the inventors of ecommerce for premium domains.&nbsp;The price is explicitly certified to be fair by real experts, so the buyer can be confident in the great long-term value and investment opportunity for the unique domain asset in question.</p>
+<p>Your competition for a great domain, and therefore your opportunity to arbitrage or capitalize, is even greater than your normal business competition, because it includes your normal competition, plus any other company or person in the world that wants to invest in domains for the future, plus anyone who competes for the same word, expression, or brand in any marketing or media.</p>
+<p>For example if you are a lighting manufacturer competing for the domain 'BrightFuture.com' then all the educational institutions or websites in the world could become your competitor for domains, or partner potentially; or you could sell it to them at a huge profit if you are a good investor. Not to mention any religious institution would be well served with that domain.</p>
+<p>If you&rsquo;ve ever been to a competitor&rsquo;s marketplace you will find predominantly random, worthless domains, at prices that were derived without any logical appraisal process. But our domain appraisals and prices are very consistent with one another, regardless whether you appreciate any particular one. Competitors collections and sites with domain names for sale are unappraised mostly, inconsistent if they are priced, and are not done by true professionals oftentimes. Conversely, DomainMarket.com's for sale inventory&nbsp;is highly curated and cleaned for excellence, with proper pricing.</p>
+<p>Super-premium domain values generally range from $10,000 to $2 million. The average industry sales price is approximately $30,000. Our marketplace also has thousands of &ldquo;close out&rdquo; domains, at even lower prices!</p>
+<p>Building a fabulous online presence starts with a top-quality domain name from DomainMarket.com. Here, you'll find only the very best .Com&nbsp;domain names waiting to be developed into first-rate profitable brands.</p>
+<p>Domains are valued based on many factors such as marketability and brand-ability, the industry it is related to, similar domain sales, acquisition cost and, if applicable, the website traffic and associated revenue they can drive. A strong domain is one of the best investments you can make in your business, and can pay for itself many times over.&nbsp;</p>
+<p>Exact match domains from DomainMarket.com dramatically reduce the amount companies pay per click by improving their Quality Scores, the measure by which Google determines a keyword's relevance and cost. Your domain's Quality Score depends on alignment between the paid keyword, ad copy and landing page or website. The more a search query appears in an ad, including in the domain name/display URL, the more relevant the ad appears to the searcher.</p>
+<p class="MsoPlainText">We are also search engine optimization (SEO) experts, and own SEO.com Inc. corporation with 40 employees. Let us know if you need help getting paid or organic traffic; help in getting to the top of Google.&nbsp;</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="not-tabs background quadrenary">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="pad-vertical-lg">
+                        <div class="background quadrenary">
+                            <div>
+<h2>Why RulesOfCombat.com? <button type='button' class='print-btn' onclick='printPage("Buynow Ajax", "Shortcode Button")'>Print</button></h2>
+<h4 class='font-primary bold'>Great brand recognition and memorability from advertising, marketing, and your web site landing pages.</h4>
+<p>This domain is likely to hold and increase its value over time. Poor domain names lose traffic and new customer conversions to better domain named companies, Microsoft Research calls this effect "domain bias in web search." RulesOfCombat.com is a category killer domain that may be commonly used around the world. Such a name offers your company a clear competitive advantage online and off.</p>
+<p>RulesOfCombat.com is relatively easy to spell / highly memorable. Trust and recognition from such a great name drives higher click through rates. Only one person or entity can have it and utilize it online and offline for marketing and advertising (and maintain all future resale rights at any price or profit level).</p>
+<p>Establish your company, product or service dominance with an outstanding .Com brand. For existing brands, it is the ideal opportunity to re-enforce and protect your brand.</p>
+</div>
+<div>
+<h2>Marketability</h2>
+<h4 class='font-primary bold'>This is an exciting long term branding opportunity</h4>
+<p>Historically, exact match keywords have been rated higher in relevancy for search engine ranking. A super-premium .Com domain name from DomainMarket.com comes at a much lower cost and with a higher long-term value than traditional advertising, which is a very risky sunk cost. Organic web traffic is a natural resource that can be acquired by the domain name owner. These domains for sale are great long-term asset investments, with an advertising annuity value to boot.</p>
+<p>Ask us about Search Engine Optimization, Search Engine Marketing, and Web Development, with our partner&nbsp;<a href="http://www.seo.com/" target="_blank" rel="nofollow noopener noreferrer">SEO.com&nbsp;;</a>&nbsp;and VOIP phone services, APIs, and apps with&nbsp;<a href="http://www.phone.com/" target="_blank" rel="nofollow noopener noreferrer">Phone.com</a>.</p>
+</div>
+<div>
+<h2>Respectability</h2>
+<p>The right domain provides instant authority and perceived market credibility. People associate premium domains with leadership and respect in your market space. This perceived market credibility increases the value of your products and services and drives profits.</p>
+<p>Please see&nbsp;<a href="http://research.microsoft.com/apps/pubs/default.aspx?id=155941" target="_blank" rel="noopener noreferrer">Microsoft study</a>, as well as&nbsp;<a href="http://www.businessinsider.com.au/why-10000-for-a-domain-name-is-still-cheap-2011-4" target="_blank" rel="noopener noreferrer">Business Insider</a>&nbsp;and&nbsp;<a href="http://www.searchenginejournal.com/how-your-domain-name-will-impact-seo-social-media-marketing" target="_blank" rel="noopener noreferrer">Search Engine Journal</a>&nbsp;for more information on this phenomenon, and how to profit accordingly.</p>
+</div>
+<div>
+<h2>Ten Reasons</h2>
+<h4 class='font-primary bold'>10 Reasons to always use DomainMarket.com and tell your friends:</h4>
+<ol>
+<li>We are US based, and native English speakers, who provide the best support, and pay all taxes.</li>
+<li>We are available 24x7x365 to provide you with the world's best .Com domain names and customer services, through easy search and commerce interfaces, or by telephone or email.</li>
+<li>We quickly and professionally transfer the names to your account at GoDaddy,&nbsp;Tucows, Enom, Network Solutions, Web.com, or any other registrar that you prefer. You will receive everything you need to maintain control of your new asset right away.</li>
+<li>Review our great case studies, references, and&nbsp;<a href="http://domainmarket.dev/testimonials">testimonials</a>.</li>
+<li>Our team has successfully completed more premium domain name transactions than any other group, in bulk and individually.</li>
+<li>We invented the expression "premium domains", "domain investing" and "domain secondary market" a long time ago. See this&nbsp;<a href="http://www.dnjournal.com/columns/coverstory8.htm">2003 article</a>.</li>
+<li>We are credited with an early domain search patent, copied and licensed by all major registrars (<a href="http://www.mikemann.com/patent/">NameMedia owns since 2005&nbsp;</a>(now GoDaddy owns)).</li>
+<li>Using .Com domains, web sites and email addresses with exact match keywords is prestigious.</li>
+<li>Using .Com web domains that include contextual keywords get better results from Google, Facebook, and other search apps.</li>
+<li>Using a&nbsp;.Com domain with properly targeted embedded keywords for your web site is a proven method to convert more leads into paying customers than sites without.</li>
+</ol>
+<p>Thank you for considering working with DomainMarket.com and SEO.com. We look forward to doing business with you!</p>
+</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript" src="/js/landers/numberTickerLander.js"></script>
+
+    <section class="corpwiki">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Product and Service Directory</h2>
+                    <div class="table-responsive">
+                        <table id='wiki-data' class='table table-striped'>
+  <thead>
+    <tr>
+      <th colspan="2">Name</th>
+      <th>Location</th>
+      <th colspan="2">Details</th>
+    </tr>
+  </thead>
+
+  <tbody>
+
+  </tbody>
+
+  <tfoot>
+    <tr>
+      <td colspan="5">
+
+
+      </td>
+    </tr>
+  </tfoot>
+</table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        jQuery("#wiki-data tfoot").remove();
+    </script>
+
+    <script src="//www.domainmarket.com/js/jquery.waypoints.min.js"></script>
+    <script src="//www.domainmarket.com/js/inview.min.js"></script>
+    <script src="//www.domainmarket.com/js/lander.js?v=11b5525fe56b1501c8fcb16c89a5c8e00c96c9af"></script>
+    <script>ga('send', 'event', "Lander", "Lander Ajax Load", "Tracking");</script>
+    </div>
+</div>
+
+
+<script>
+var __domain = "rulesofcombat.com";
+var __isStandalone = false;
+        jQuery(function () {
+            ga('send', 'event', "Lander", "Lander Load", "Tracking", {
+                nonInteraction: true
+            });
+        });
+</script>
+
+
+                                </div>
+        </div>
+
+        <!-- JavaScripts -->
+        <script src="//www.domainmarket.com/js/app.js?v=11b5525fe56b1501c8fcb16c89a5c8e00c96c9af"></script>
+                                <script>
+                /* <![CDATA[ */
+                var google_conversion_id = 924179745;
+                var google_custom_params = window.google_tag_params;
+                var google_remarketing_only = true;
+                /* ]]> */
+            </script>
+            <script src="//www.googleadservices.com/pagead/conversion.js"></script>
+            <noscript>
+            <div style="display:inline;">
+                <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/924179745/?value=0&amp;guid=ON&amp;script=0"/>
+            </div>
+            </noscript>
+                    
+        <footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <a href="http://phone.com" target="_blank" rel="nofollow">
+                    <img src="//www.domainmarket.com/images/phonecom-2.png" class="" alt="Visit Phone.com - VoIP Phone Service &amp; Systems" title="VoIP Phone Service &amp; Systems from Phone.com">
+                </a>
+                <a href="http://seo.com" target="_blank" rel="nofollow">
+                    <img src="//www.domainmarket.com/images/seodotcom-2.png" class="" alt="Visit SEO.com - a Full Service Digital Marketing Agency" title="Visit SEO.com - a Full Service Digital Marketing Agency">
+                </a>
+                <a href="http://mikemann.com" target="_blank" rel="nofollow">
+                    <img src="//www.domainmarket.com/images/mikemanndotcom-2.png" class="" alt="Visit Mikemann.com - Social Capital Enterprises" title="Mikemann.com - Social Capital Enterprises">
+                </a>
+                <a href="http://www.accurateappraisals.com/" target="_blank" rel="nofollow">
+                    <img src="//www.domainmarket.com/images/accurate-appraisals.png" class="" alt="Visit AccurateAppraisals.com - Domain Appraisals &amp; Domain Valuations" title="AccurateAppraisals.com - Domain Appraisals &amp; Domain Valuations">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="background primary text-center copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="pad-vertical">Copyright © 2018. DomainMarket.com | All Rights Reserved.</div>
+                    <a href="https://www.domainmarket.com/about-us" class="underline">About</a> | 
+                    <a href="https://www.domainmarket.com/faq" class="underline">FAQ</a> | 
+                    <a href="https://www.domainmarket.com/privacy-policy" class="underline">Privacy</a> |
+                    <a href="https://www.domainmarket.com/legal-terms" class="underline">Legal</a> |
+                    <a href="https://www.domainmarket.com/security-statement" class="underline">Security</a> |
+                    <a href="https://www.domainmarket.com/contact" class="underline">Contact</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>        <!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+ fbq('init', '1223056881039335'); 
+fbq('track', 'PageView');
+</script>
+<noscript>
+ <img height="1" width="1" 
+src="https://www.facebook.com/tr?id=1223056881039335&ev=PageView
+&noscript=1"/>
+</noscript>
+<!-- End Facebook Pixel Code -->
+            <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"f1778a26d1","applicationID":"22404933","transactionName":"ZAdTMkZUDUpXABINDV1NcAVAXAxXGQETHQxcFQtcQUcP","queueTime":0,"applicationTime":208,"atts":"SEBQRA5OHkQ=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
