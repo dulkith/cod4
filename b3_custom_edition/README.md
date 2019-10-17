@@ -15,7 +15,7 @@ Source: http://www.bigbrotherbot.net)
 - This edition support for COD4x (Call 4 of Duty 4 multiplayer) and our mod.
 
 - **Introduce new commands.**
-iamsles - ***When first run use this to get Super admin permission 
+iamsles - When first run use this to get Super admin permission 
 !sles - say b3 version info
 English and Sinhala fun commands. 
 !ss <player_name> - take screenshot of player.
@@ -80,22 +80,30 @@ English and Sinhala fun commands.
 ### Ubuntu Setup
 
 *First Install following.*
+
 `sudo apt-get install apache2`
+
 `sudo apt-get install php5`
+
 `sudo apt-get install mysql-server mysql-client`
+
 `sudo apt-get install python-pip`
+
 `sudo apt-get install phpmyadmin`
 
  
 *Edit the Apache config file.*
+
 `sudo nano /etc/apache2/apache2.conf`
 
 
 *And add this line someware in the config file at the bottom.*
+
 `Include /etc/phpmyadmin/apache.conf`
 
 
 *And finally restart Apache.*
+
 `/etc/init.d/apache2 restart`
 
 
@@ -107,14 +115,22 @@ English and Sinhala fun commands.
 *Use this link to download *
 
 *Then you got to install the pip packagers which is mention in the required text. *
+
 `sudo apt-get install python-pip`
+
 `pip install pymysql>=0.6.6`
+
 `pip install python-dateutil>=2.4.1`
+
 `pip install feedparser>=4.1`
+
 `pip install requests>=2.6.0`
 
+
 *open this file*
+
 ` /b3/conf/b3.xml`
+
 *Apply your values to below parameters*
 
 - **database** - mysql://YOUR_MYSQL_USER_NAME:YOUR_MYSQL_PASSWORD@YOUR_MYSQL_SERVER_IP:3306/YOUR_DATABASE_NAME
@@ -127,21 +143,31 @@ English and Sinhala fun commands.
 
 ### (*Note that b3 was designed to run on Python 2.7.6)
 *Check Version by using*
+
 `python -V`
 
+
 *To test run*
+
 `python b3_run.py`
+
 
 *To Keep it running on screen  use the following bash script
 install the screen*
+
 `apt-get install screen`
+
 
 #### Startup Server B3
 
 ***Change file permission*
+
 `chmod 777 start.sh`
 
+
 *To start server on screen*
+
 `./start.sh`
+
 
 # Contact me for any errors :)
