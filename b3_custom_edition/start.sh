@@ -1,17 +1,6 @@
 #!/bin/bash
-function startServer(){
-NUMSECONDS=`expr $(date +%s)`
-until python b3_run.py ; do
-let DIFF=(`date +%s` - "$NUMSECONDS")
-if [ "$DIFF" -gt 15 ]; then
-NUMSECONDS=`expr $(date +%s)`
-echo "Server 'python b3_run.py ' crashed with exit code $?.  Respawning..." >&2 
-fi
-sleep 3
-done
-let DIFF=(`date +%s` - "$NUMSECONDS")
-if [ ! -e "SERVER_STOPPED" ] && [ "$DIFF" -gt 15 ]; then
-startServer
-fi
-}
-startServer
+# COD4 B3 Server Management Script.
+# Coded and devoloped by COD4-LK
+
+# Startup Server B3
+screen -dm -S B3 -t B3 bash -c 'taskset -c 0 python b3_run.py'
