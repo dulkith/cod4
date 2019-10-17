@@ -79,7 +79,7 @@ English and Sinhala fun commands.
 !menu - open menu
 ### Ubuntu Setup
 
-*First Install following.*
+***First Install following.***
 
 `sudo apt-get install apache2`
 
@@ -92,29 +92,29 @@ English and Sinhala fun commands.
 `sudo apt-get install phpmyadmin`
 
  
-*Edit the Apache config file.*
+***Edit the Apache config file.***
 
 `sudo nano /etc/apache2/apache2.conf`
 
 
-*And add this line someware in the config file at the bottom.*
+***And add this line someware in the config file at the bottom.***
 
 `Include /etc/phpmyadmin/apache.conf`
 
 
-*And finally restart Apache.*
+***And finally restart Apache.***
 
 `/etc/init.d/apache2 restart`
 
 
-*Upload the b3.sql file to the phpmyadmin database. *
+**Upload the b3.sql file to the phpmyadmin database.** 
 [b3.sql](https://github.com/dulkith/cod4/blob/master/b3_custom_edition/b3/sql/mysql/b3.sql "b3.sql")
 
-#### *Next is Installing b3. First download this folder and  upload it into linux vps*
+### *Next is Installing b3. First download this folder and  upload it into linux vps*
 [DOWNLOAD : COD4-LK [B3] Customized Edition ](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/dulkith/cod4/tree/master/b3_custom_edition "DOWNLOAD ")
-*Use this link to download *
+**Use this link to download** 
 
-*Then you got to install the pip packagers which is mention in the required text. *
+***Then you got to install the pip packagers which is mention in the required text. ***
 
 `sudo apt-get install python-pip`
 
@@ -127,11 +127,11 @@ English and Sinhala fun commands.
 `pip install requests>=2.6.0`
 
 
-*open this file*
+***open this file***
 
 ` /b3/conf/b3.xml`
 
-*Apply your values to below parameters*
+***Apply your values to below parameters***
 
 - **database** - mysql://YOUR_MYSQL_USER_NAME:YOUR_MYSQL_PASSWORD@YOUR_MYSQL_SERVER_IP:3306/YOUR_DATABASE_NAME
 - **rcon_password** - YOUR_RCON_PASSWORD
@@ -142,7 +142,7 @@ English and Sinhala fun commands.
 - **screenshot_website_link** - www.clan-website.com/ss
 
 ### (*Note that b3 was designed to run on Python 2.7.6)
-*Check Version by using*
+***Check Version by using***
 
 `python -V`
 
@@ -152,20 +152,20 @@ English and Sinhala fun commands.
 `python b3_run.py`
 
 
-*To Keep it running on screen  use the following bash script
-install the screen*
+***To Keep it running on screen  use the following bash script
+install the screen***
 
 `apt-get install screen`
 
 
 #### Startup Server B3
 
-***Change file permission*
+*****Change file permission***
 
 `chmod 777 start.sh`
 
 
-*To start server on screen*
+***To start server on screen***
 
 `./start.sh`
 
