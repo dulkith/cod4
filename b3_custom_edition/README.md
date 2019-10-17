@@ -13,70 +13,71 @@ Source: http://www.bigbrotherbot.net)
 
 - This customized edition based on B3 v1.12 Iron Pigeon (Latest relese), because this include all the new features of latest edition.
 - This edition support for COD4x (Call 4 of Duty 4 multiplayer) and our mod.
+- Introduce new commands.
 
-- **Introduce new commands.**
-iamsles - When first run use this to get Super admin permission 
-!sles - say b3 version info
-English and Sinhala fun commands. 
-!ss <player_name> - take screenshot of player.
-!ssall  - take screenshot of all players.
-!xlr - XLR stats of player
-!id - Player ID
-!xlrreset <player_ID> - reset xlrstats data
-!fr - Fasr restart map
-!map_rotate - Change map to next
-!bal or !balance - Auto team balance in TDM and SND
-!fov - Field Of View
-!fps - Fullbright
-!say <message> - Public message
-!tell <message> <player_name> - Personal message
-!menu - Open game menu
-!music - mute/un-mute killcam music
-!kmusic - mute/un-mute knife round music
-!km - kick your-self
-!cmd - for admin to play with
-!cookie - give a cookie to a player
-!sry - say you are sorry to your last victim
-!ns - say 'Nice shot' to your killer
-!emblem - Change Emblem Text
-!laser - Enble Laser Force
-!rpd - Get weapon rpd
-!aku - Get weapon aku
-!ak - Get weapon ak47
-!r700 - Get weapon r700
-!knife - Get weapon knife
-!deagle - Get weapon deagle
-!akimbo - Get weapon akimbo
-!pack - Get weapon pack
-!returnbomb - return the bomb
-!dropBomb - Drop the bomb
-!givebomb - Give Bomb To Player
-!save - Save Position
-!load - Load Position
-!advban - Ban Player With Cfg Killer
-!vip - Get Or Give Vip
-!wtf - Blow up Player
-!flash - Flash Player
-!spawn - ReSpawn
-!bounce - Bounce player
-!tphere - teleport player to you
-!jetpack - Get JetPack
-!jump - Enable Hight Jump All Players
-!jumpoff - Disable Hight Jump All Players
-!party - Enable Party Mode
-!rob - Take all weapons
-!ammo - Unlimited Ammo
-!print - say a message to all players in bold
-!bold - say a message to all players in bottom left
-!reset - logout to default (for menu)
-!master - login to master (for menu)
-!senior - login to master (for senior admin)
-!admin - login (for menu)
-!fulladmin - login to fulladmin (for menu)
-!mod - login (for menu)
-!member - login to member (for menu)
-!srvlist - Rs servers
-!menu - open menu
+   iamsles - When first run use this to get Super admin permission 
+   !sles - say b3 version info
+   English and Sinhala fun commands. 
+   !ss <player_name> - take screenshot of player.
+   !ssall  - take screenshot of all players.
+   !xlr - XLR stats of player
+   !id - Player ID
+   !xlrreset <player_ID> - reset xlrstats data
+   !fr - Fasr restart map
+   !map_rotate - Change map to next
+   !bal or !balance - Auto team balance in TDM and SND
+   !fov - Field Of View
+   !fps - Fullbright
+   !say <message> - Public message
+   !tell <message> <player_name> - Personal message
+   !menu - Open game menu
+   !music - mute/un-mute killcam music
+   !kmusic - mute/un-mute knife round music
+   !km - kick your-self
+   !cmd - for admin to play with
+   !cookie - give a cookie to a player
+   !sry - say you are sorry to your last victim
+   !ns - say 'Nice shot' to your killer
+   !emblem - Change Emblem Text
+   !laser - Enble Laser Force
+   !rpd - Get weapon rpd
+   !aku - Get weapon aku
+   !ak - Get weapon ak47
+   !r700 - Get weapon r700
+   !knife - Get weapon knife
+   !deagle - Get weapon deagle
+   !akimbo - Get weapon akimbo
+   !pack - Get weapon pack
+   !returnbomb - return the bomb
+   !dropBomb - Drop the bomb
+   !givebomb - Give Bomb To Player
+   !save - Save Position
+   !load - Load Position
+   !advban - Ban Player With Cfg Killer
+   !vip - Get Or Give Vip
+   !wtf - Blow up Player
+   !flash - Flash Player
+   !spawn - ReSpawn
+   !bounce - Bounce player
+   !tphere - teleport player to you
+   !jetpack - Get JetPack
+   !jump - Enable Hight Jump All Players
+   !jumpoff - Disable Hight Jump All Players
+   !party - Enable Party Mode
+   !rob - Take all weapons
+   !ammo - Unlimited Ammo
+   !print - say a message to all players in bold
+   !bold - say a message to all players in bottom left
+   !reset - logout to default (for menu)
+   !master - login to master (for menu)
+   !senior - login to master (for senior admin)
+   !admin - login (for menu)
+   !fulladmin - login to fulladmin (for menu)
+   !mod - login (for menu)
+   !member - login to member (for menu)
+   !srvlist - Rs servers
+   !menu - open menu
+ 
 ### Ubuntu Setup
 
 ***First Install following.***
