@@ -18,7 +18,7 @@ Facebook - https://www.facebook.com/dulkith
 WhatsApp - +94 77 2088 783
 
 ## Screenshots:
-[![](https://github.com/dulkith/cod4/blob/master/screenshots/img%20(6).png?raw=true)](https://github.com/dulkith/cod4/blob/master/screenshots/img%20(6).png?raw=true)
+[![](https://github.com/dulkith/cod4/blob/master/screenshots/img%20(4).png?raw=true)](https://github.com/dulkith/cod4/blob/master/screenshots/img%20(4).png?raw=true)
 [![](https://github.com/dulkith/cod4/blob/master/screenshots/img%20(5).png?raw=true)](https://github.com/dulkith/cod4/blob/master/screenshots/img%20(5).png?raw=true)
 [![](https://github.com/dulkith/cod4/blob/master/screenshots/img%20(2).png?raw=true)](https://github.com/dulkith/cod4/blob/master/screenshots/img%20(2).png?raw=true)
 [![](https://github.com/dulkith/cod4/blob/master/screenshots/img%20(3).png?raw=true)](https://github.com/dulkith/cod4/blob/master/screenshots/img%20(3).png?raw=true)
