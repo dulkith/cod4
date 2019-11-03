@@ -1,0 +1,46 @@
+REFERENCE           RULES_INTEL
+LANG_ENGLISH        "Field Orders:"
+
+REFERENCE           CHALLENGE_CAPS
+LANG_ENGLISH        "FIELD ORDERS:"
+
+REFERENCE           COMPLETED
+LANG_ENGLISH        "Field Orders"
+
+REFERENCE           HEADSHOT
+LANG_ENGLISH        "Earn ^3&&1^7 kill with a headshot"
+
+REFERENCE           KILLS
+LANG_ENGLISH        "Earn ^3&&1^7 kill(s)"
+
+REFERENCE           KNIFE_KILL
+LANG_ENGLISH        "Earn ^3&&1^7 kill with melee"
+
+REFERENCE           EXPLOSIVE_KILL
+LANG_ENGLISH        "Earn ^3&&1^7 kill with explosive"
+
+REFERENCE           CROUCH_KILLS
+LANG_ENGLISH        "Earn ^3&&1^7 kill(s) while crouched"
+
+REFERENCE           PRONE_KILLS
+LANG_ENGLISH        "Earn ^3&&1^7 kill while prone"
+
+REFERENCE           BACK_KILLS
+LANG_ENGLISH        "Earn ^3&&1^7 kill from behind"
+
+REFERENCE           JUMP_SHOT
+LANG_ENGLISH        "Earn ^3&&1^7 kill while jumping"
+
+REFERENCE           SECONDARY_KILLS
+LANG_ENGLISH        "Earn ^3&&1^7 kill with your secondary weapon"
+
+REFERENCE           FOUND_KILL
+LANG_ENGLISH        "Earn ^3&&1^7 kill(s) with a picked up weapon"
+
+REFERENCE           TBAG
+LANG_ENGLISH        "Humiliate the next enemy you kill"
+
+REFERENCE           ACQUIRING_INTEL
+LANG_ENGLISH        "Acquiring Field Orders"
+
+ENDMARKER

@@ -1,0 +1,53 @@
+VERSION             "1"
+CONFIG              "C:\trees\cod3\cod3\bin\StringEd.cfg"
+FILENOTES           ""
+
+REFERENCE		 	SPECTATORS
+LANG_ENGLISH 		"Shoutcaster"
+
+REFERENCE           OW_RANK_PRESTIGE_1
+LANG_ENGLISH        "Advanced Level I"
+
+REFERENCE           OW_RANK_PRESTIGE_2
+LANG_ENGLISH        "Advanced Level II"
+
+REFERENCE           OW_RANK_PRESTIGE_3
+LANG_ENGLISH        "Advanced Level III"
+
+REFERENCE           OW_RANK_PRESTIGE_4
+LANG_ENGLISH        "Advanced Level IV"
+
+REFERENCE           OW_RANK_PRESTIGE_5
+LANG_ENGLISH        "Advanced Level V"
+
+REFERENCE           OW_RANK_PRESTIGE_6
+LANG_ENGLISH        "Advanced Level VI"
+
+REFERENCE           OW_RANK_PRESTIGE_7
+LANG_ENGLISH        "Advanced Level VII"
+
+REFERENCE           OW_RANK_PRESTIGE_8
+LANG_ENGLISH        "Advanced Level VIII"
+
+REFERENCE           OW_RANK_PRESTIGE_9
+LANG_ENGLISH        "Advanced Level IX"
+
+REFERENCE           OW_RANK_PRESTIGE_10
+LANG_ENGLISH        "Advanced Level X"
+
+REFERENCE           OW_RANK_PRESTIGE_11
+LANG_ENGLISH        "Advanced Level XI"
+
+REFERENCE           OW_RANK_PRESTIGE_12
+LANG_ENGLISH        "Advanced Level XII"
+
+REFERENCE           OW_RANK_PRESTIGE_13
+LANG_ENGLISH        "Advanced Level XIII"
+
+REFERENCE           OW_RANK_PRESTIGE_14
+LANG_ENGLISH        "Advanced Level XIV"
+
+REFERENCE           OW_RANK_PRESTIGE_15
+LANG_ENGLISH        "Advanced Level XV"
+
+ENDMARKER

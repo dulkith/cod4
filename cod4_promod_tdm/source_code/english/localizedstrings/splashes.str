@@ -1,0 +1,89 @@
+VERSION             "1"
+CONFIG              "C:\trees\build-iw4-pc\iw4\bin\StringEd.cfg"
+FILENOTES           ""
+
+REFERENCE           HEADSHOT
+LANG_ENGLISH        "^3Headshot!"
+
+REFERENCE           HEADSHOT_DESC
+LANG_ENGLISH        "^3+5"
+
+REFERENCE           ASSISTEDSUICIDE
+LANG_ENGLISH        "^4Assisted Suicide!"
+
+REFERENCE           ASSISTEDSUICIDE_DESC
+LANG_ENGLISH        "You have assisted the suicide of an enemy. ^3+10"
+
+REFERENCE           LONGSHOT
+LANG_ENGLISH        "^2Longshot!"
+
+REFERENCE           LONGSHOT_DESC
+LANG_ENGLISH        "Nice kill from a distance! (^3+5^7)"
+
+REFERENCE           AVENGER
+LANG_ENGLISH        "Avenger!"
+
+REFERENCE           AVENGER_DESC
+LANG_ENGLISH        "You've avenged a team-mate. (^3+5^7)"
+
+REFERENCE           DEFENDER
+LANG_ENGLISH        "Rescuer!"
+
+REFERENCE           DEFENDER_DESC
+LANG_ENGLISH        "You've rescued a team-mate. (^3+5^7)"
+
+REFERENCE           POSTHUMOUS
+LANG_ENGLISH        "Afterlife!"
+
+REFERENCE           POSTHUMOUS_DESC
+LANG_ENGLISH        "You killed an enemy after you died. (^3+3^7)"
+
+REFERENCE           REVENGE
+LANG_ENGLISH        "^2Payback!"
+
+REFERENCE           REVENGE_DESC
+LANG_ENGLISH        "You've taken revenge. (^3+5^7)"
+
+REFERENCE           DOUBLEKILL
+LANG_ENGLISH        "^3Double-Kill!"
+
+REFERENCE           DOUBLEKILL_DESC
+LANG_ENGLISH        "^3+5"
+
+REFERENCE           TRIPLEKILL
+LANG_ENGLISH        "^5Triple-Kill!"
+
+REFERENCE           TRIPLEKILL_DESC
+LANG_ENGLISH        "^3+7"
+
+REFERENCE           MULTIKILL
+LANG_ENGLISH        "^1Multi-Kill!"
+
+REFERENCE           MULTIKILL_DESC
+LANG_ENGLISH        "^3+10"
+
+REFERENCE           FIRSTBLOOD
+LANG_ENGLISH        "^1First Blood!"
+
+REFERENCE           FIRSTBLOOD_DESC
+LANG_ENGLISH        "You got the first kill. (^3+10^7)"
+
+REFERENCE           BUZZKILL
+LANG_ENGLISH        "Buzzkill!"
+
+REFERENCE           BUZZKILL_DESC
+LANG_ENGLISH        "Stopped enemy short of a killstreak. (^3+10^7)"
+
+REFERENCE           COMEBACK
+LANG_ENGLISH        "Comeback!"
+
+REFERENCE           COMEBACK_DESC
+LANG_ENGLISH        "You've recovered from a streak of deaths. (^3+10^7)"
+
+REFERENCE           ONE_SHOT_KILL
+LANG_ENGLISH        "One Shot Kill!"
+
+REFERENCE           ONE_SHOT_KILL_DESC
+LANG_ENGLISH        "One shot... one kill"
+
+ENDMARKER

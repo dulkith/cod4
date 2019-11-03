@@ -1,0 +1,11 @@
+VERSION             "1"
+CONFIG              "C:\trees\cod3\cod3\bin\StringEd_PC.cfg"
+FILENOTES           ""
+
+REFERENCE           RELOAD
+LANG_ENGLISH        "Reload"
+
+REFERENCE           LOW_AMMO_NO_RELOAD
+LANG_ENGLISH        "Low Ammo"
+
+ENDMARKER

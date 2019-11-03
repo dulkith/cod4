@@ -1,0 +1,23 @@
+VERSION             "1"
+CONFIG              "C:\trees\cod3\cod3\bin\StringEd.cfg"
+FILENOTES           "Strings used in the weapon settings go in this file."
+
+REFERENCE           KNIFE
+LANG_ENGLISH        "Knife"
+
+REFERENCE			NO_AMMO
+LANG_ENGLISH		"No Ammo"
+
+REFERENCE			BALLISTA
+LANG_ENGLISH		"Ballista"
+
+REFERENCE			BALLISTA_IRON
+LANG_ENGLISH		"Ballista Iron Sight"
+
+REFERENCE			PEACEKEEPER
+LANG_ENGLISH		"Peacekeeper SMG"	
+
+REFERENCE			USR
+LANG_ENGLISH		"USR"	
+
+ENDMARKER

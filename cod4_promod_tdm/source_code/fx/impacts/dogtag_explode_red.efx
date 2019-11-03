@@ -1,0 +1,187 @@
+iwfx 2
+
+{
+	name "splat";
+	editorFlags useRandVel0 useBackCompatVel;
+	flags spawnRelative spawnFrustumCull spawnOffsetNone runRelToSpawn;
+	spawnRange 0 1000;
+	fadeInRange 0 0;
+	fadeOutRange 0 0;
+	spawnFrustumCullRadius 30;
+	spawnLooping 200 1;
+	spawnOneShot 1 0;
+	spawnDelayMsec 0 0;
+	lifeSpanMsec 500 0;
+	spawnOrgX 5 0;
+	spawnOrgY 0 0;
+	spawnOrgZ 0 0;
+	spawnOffsetRadius 1 0;
+	spawnOffsetHeight 10 0;
+	spawnAnglePitch 0 0;
+	spawnAngleYaw 0 0;
+	spawnAngleRoll 0 0;
+	angleVelPitch 0 0;
+	angleVelYaw 0 0;
+	angleVelRoll 0 0;
+	initialRot 0 0;
+	gravity 0 0;
+	elasticity 1 0;
+	atlasBehavior startFixed playOverLife;
+	atlasIndex 0;
+	atlasFps 1;
+	atlasLoopCount 0;
+	atlasColIndexBits 0;
+	atlasRowIndexBits 0;
+	atlasEntryCount 0;
+	velGraph0X 1
+	{
+		{
+			0 0.5
+			1 0.5
+		}
+		{
+			0 0.5
+			1 0.5
+		}
+	};
+	velGraph0Y 0
+	{
+		{
+			0 0.1333
+			1 0.1333
+		}
+		{
+			0 -0.1333
+			1 -0.1333
+		}
+	};
+	velGraph0Z 0
+	{
+		{
+			0 -0.1333
+			1 -0.1333
+		}
+		{
+			0 0.1333
+			1 0.1333
+		}
+	};
+	velGraph1X 0
+	{
+		{
+			0 0
+			1 0.5
+		}
+		{
+			0 0
+			1 0
+		}
+	};
+	velGraph1Y 0
+	{
+		{
+			0 0
+			1 0
+		}
+		{
+			0 0
+			1 0
+		}
+	};
+	velGraph1Z 0
+	{
+		{
+			0 0
+			1 0
+		}
+		{
+			0 0
+			1 0
+		}
+	};
+	rotGraph 10
+	{
+		{
+			0 0
+			1 0
+		}
+		{
+			0 0
+			1 0
+		}
+	};
+	sizeGraph0 100
+	{
+		{
+			0 1
+			1 1
+		}
+		{
+			0 1
+			1 0
+		}
+	};
+	sizeGraph1 58
+	{
+		{
+			0 1
+			1 1
+		}
+		{
+			0 1
+			1 0
+		}
+	};
+	scaleGraph 1
+	{
+		{
+			0 1
+			1 0
+		}
+		{
+			0 1
+			1 0
+		}
+	};
+	colorGraph 1
+	{
+		{
+			0 1 0 0
+			1 1 0 0
+		}
+		{
+			0 0.4235 0.3843 0.3098
+			1 0.4235 0.3843 0.3098
+		}
+	};
+	alphaGraph 1
+	{
+		{
+			0 1
+			0.2922 0.9051
+			0.5753 0.635
+			0.8539 0.2774
+			1 0
+		}
+		{
+			0 1
+			1 0
+		}
+	};
+	lightingFrac 0.35;
+	collOffset 0 0 0;
+	collRadius 0;
+	fxOnImpact "";
+	fxOnDeath "";
+	sortOrder 5;
+	emission "";
+	emitDist 1 0;
+	emitDistVariance 0 0;
+	trailSplitDist 0;
+	trailScrollTime 0;
+	trailRepeatDist 0;
+	billboardSprite
+	{
+		"gfx_bloodburst06_atlas"
+	};
+}

@@ -1,0 +1,126 @@
+{
+	map		"mp_convoy"
+	longname	"MPUI_CONVOY"
+	gametype	"ctf dm dom koth sab sd war"
+	
+}
+
+{
+	map		"mp_backlot"
+	longname	"MPUI_BACKLOT"
+	gametype	"ctf dm dom koth sab sd war"
+}
+
+{
+	map		"mp_bloc"
+	longname	"MPUI_BLOC"
+	gametype	"ctf dm dom koth sab sd war"
+}
+
+{
+	map		"mp_bog"
+	longname	"MPUI_BOG"
+	gametype	"ctf dm dom koth sab sd war"
+}
+
+{
+	map			"mp_broadcast"
+	longname	"MPUI_BROADCAST"
+	gametype	"ctf dm dom koth sab sd war"
+}
+
+{
+	map			"mp_carentan"
+	longname	"MPUI_CARENTAN"
+	gametype	"ctf dm dom koth sab sd war"
+}
+
+{
+	map		"mp_countdown"
+	longname	"MPUI_COUNTDOWN"
+	gametype	"ctf dm dom koth sab sd war"
+}
+
+{
+	map		"mp_crash"
+	longname	"MPUI_CRASH"
+	gametype	"ctf dm dom koth sab sd war"
+}
+
+{
+	map			"mp_creek"
+	longname	"MPUI_CREEK"
+	gametype	"ctf dm dom koth sab sd war"
+}
+
+{
+	map		"mp_crossfire"
+	longname	"MPUI_CROSSFIRE"
+	gametype	"ctf dm dom koth sab sd war"
+}
+
+{
+	map		"mp_citystreets"
+	longname	"MPUI_CITYSTREETS"
+	gametype	"ctf dm dom koth sab sd war"
+}
+
+{
+	map		"mp_farm"
+	longname	"MPUI_FARM"
+	gametype	"ctf dm dom koth sab sd war"
+}
+
+{
+	map			"mp_killhouse"
+	longname	"MPUI_KILLHOUSE"
+	gametype	"ctf dm dom koth sab sd war"
+}
+
+{
+	map			"mp_overgrown"
+	longname	"MPUI_OVERGROWN"
+	gametype	"ctf dm dom koth sab sd war"
+}
+
+{
+	map			"mp_pipeline"
+	longname	"MPUI_PIPELINE"
+	gametype	"ctf dm dom koth sab sd war"
+}
+
+{
+	map			"mp_shipment"
+	longname	"MPUI_SHIPMENT"
+	gametype	"ctf dm dom koth sab sd war"
+}
+
+{
+	map			"mp_showdown"
+	longname	"MPUI_SHOWDOWN"
+	gametype	"ctf dm dom koth sab sd war"
+}
+
+{
+	map			"mp_strike"
+	longname	"MPUI_STRIKE"
+	gametype	"ctf dm dom koth sab sd war"
+}
+
+{
+	map			"mp_vacant"
+	longname	"MPUI_VACANT"
+	gametype	"ctf dm dom koth sab sd war"
+}
+
+{
+	map			"mp_cargoship"
+	longname	"MPUI_CARGOSHIP"
+	gametype	"ctf dm dom koth sab sd war"
+}
+
+{
+	map		"mp_crash_snow"
+	longname	"MPUI_CRASH_SNOW"
+	gametype	"ctf dm dom koth sab sd war"
+}

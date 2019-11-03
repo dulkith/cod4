@@ -1,0 +1,1816 @@
+
+#include "ui/menudefinition.h";
+{
+    menuDef
+    {
+        name                      "team_marinesopfor_flipped"
+        rect                      0 0 640 480 HORIZONTAL_ALIGN_SUBLEFT VERTICAL_ALIGN_SUBTOP
+        borderSize                1
+        foreColor                 1 1 1 1
+        backColor                 0 0 0 0
+        borderColor               0 0 0 0
+        outlineColor              0 0 0 0
+        blurWorld                 7
+        onESC                     { scriptMenuResponse back ;  }
+        execKey                   "1" { scriptMenuResponse allies ;  }
+        execKey                   "2" { scriptMenuResponse axis ;  }
+        execKey                   "3" { scriptMenuResponse autoassign ;  }
+        execKey                   "4" { scriptMenuResponse shoutcast ;  }
+        focusColor                0.95294 0.72156 0.21176 1
+        disableColor              0 0 0 0
+        visible 0                 
+        itemDef
+        {
+            rect                      -107 0 1708 480 HORIZONTAL_ALIGN_SUBLEFT VERTICAL_ALIGN_SUBTOP
+            style                     WINDOW_STYLE_SHADER
+            borderSize                1
+            foreColor                 1 1 1 0.7
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            background                "animbg_fogscroll"
+            textScale                 0.55
+            exp                       rect X ( ( ( ( - 107 ) - ( ( float( milliseconds( ) % 60000 ) / 60000 ) * ( 854 ) ) ) ) );
+            visible                   when ( ( dvarint( "sles_oldschool" ) != 1 ) )
+            decoration                
+        }
+        itemDef
+        {
+            rect                      -107 0 1708 480 HORIZONTAL_ALIGN_SUBLEFT VERTICAL_ALIGN_SUBTOP
+            style                     WINDOW_STYLE_SHADER
+            borderSize                1
+            foreColor                 1 1 1 0.7
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            background                "animbg_fogscrollthin"
+            textScale                 0.55
+            exp                       rect X ( ( ( ( - 961 ) + ( ( float( milliseconds( ) % 100000 ) / 100000 ) * ( 854 ) ) ) ) );
+            visible                   when ( ( dvarint( "sles_oldschool" ) != 1 ) )
+            decoration                
+        }
+        itemDef
+        {
+            rect                      0 0 640 480 HORIZONTAL_ALIGN_FULLSCREEN VERTICAL_ALIGN_FULLSCREEN
+            style                     WINDOW_STYLE_FILLED
+            borderSize                1
+            foreColor                 1 1 1 1
+            backColor                 0 0 0 0.28
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            textScale                 0.55
+            visible                   when ( ( dvarint( "sles_oldschool" ) != 1 ) )
+            decoration                
+        }
+        itemDef
+        {
+            rect                      0 0 290 480 HORIZONTAL_ALIGN_FULLSCREEN VERTICAL_ALIGN_FULLSCREEN
+            style                     WINDOW_STYLE_FILLED
+            borderSize                1
+            foreColor                 1 1 1 1
+            backColor                 0 0 0 0.35
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            textScale                 0.55
+            visible                   when ( ( dvarint( "sles_oldschool" ) != 1 ) )
+            decoration                
+        }
+        itemDef
+        {
+            rect                      -40 0 1 480 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_TOP
+            style                     WINDOW_STYLE_SHADER
+            borderSize                1
+            foreColor                 1 1 1 0.8
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            textScale                 0.55
+            exp                       material ( ( ( "menu_button_backg" ) ) );
+            visible                   when ( ( dvarint( "sles_oldschool" ) != 1 ) )
+            decoration                
+        }
+        itemDef
+        {
+            rect                      -40 0 8 480 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_TOP
+            style                     WINDOW_STYLE_SHADER
+            borderSize                1
+            foreColor                 1 1 1 0.75
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            textScale                 0.55
+            exp                       material ( ( ( "gradient" ) ) );
+            visible                   when ( ( dvarint( "sles_oldschool" ) != 1 ) )
+            decoration                
+        }
+        itemDef
+        {
+            name                      "mini_map2"
+            rect                      -260 135 240 240 HORIZONTAL_ALIGN_RIGHT VERTICAL_ALIGN_TOP
+            ownerDraw                 CG_PLAYER_FULLMAP_MAP
+            borderSize                1
+            foreColor                 1 1 1 1
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            background                "compass_map_default"
+            type                      ITEM_TYPE_OWNERDRAW
+            textScale                 0.55
+            visible                   when ( ( dvarint( "sles_oldschool" ) != 1 ) )
+            decoration                
+        }
+        itemDef
+        {
+            name                      "mini_map2_overlay"
+            rect                      -260 135 240 240 HORIZONTAL_ALIGN_RIGHT VERTICAL_ALIGN_TOP
+            style                     WINDOW_STYLE_SHADER
+            borderSize                1
+            foreColor                 1 1 1 1
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            textScale                 0.55
+            exp                       material ( ( ( tablelookup( "mp/mapsTable.csv" , 0 , dvarstring( "mapname" ) , 7 ) ) ) );
+            visible                   when ( ( dvarint( "sles_oldschool" ) != 1 ) )
+            decoration                
+        }
+        itemDef
+        {
+            name                      "compasspointers2"
+            rect                      -260 135 240 240 HORIZONTAL_ALIGN_RIGHT VERTICAL_ALIGN_TOP
+            ownerDraw                 CG_PLAYER_FULLMAP_POINTERS
+            borderSize                1
+            foreColor                 1 1 1 1
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            background                "objective_line"
+            type                      ITEM_TYPE_OWNERDRAW
+            textScale                 0.55
+            visible                   when ( ( dvarint( "sles_oldschool" ) != 1 ) )
+            decoration                
+        }
+        itemDef
+        {
+            name                      "compassfriendlies2"
+            rect                      -260 135 240 240 HORIZONTAL_ALIGN_RIGHT VERTICAL_ALIGN_TOP
+            ownerDraw                 CG_PLAYER_FULLMAP_FRIENDS
+            borderSize                1
+            foreColor                 1 1 1 1
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            background                "compassping_friendly"
+            type                      ITEM_TYPE_OWNERDRAW
+            textScale                 0.55
+            visible                   when ( ( dvarint( "sles_oldschool" ) != 1 ) )
+            decoration                
+        }
+        itemDef
+        {
+            name                      "compassenemies2"
+            rect                      -260 135 240 240 HORIZONTAL_ALIGN_RIGHT VERTICAL_ALIGN_TOP
+            ownerDraw                 CG_PLAYER_FULLMAP_ENEMIES
+            borderSize                1
+            foreColor                 1 1 1 1
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            background                "compassping_enemy"
+            type                      ITEM_TYPE_OWNERDRAW
+            textScale                 0.55
+            visible                   when ( ( dvarint( "sles_oldschool" ) != 1 && ( dvarbool( "ui_hud_hardcore" ) == 0 || ( dvarint( "ui_uav_allies" ) && team( "name" ) == "TEAM_ALLIES" ) || ( dvarint( "ui_uav_axis" ) && team( "name" ) == "TEAM_AXIS" ) || ( dvarint( "ui_uav_client" ) && team( "name" ) == "TEAM_FREE" ) ) ) )
+            decoration                
+        }
+        itemDef
+        {
+            name                      "compassplayer2"
+            rect                      -260 135 240 240 HORIZONTAL_ALIGN_RIGHT VERTICAL_ALIGN_TOP
+            ownerDraw                 CG_PLAYER_FULLMAP_PLAYER
+            borderSize                1
+            foreColor                 1 1 1 1
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            background                "compassping_player"
+            type                      ITEM_TYPE_OWNERDRAW
+            textScale                 0.55
+            visible                   when ( ( dvarint( "sles_oldschool" ) != 1 ) )
+            decoration                
+        }
+        itemDef
+        {
+            rect                      -255 134 240 0 HORIZONTAL_ALIGN_RIGHT VERTICAL_ALIGN_TOP
+            borderSize                1
+            foreColor                 1 1 1 0.7
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            textScale                 0.4583
+            textStyle                 ITEM_TEXTSTYLE_SHADOWED
+            exp                       text ( ( ( "@" + tablelookup( "mp/mapsTable.csv" , 0 , dvarstring( "mapname" ) , 3 ) ) ) );
+            visible                   when ( ( dvarint( "sles_oldschool" ) != 1 ) )
+            decoration                
+            autoWrapped               
+        }
+        itemDef
+        {
+            rect                      10 58 128 128 HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_TOP
+            style                     WINDOW_STYLE_SHADER
+            borderSize                1
+            foreColor                 1 1 1 0.275
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            textScale                 0.55
+            exp                       material ( ( ( dvarstring( "g_TeamIcon_Allies" ) ) ) );
+            visible                   when ( ( ( localvarstring( "ui_team" ) == "marines" ) && dvarint( "sles_oldschool" ) != 1 ) )
+            decoration                
+        }
+        itemDef
+        {
+            rect                      10 58 128 128 HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_TOP
+            style                     WINDOW_STYLE_SHADER
+            borderSize                1
+            foreColor                 1 1 1 0.275
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            textScale                 0.55
+            exp                       material ( ( ( dvarstring( "g_TeamIcon_Axis" ) ) ) );
+            visible                   when ( ( ( localvarstring( "ui_team" ) == "opfor" ) && dvarint( "sles_oldschool" ) != 1 ) )
+            decoration                
+        }
+        itemDef
+        {
+            rect                      10 58 128 128 HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_TOP
+            style                     WINDOW_STYLE_SHADER
+            borderSize                1
+            foreColor                 1 1 1 0.275
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            textScale                 0.55
+            exp                       material ( ( ( dvarstring( "g_TeamIcon_Allies" ) ) ) );
+            visible                   when ( ( ( team( "name" ) == "TEAM_FREE" && localvarstring( "ui_team" ) == "marines" ) && dvarint( "sles_oldschool" ) != 1 ) )
+            decoration                
+        }
+        itemDef
+        {
+            rect                      10 58 128 128 HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_TOP
+            style                     WINDOW_STYLE_SHADER
+            borderSize                1
+            foreColor                 1 1 1 0.275
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            textScale                 0.55
+            exp                       material ( ( ( dvarstring( "g_TeamIcon_Axis" ) ) ) );
+            visible                   when ( ( ( team( "name" ) == "TEAM_FREE" && localvarstring( "ui_team" ) == "opfor" ) && dvarint( "sles_oldschool" ) != 1 ) )
+            decoration                
+        }
+        itemDef
+        {
+            rect                      10 196 128 128 HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_TOP
+            borderSize                1
+            foreColor                 1 1 1 0.2
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            textFont                  UI_FONT_OBJECTIVE
+            textScale                 0.4583
+            textStyle                 ITEM_TEXTSTYLE_SHADOWEDMORE
+            exp                       text ( ( ( "@" + dvarstring( "g_TeamName_Allies" ) ) ) );
+            visible                   when ( ( ( team( "name" ) == "TEAM_ALLIES" ) && dvarint( "sles_oldschool" ) != 1 ) )
+            decoration                
+        }
+        itemDef
+        {
+            rect                      10 196 128 128 HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_TOP
+            borderSize                1
+            foreColor                 1 1 1 0.2
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            textFont                  UI_FONT_OBJECTIVE
+            textScale                 0.4583
+            textStyle                 ITEM_TEXTSTYLE_SHADOWEDMORE
+            exp                       text ( ( ( "@" + dvarstring( "g_TeamName_Allies" ) ) ) );
+            visible                   when ( ( ( team( "name" ) == "TEAM_FREE" && localvarstring( "ui_team" ) == "marines" ) && dvarint( "sles_oldschool" ) != 1 ) )
+            decoration                
+        }
+        itemDef
+        {
+            rect                      10 196 128 128 HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_TOP
+            borderSize                1
+            foreColor                 1 1 1 0.2
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            textFont                  UI_FONT_OBJECTIVE
+            textScale                 0.4583
+            textStyle                 ITEM_TEXTSTYLE_SHADOWEDMORE
+            exp                       text ( ( ( "@" + dvarstring( "g_TeamName_Axis" ) ) ) );
+            visible                   when ( ( ( team( "name" ) == "TEAM_AXIS" ) && dvarint( "sles_oldschool" ) != 1 ) )
+            decoration                
+        }
+        itemDef
+        {
+            rect                      10 196 128 128 HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_TOP
+            borderSize                1
+            foreColor                 1 1 1 0.2
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            textFont                  UI_FONT_OBJECTIVE
+            textScale                 0.4583
+            textStyle                 ITEM_TEXTSTYLE_SHADOWEDMORE
+            exp                       text ( ( ( "@" + dvarstring( "g_TeamName_Axis" ) ) ) );
+            visible                   when ( ( ( team( "name" ) == "TEAM_FREE" && localvarstring( "ui_team" ) == "opfor" ) && dvarint( "sles_oldschool" ) != 1 ) )
+            decoration                
+        }
+        itemDef
+        {
+            rect                      -20 40 300 30 HORIZONTAL_ALIGN_SUBLEFT VERTICAL_ALIGN_SUBTOP
+            style                     WINDOW_STYLE_SHADER
+            borderSize                1
+            foreColor                 0.445 0.457 0.527 0.4
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            background                "menu_button_backg"
+            textScale                 0.55
+            visible                   when ( ( ! localvarbool( "ui_hideBack" ) && dvarint( "sles_oldschool" ) != 1 ) )
+            decoration                
+        }
+        itemDef
+        {
+            rect                      -20 67 300 6 HORIZONTAL_ALIGN_SUBLEFT VERTICAL_ALIGN_SUBTOP
+            style                     WINDOW_STYLE_SHADER
+            borderSize                1
+            foreColor                 1 1 1 1
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            textScale                 0.55
+            exp                       material ( ( ( "menu_button_backg" ) ) );
+            visible                   when ( ( ! localvarbool( "ui_hideBack" ) && dvarint( "sles_oldschool" ) != 1 ) )
+            decoration                
+        }
+        itemDef
+        {
+            rect                      -20 40 300 30 HORIZONTAL_ALIGN_SUBLEFT VERTICAL_ALIGN_SUBTOP
+            borderSize                1
+            foreColor                 0.95294 0.72156 0.21176 1
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            textFont                  UI_FONT_OBJECTIVE
+            textAlign                 ITEM_ALIGN_MIDDLE_RIGHT
+            textAlignX                -25
+            textScale                 0.51
+            textStyle                 ITEM_TEXTSTYLE_SHADOWED
+            text                      "TEAM"
+            visible                   when ( ( ! localvarbool( "ui_hideBack" ) && dvarint( "sles_oldschool" ) != 1 ) )
+        }
+        itemDef
+        {
+            rect                      -20 80 300 22 HORIZONTAL_ALIGN_SUBLEFT VERTICAL_ALIGN_SUBTOP
+            style                     WINDOW_STYLE_SHADER
+            borderSize                1
+            foreColor                 0.445 0.457 0.527 1
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            background                "menu_button_backg"
+            textScale                 0.55
+            visible                   when ( ( ( localvarint( "ui_highlight_main" ) == 1 ) && dvarint( "sles_oldschool" ) != 1 ) )
+            decoration                
+        }
+        itemDef
+        {
+            rect                      -20 80 300 22 HORIZONTAL_ALIGN_SUBLEFT VERTICAL_ALIGN_SUBTOP
+            style                     WINDOW_STYLE_SHADER
+            borderSize                1
+            foreColor                 0.445 0.457 0.527 0.4
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            background                "menu_button_backg"
+            textScale                 0.55
+            visible                   when ( ( ! localvarbool( "ui_hideBack" ) && dvarint( "sles_oldschool" ) != 1 ) )
+            decoration                
+        }
+        itemDef
+        {
+            rect                      -20 102 300 4 HORIZONTAL_ALIGN_SUBLEFT VERTICAL_ALIGN_SUBTOP
+            style                     WINDOW_STYLE_SHADER
+            borderSize                1
+            foreColor                 1 1 1 0.7
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            textScale                 0.55
+            exp                       material ( ( ( "menu_button_backg" ) ) );
+            visible                   when ( ( ( localvarint( "ui_highlight_main" ) == 1 ) && dvarint( "sles_oldschool" ) != 1 ) )
+            decoration                
+        }
+        itemDef
+        {
+            rect                      -20 102 300 4 HORIZONTAL_ALIGN_SUBLEFT VERTICAL_ALIGN_SUBTOP
+            style                     WINDOW_STYLE_SHADER
+            borderSize                1
+            foreColor                 1 1 1 0.2
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            textScale                 0.55
+            exp                       material ( ( ( "menu_button_backg" ) ) );
+            visible                   when ( ( ! localvarbool( "ui_hideBack" ) && dvarint( "sles_oldschool" ) != 1 ) )
+            decoration                
+        }
+        itemDef
+        {
+            rect                      -20 80 300 22 HORIZONTAL_ALIGN_SUBLEFT VERTICAL_ALIGN_SUBTOP
+            borderSize                1
+            foreColor                 1 1 1 1
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            type                      ITEM_TYPE_BUTTON
+            textFont                  UI_FONT_OBJECTIVE
+            textAlign                 ITEM_ALIGN_MIDDLE_RIGHT
+            textAlignX                -25
+            textScale                 0.39
+            textStyle                 ITEM_TEXTSTYLE_SHADOWED
+            text                      "Attack ^7<"
+            action                    { play mouse_click ; scriptMenuResponse allies ; ;  }
+            onFocus                   { play mouse_over ; setLocalVarString ui_choicegroup play_class_marines_flipped ; setLocalVarInt ui_highlight_main 1 ; ;  }
+            leaveFocus                { setLocalVarInt ui_highlight_main 0 ;  }
+            exp                       material ( ( ( "menu_button_backg" ) ) );
+            visible                   when ( ( ! localvarbool( "ui_hideBack" ) && dvarint( "sles_oldschool" ) != 1 && team( name ) == "TEAM_AXIS" || team(name) == "TEAM_FREE" || team(name) == "TEAM_SPECTATOR") )
+        }
+		itemDef
+        {
+            rect                      -20 80 300 22 HORIZONTAL_ALIGN_SUBLEFT VERTICAL_ALIGN_SUBTOP
+            borderSize                1
+            foreColor                 1 1 1 1
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            type                      ITEM_TYPE_BUTTON
+            textFont                  UI_FONT_OBJECTIVE
+            textAlign                 ITEM_ALIGN_MIDDLE_RIGHT
+            textAlignX                -25
+            textScale                 0.39
+            textStyle                 ITEM_TEXTSTYLE_SHADOWED
+            text                      "Attack ^7<"
+            action                    {  }
+            onFocus                   { play mouse_over ; setLocalVarString ui_choicegroup play_class_marines_flipped ; setLocalVarInt ui_highlight_main 1 ; ;  }
+            leaveFocus                { setLocalVarInt ui_highlight_main 0 ;  }
+            exp                       material ( ( ( "menu_button_backg" ) ) );
+            visible                   when ( ( ! localvarbool( "ui_hideBack" ) && dvarint( "sles_oldschool" ) != 1 && team( name ) == "TEAM_ALLIES" ) )
+        }
+		
+        itemDef
+        {
+            rect                      -20 105 300 22 HORIZONTAL_ALIGN_SUBLEFT VERTICAL_ALIGN_SUBTOP
+            style                     WINDOW_STYLE_SHADER
+            borderSize                1
+            foreColor                 0.445 0.457 0.527 1
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            background                "menu_button_backg"
+            textScale                 0.55
+            visible                   when ( ( ( localvarint( "ui_highlight_main" ) == 2 ) && dvarint( "sles_oldschool" ) != 1 ) )
+            decoration                
+        }
+        itemDef
+        {
+            rect                      -20 105 300 22 HORIZONTAL_ALIGN_SUBLEFT VERTICAL_ALIGN_SUBTOP
+            style                     WINDOW_STYLE_SHADER
+            borderSize                1
+            foreColor                 0.445 0.457 0.527 0.4
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            background                "menu_button_backg"
+            textScale                 0.55
+            visible                   when ( ( ! localvarbool( "ui_hideBack" ) && dvarint( "sles_oldschool" ) != 1 ) )
+            decoration                
+        }
+        itemDef
+        {
+            rect                      -20 127 300 4 HORIZONTAL_ALIGN_SUBLEFT VERTICAL_ALIGN_SUBTOP
+            style                     WINDOW_STYLE_SHADER
+            borderSize                1
+            foreColor                 1 1 1 0.7
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            textScale                 0.55
+            exp                       material ( ( ( "menu_button_backg" ) ) );
+            visible                   when ( ( ( localvarint( "ui_highlight_main" ) == 2 ) && dvarint( "sles_oldschool" ) != 1 ) )
+            decoration                
+        }
+        itemDef
+        {
+            rect                      -20 127 300 4 HORIZONTAL_ALIGN_SUBLEFT VERTICAL_ALIGN_SUBTOP
+            style                     WINDOW_STYLE_SHADER
+            borderSize                1
+            foreColor                 1 1 1 0.2
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            textScale                 0.55
+            exp                       material ( ( ( "menu_button_backg" ) ) );
+            visible                   when ( ( ! localvarbool( "ui_hideBack" ) && dvarint( "sles_oldschool" ) != 1 ) )
+            decoration                
+        }
+        itemDef
+        {
+            rect                      -20 105 300 22 HORIZONTAL_ALIGN_SUBLEFT VERTICAL_ALIGN_SUBTOP
+            borderSize                1
+            foreColor                 1 1 1 1
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            type                      ITEM_TYPE_BUTTON
+            textFont                  UI_FONT_OBJECTIVE
+            textAlign                 ITEM_ALIGN_MIDDLE_RIGHT
+            textAlignX                -25
+            textScale                 0.39
+            textStyle                 ITEM_TEXTSTYLE_SHADOWED
+            text                      "Defence ^7<"
+            action                    { play mouse_click ; scriptMenuResponse axis ; ;  }
+            onFocus                   { play mouse_over ; setLocalVarString ui_choicegroup play_class_marines_flipped ; setLocalVarInt ui_highlight_main 2 ; ;  }
+            leaveFocus                { setLocalVarInt ui_highlight_main 0 ;  }
+            exp                       material ( ( ( "menu_button_backg" ) ) );
+            visible                   when ( ( ! localvarbool( "ui_hideBack" ) && dvarint( "sles_oldschool" ) != 1 && team( name ) == "TEAM_ALLIES" || team(name) == "TEAM_FREE" || team(name) == "TEAM_SPECTATOR" ) )
+        }
+		itemDef
+        {
+            rect                      -20 105 300 22 HORIZONTAL_ALIGN_SUBLEFT VERTICAL_ALIGN_SUBTOP
+            borderSize                1
+            foreColor                 1 1 1 1
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            type                      ITEM_TYPE_BUTTON
+            textFont                  UI_FONT_OBJECTIVE
+            textAlign                 ITEM_ALIGN_MIDDLE_RIGHT
+            textAlignX                -25
+            textScale                 0.39
+            textStyle                 ITEM_TEXTSTYLE_SHADOWED
+            text                      "Defence ^7<"
+            action                    {  }
+            onFocus                   { play mouse_over ; setLocalVarString ui_choicegroup play_class_marines_flipped ; setLocalVarInt ui_highlight_main 2 ; ;  }
+            leaveFocus                { setLocalVarInt ui_highlight_main 0 ;  }
+            exp                       material ( ( ( "menu_button_backg" ) ) );
+            visible                   when ( ( ! localvarbool( "ui_hideBack" ) && dvarint( "sles_oldschool" ) != 1 && team( name ) == "TEAM_AXIS" ) )
+        }
+		
+        itemDef
+        {
+            rect                      -20 130 300 22 HORIZONTAL_ALIGN_SUBLEFT VERTICAL_ALIGN_SUBTOP
+            style                     WINDOW_STYLE_SHADER
+            borderSize                1
+            foreColor                 0.445 0.457 0.527 1
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            background                "menu_button_backg"
+            textScale                 0.55
+            visible                   when ( ( ( localvarint( "ui_highlight_main" ) == 3 ) && dvarint( "sles_oldschool" ) != 1 ) )
+            decoration                
+        }
+        itemDef
+        {
+            rect                      -20 130 300 22 HORIZONTAL_ALIGN_SUBLEFT VERTICAL_ALIGN_SUBTOP
+            style                     WINDOW_STYLE_SHADER
+            borderSize                1
+            foreColor                 0.445 0.457 0.527 0.4
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            background                "menu_button_backg"
+            textScale                 0.55
+            visible                   when ( ( ! localvarbool( "ui_hideBack" ) && dvarint( "sles_oldschool" ) != 1 ) )
+            decoration                
+        }
+        itemDef
+        {
+            rect                      -20 152 300 4 HORIZONTAL_ALIGN_SUBLEFT VERTICAL_ALIGN_SUBTOP
+            style                     WINDOW_STYLE_SHADER
+            borderSize                1
+            foreColor                 1 1 1 0.7
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            textScale                 0.55
+            exp                       material ( ( ( "menu_button_backg" ) ) );
+            visible                   when ( ( ( localvarint( "ui_highlight_main" ) == 3 ) && dvarint( "sles_oldschool" ) != 1 ) )
+            decoration                
+        }
+        itemDef
+        {
+            rect                      -20 152 300 4 HORIZONTAL_ALIGN_SUBLEFT VERTICAL_ALIGN_SUBTOP
+            style                     WINDOW_STYLE_SHADER
+            borderSize                1
+            foreColor                 1 1 1 0.2
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            textScale                 0.55
+            exp                       material ( ( ( "menu_button_backg" ) ) );
+            visible                   when ( ( ! localvarbool( "ui_hideBack" ) && dvarint( "sles_oldschool" ) != 1 ) )
+            decoration                
+        }
+        itemDef
+        {
+            rect                      -20 130 300 22 HORIZONTAL_ALIGN_SUBLEFT VERTICAL_ALIGN_SUBTOP
+            borderSize                1
+            foreColor                 1 1 1 1
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            type                      ITEM_TYPE_BUTTON
+            textFont                  UI_FONT_OBJECTIVE
+            textAlign                 ITEM_ALIGN_MIDDLE_RIGHT
+            textAlignX                -25
+            textScale                 0.39
+            textStyle                 ITEM_TEXTSTYLE_SHADOWED
+            text                      "Auto assign ^7<"
+            action                    { play mouse_click ; scriptMenuResponse autoassign ; ;  }
+            onFocus                   { play mouse_over ; setLocalVarString ui_choicegroup play_class_marines_flipped ; setLocalVarInt ui_highlight_main 3 ; ;  }
+            leaveFocus                { setLocalVarInt ui_highlight_main 0 ;  }
+            exp                       material ( ( ( "menu_button_backg" ) ) );
+            visible                   when ( ( ! localvarbool( "ui_hideBack" ) && dvarint( "sles_oldschool" ) != 1 ) )
+        }
+        itemDef
+        {
+            rect                      -20 230 300 22 HORIZONTAL_ALIGN_SUBLEFT VERTICAL_ALIGN_SUBTOP
+            style                     WINDOW_STYLE_SHADER
+            borderSize                1
+            foreColor                 0.445 0.457 0.527 1
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            background                "menu_button_backg"
+            textScale                 0.55
+            visible                   when ( ( ( localvarint( "ui_highlight_main" ) == 4 ) && dvarint( "sles_oldschool" ) != 1 ) )
+            decoration                
+        }
+        itemDef
+        {
+            rect                      -20 230 300 22 HORIZONTAL_ALIGN_SUBLEFT VERTICAL_ALIGN_SUBTOP
+            style                     WINDOW_STYLE_SHADER
+            borderSize                1
+            foreColor                 0.445 0.457 0.527 0.4
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            background                "menu_button_backg"
+            textScale                 0.55
+            visible                   when ( ( ! localvarbool( "ui_hideBack" ) && dvarint( "sles_oldschool" ) != 1 ) )
+            decoration                
+        }
+        itemDef
+        {
+            rect                      -20 252 300 4 HORIZONTAL_ALIGN_SUBLEFT VERTICAL_ALIGN_SUBTOP
+            style                     WINDOW_STYLE_SHADER
+            borderSize                1
+            foreColor                 1 1 1 0.7
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            textScale                 0.55
+            exp                       material ( ( ( "menu_button_backg" ) ) );
+            visible                   when ( ( ( localvarint( "ui_highlight_main" ) == 4 ) && dvarint( "sles_oldschool" ) != 1 ) )
+            decoration                
+        }
+        itemDef
+        {
+            rect                      -20 252 300 4 HORIZONTAL_ALIGN_SUBLEFT VERTICAL_ALIGN_SUBTOP
+            style                     WINDOW_STYLE_SHADER
+            borderSize                1
+            foreColor                 1 1 1 0.2
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            textScale                 0.55
+            exp                       material ( ( ( "menu_button_backg" ) ) );
+            visible                   when ( ( ! localvarbool( "ui_hideBack" ) && dvarint( "sles_oldschool" ) != 1 ) )
+            decoration                
+        }
+        itemDef
+        {
+            rect                      -20 230 300 22 HORIZONTAL_ALIGN_SUBLEFT VERTICAL_ALIGN_SUBTOP
+            borderSize                1
+            foreColor                 1 1 1 1
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            type                      ITEM_TYPE_BUTTON
+            textFont                  UI_FONT_OBJECTIVE
+            textAlign                 ITEM_ALIGN_MIDDLE_RIGHT
+            textAlignX                -25
+            textScale                 0.39
+            textStyle                 ITEM_TEXTSTYLE_SHADOWED
+            text                      "Shoutcaster ^7<"
+            action                    { play mouse_click ; scriptMenuResponse shoutcast ; ;  }
+            onFocus                   { play mouse_over ; setLocalVarString ui_choicegroup play_class_marines_flipped ; setLocalVarInt ui_highlight_main 4 ; ;  }
+            leaveFocus                { setLocalVarInt ui_highlight_main 0 ;  }
+            exp                       material ( ( ( "menu_button_backg" ) ) );
+            visible                   when ( ( ! localvarbool( "ui_hideBack" ) && dvarint( "sles_oldschool" ) != 1 ) )
+        }
+        itemDef
+        {
+            rect                      -20 255 300 22 HORIZONTAL_ALIGN_SUBLEFT VERTICAL_ALIGN_SUBTOP
+            style                     WINDOW_STYLE_SHADER
+            borderSize                1
+            foreColor                 0.445 0.457 0.527 1
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            background                "menu_button_backg"
+            textScale                 0.55
+            visible                   when ( ( ( localvarint( "ui_highlight_main" ) == 5 ) && dvarint( "sles_oldschool" ) != 1 ) )
+            decoration                
+        }
+        itemDef
+        {
+            rect                      -20 255 300 22 HORIZONTAL_ALIGN_SUBLEFT VERTICAL_ALIGN_SUBTOP
+            style                     WINDOW_STYLE_SHADER
+            borderSize                1
+            foreColor                 0.445 0.457 0.527 0.4
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            background                "menu_button_backg"
+            textScale                 0.55
+            visible                   when ( ( ! localvarbool( "ui_hideBack" ) && dvarint( "sles_oldschool" ) != 1 ) )
+            decoration                
+        }
+        itemDef
+        {
+            rect                      -20 277 300 4 HORIZONTAL_ALIGN_SUBLEFT VERTICAL_ALIGN_SUBTOP
+            style                     WINDOW_STYLE_SHADER
+            borderSize                1
+            foreColor                 1 1 1 0.7
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            textScale                 0.55
+            exp                       material ( ( ( "menu_button_backg" ) ) );
+            visible                   when ( ( ( localvarint( "ui_highlight_main" ) == 5 ) && dvarint( "sles_oldschool" ) != 1 ) )
+            decoration                
+        }
+        itemDef
+        {
+            rect                      -20 277 300 4 HORIZONTAL_ALIGN_SUBLEFT VERTICAL_ALIGN_SUBTOP
+            style                     WINDOW_STYLE_SHADER
+            borderSize                1
+            foreColor                 1 1 1 0.2
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            textScale                 0.55
+            exp                       material ( ( ( "menu_button_backg" ) ) );
+            visible                   when ( ( ! localvarbool( "ui_hideBack" ) && dvarint( "sles_oldschool" ) != 1 ) )
+            decoration                
+        }
+        itemDef
+        {
+            rect                      -20 255 300 22 HORIZONTAL_ALIGN_SUBLEFT VERTICAL_ALIGN_SUBTOP
+            borderSize                1
+            foreColor                 1 1 1 1
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            type                      ITEM_TYPE_BUTTON
+            textFont                  UI_FONT_OBJECTIVE
+            textAlign                 ITEM_ALIGN_MIDDLE_RIGHT
+            textAlignX                -25
+            textScale                 0.39
+            textStyle                 ITEM_TEXTSTYLE_SHADOWED
+            text                      "Leave Game ^7<"
+            action                    { play mouse_click ; open popup_endgame ; ;  }
+            onFocus                   { play mouse_over ; setLocalVarString ui_choicegroup play_class_marines_flipped ; setLocalVarInt ui_highlight_main 5 ; ;  }
+            leaveFocus                { setLocalVarInt ui_highlight_main 0 ;  }
+            exp                       material ( ( ( "menu_button_backg" ) ) );
+            visible                   when ( ( ! localvarbool( "ui_hideBack" ) && dvarint( "sles_oldschool" ) != 1 ) )
+        }
+        itemDef
+        {
+            rect                      0 0 640 480 HORIZONTAL_ALIGN_FULLSCREEN VERTICAL_ALIGN_FULLSCREEN
+            style                     WINDOW_STYLE_FILLED
+            borderSize                1
+            foreColor                 1 1 1 1
+            backColor                 0 0 0 0.75
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            textScale                 0.55
+            visible                   when ( ( dvarint( "sles_oldschool" ) == 1 ) )
+            decoration                
+        }
+        itemDef
+        {
+            rect                      0 0 854 75 HORIZONTAL_ALIGN_FULLSCREEN VERTICAL_ALIGN_SUBTOP
+            style                     WINDOW_STYLE_SHADER
+            borderSize                1
+            foreColor                 1 1 1 1
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            background                "gradient_top"
+            textScale                 0.55
+            visible                   when ( ( dvarint( "sles_oldschool" ) == 1 ) )
+            decoration                
+        }
+        itemDef
+        {
+            rect                      0 405 854 75 HORIZONTAL_ALIGN_FULLSCREEN VERTICAL_ALIGN_SUBTOP
+            style                     WINDOW_STYLE_SHADER
+            borderSize                1
+            foreColor                 1 1 1 1
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            background                "gradient_bottom"
+            textScale                 0.55
+            visible                   when ( ( dvarint( "sles_oldschool" ) == 1 ) )
+            decoration                
+        }
+        itemDef
+        {
+            rect                      20 5 0 0 HORIZONTAL_ALIGN_SUBLEFT VERTICAL_ALIGN_SUBTOP
+            borderSize                1
+            foreColor                 1 0.8 0.4 1
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            textFont                  UI_FONT_NORMAL
+            textAlign                 ITEM_ALIGN_TOP_LEFT
+            textScale                 0.5833
+            exp                       text ( ( "@MPUI_CHOOSE_TEAM" ) );
+            visible                   when ( ( dvarint( "sles_oldschool" ) == 1 ) )
+            decoration                
+        }
+        itemDef
+        {
+            rect                      48 72 285 115 HORIZONTAL_ALIGN_SUBLEFT VERTICAL_ALIGN_SUBTOP
+            style                     WINDOW_STYLE_FILLED
+            borderSize                1
+            foreColor                 1 1 1 1
+            backColor                 0 0 0 0.5
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            textScale                 0.55
+            visible                   when ( ( dvarstring( "ui_motd" ) != "" && dvarint( "sles_oldschool" ) == 1 ) )
+            decoration                
+        }
+        itemDef
+        {
+            rect                      55 102 270 120 HORIZONTAL_ALIGN_SUBLEFT VERTICAL_ALIGN_SUBTOP
+            borderSize                1
+            foreColor                 1 1 1 1
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            type                      ITEM_TYPE_BUTTON
+            textAlignY                -10
+            textScale                 0.375
+            dvar                      "ui_motd"
+            visible                   when ( ( dvarstring( "ui_motd" ) != "" && dvarint( "sles_oldschool" ) == 1 ) )
+            decoration                
+            autoWrapped               
+        }
+        itemDef
+        {
+            rect                      55 72 0 0 HORIZONTAL_ALIGN_SUBLEFT VERTICAL_ALIGN_SUBTOP
+            borderSize                1
+            foreColor                 1 0.8 0.4 1
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            textScale                 0.4583
+            text                      "Message of the Day"
+            visible                   when ( ( dvarstring( "ui_motd" ) != "" && dvarint( "sles_oldschool" ) == 1 ) )
+            decoration                
+        }
+        itemDef
+        {
+            rect                      48 72 283 113 HORIZONTAL_ALIGN_SUBLEFT VERTICAL_ALIGN_SUBTOP
+            style                     WINDOW_STYLE_SHADER
+            border                    WINDOW_BORDER_FULL
+            borderSize                0.75
+            foreColor                 0.5 0.5 0.5 0.15
+            backColor                 0 0 0 0
+            borderColor               0.5 0.5 0.5 0.7
+            outlineColor              0 0 0 0
+            background                "white"
+            textScale                 0.55
+            visible                   when ( ( dvarstring( "ui_motd" ) != "" && dvarint( "sles_oldschool" ) == 1 ) )
+            decoration                
+        }
+		
+		//////////////////// MAP OLD ////////////////////////////
+		
+        itemDef
+        {
+            name                      "mini_map2"
+            rect                      -260 135 240 240 HORIZONTAL_ALIGN_RIGHT VERTICAL_ALIGN_TOP
+            ownerDraw                 CG_PLAYER_FULLMAP_MAP
+            borderSize                1
+            foreColor                 1 1 1 1
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            background                "compass_map_default"
+            type                      ITEM_TYPE_OWNERDRAW
+            textScale                 0.55
+            visible                   when ( ( 1 && dvarint( "sles_oldschool" ) == 1 ) )
+            decoration                
+        }
+        itemDef
+        {
+            name                      "mini_map2_overlay"
+            rect                      -260 135 240 240 HORIZONTAL_ALIGN_RIGHT VERTICAL_ALIGN_TOP
+            style                     WINDOW_STYLE_SHADER
+            borderSize                1
+            foreColor                 1 1 1 1
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            textScale                 0.55
+            exp                       material ( ( tablelookup( "mp/mapsTable.csv" , 0 , dvarstring( "mapname" ) , 7 ) ) );
+            visible                   when ( ( 1 && dvarint( "sles_oldschool" ) == 1 ) )
+            decoration                
+        }
+        itemDef
+        {
+            name                      "compasspointers2"
+            rect                      -260 135 240 240 HORIZONTAL_ALIGN_RIGHT VERTICAL_ALIGN_TOP
+            ownerDraw                 CG_PLAYER_FULLMAP_POINTERS
+            borderSize                1
+            foreColor                 1 1 1 1
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            background                "objective_line"
+            type                      ITEM_TYPE_OWNERDRAW
+            textScale                 0.55
+            visible                   when ( ( 1 && dvarint( "sles_oldschool" ) == 1 ) )
+            decoration                
+        }
+        itemDef
+        {
+            name                      "compassfriendlies2"
+            rect                      -260 135 240 240 HORIZONTAL_ALIGN_RIGHT VERTICAL_ALIGN_TOP
+            ownerDraw                 CG_PLAYER_FULLMAP_FRIENDS
+            borderSize                1
+            foreColor                 1 1 1 1
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            background                "compassping_friendly"
+            type                      ITEM_TYPE_OWNERDRAW
+            textScale                 0.55
+            visible                   when ( ( 1 && dvarint( "sles_oldschool" ) == 1 ) )
+            decoration                
+        }
+        itemDef
+        {
+            name                      "compassenemies2"
+            rect                      -260 135 240 240 HORIZONTAL_ALIGN_RIGHT VERTICAL_ALIGN_TOP
+            ownerDraw                 CG_PLAYER_FULLMAP_ENEMIES
+            borderSize                1
+            foreColor                 1 1 1 1
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            background                "compassping_enemy"
+            type                      ITEM_TYPE_OWNERDRAW
+            textScale                 0.55
+            visible                   when ( ( dvarbool( "ui_hud_hardcore" ) == 0 && dvarint( "sles_oldschool" ) == 1 ) )
+            decoration                
+        }
+        itemDef
+        {
+            name                      "compassplayer2"
+            rect                      -260 135 240 240 HORIZONTAL_ALIGN_RIGHT VERTICAL_ALIGN_TOP
+            ownerDraw                 CG_PLAYER_FULLMAP_PLAYER
+            borderSize                1
+            foreColor                 1 1 1 1
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            background                "compassping_player"
+            type                      ITEM_TYPE_OWNERDRAW
+            textScale                 0.55
+            visible                   when ( ( 1 && team( "name" ) != "TEAM_FREE" && dvarint( "sles_oldschool" ) == 1 ) )
+            decoration                
+        }
+		
+		itemDef
+        {
+            rect                      -255 134 240 0 HORIZONTAL_ALIGN_RIGHT VERTICAL_ALIGN_TOP
+            borderSize                1
+            foreColor                 1 1 1 0.7
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            textScale                 0.4583
+            textStyle                 ITEM_TEXTSTYLE_SHADOWED
+            exp                       text ( ( ( "@" + tablelookup( "mp/mapsTable.csv" , 0 , dvarstring( "mapname" ) , 3 ) ) ) );
+            visible                   when ( ( dvarint( "sles_oldschool" ) == 1 ) )
+            decoration                
+            autoWrapped               
+        }
+		
+		//////////////////////////////////////
+		
+        itemDef
+        {
+            rect                      -120 -32 378 64 HORIZONTAL_ALIGN_SUBLEFT VERTICAL_ALIGN_SUBTOP
+            style                     WINDOW_STYLE_SHADER
+            borderSize                1
+            foreColor                 0.9 0.9 0.95 0.175
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            background                "white"
+            textScale                 0.55
+            visible                   when ( ( dvarint( "sles_oldschool" ) == 1 ) )
+            decoration                
+        }
+        itemDef
+        {
+            rect                      258 -32 16 -64 HORIZONTAL_ALIGN_SUBLEFT VERTICAL_ALIGN_SUBTOP
+            style                     WINDOW_STYLE_SHADER
+            borderSize                1
+            foreColor                 0.9 0.9 0.95 0.175
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            background                "button_highlight_end"
+            textScale                 0.55
+            visible                   when ( ( dvarint( "sles_oldschool" ) == 1 ) )
+            decoration                
+        }
+        itemDef
+        {
+            rect                      56 448 528 40 HORIZONTAL_ALIGN_SUBLEFT VERTICAL_ALIGN_SUBTOP
+            style                     WINDOW_STYLE_SHADER
+            borderSize                1
+            foreColor                 0.9 0.9 0.95 0.175
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            background                "white"
+            textScale                 0.55
+            visible                   when ( ( dvarint( "sles_oldschool" ) == 1 ) )
+            decoration                
+        }
+        itemDef
+        {
+            rect                      584 448 16 64 HORIZONTAL_ALIGN_SUBLEFT VERTICAL_ALIGN_SUBTOP
+            style                     WINDOW_STYLE_SHADER
+            borderSize                1
+            foreColor                 0.9 0.9 0.95 0.175
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            background                "button_highlight_end"
+            textScale                 0.55
+            visible                   when ( ( dvarint( "sles_oldschool" ) == 1 ) )
+            decoration                
+        }
+        itemDef
+        {
+            rect                      40 448 -16 64 HORIZONTAL_ALIGN_SUBLEFT VERTICAL_ALIGN_SUBTOP
+            style                     WINDOW_STYLE_SHADER
+            borderSize                1
+            foreColor                 0.9 0.9 0.95 0.175
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            background                "button_highlight_end"
+            textScale                 0.55
+            visible                   when ( ( dvarint( "sles_oldschool" ) == 1 ) )
+            decoration                
+        }
+        itemDef
+        {
+            rect                      -120 464 160 32 HORIZONTAL_ALIGN_SUBLEFT VERTICAL_ALIGN_SUBTOP
+            style                     WINDOW_STYLE_SHADER
+            borderSize                1
+            foreColor                 0.9 0.9 0.95 0.175
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            background                "white"
+            textScale                 0.55
+            visible                   when ( ( dvarint( "sles_oldschool" ) == 1 ) )
+            decoration                
+        }
+        itemDef
+        {
+            rect                      600 464 160 32 HORIZONTAL_ALIGN_SUBLEFT VERTICAL_ALIGN_SUBTOP
+            style                     WINDOW_STYLE_SHADER
+            borderSize                1
+            foreColor                 0.9 0.9 0.95 0.175
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            background                "white"
+            textScale                 0.55
+            visible                   when ( ( dvarint( "sles_oldschool" ) == 1 ) )
+            decoration                
+        }
+        itemDef
+        {
+            name                      "back"
+            rect                      -250 -26 40 20 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_BOTTOM
+            style                     WINDOW_STYLE_FILLED
+            borderSize                1
+            foreColor                 1 1 1 1
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            type                      ITEM_TYPE_BUTTON
+            textFont                  UI_FONT_NORMAL
+            textAlignY                18
+            textScale                 0.375
+            textStyle                 ITEM_TEXTSTYLE_SHADOWED
+            text                      "@MENU_BACK"
+            mouseEnter                { play mouse_over ;  }
+            action                    { play mouse_click ; close self ; ;  }
+            visible                   when ( ( 1 && dvarint( "sles_oldschool" ) == 1 ) )
+        }
+        itemDef
+        {
+            rect                      10 58 128 128 HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_TOP
+            style                     WINDOW_STYLE_SHADER
+            borderSize                1
+            foreColor                 1 1 1 0.275
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            textScale                 0.55
+            exp                       material ( ( dvarstring( "g_TeamIcon_Allies" ) ) );
+            visible                   when ( ( localvarstring( "ui_team" ) == "marines" && dvarint( "sles_oldschool" ) == 1 ) )
+            decoration                
+        }
+        itemDef
+        {
+            rect                      10 58 128 128 HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_TOP
+            style                     WINDOW_STYLE_SHADER
+            borderSize                1
+            foreColor                 1 1 1 0.275
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            textScale                 0.55
+            exp                       material ( ( dvarstring( "g_TeamIcon_Axis" ) ) );
+            visible                   when ( ( localvarstring( "ui_team" ) == "opfor" && dvarint( "sles_oldschool" ) == 1 ) )
+            decoration                
+        }
+        itemDef
+        {
+            rect                      10 58 128 128 HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_TOP
+            style                     WINDOW_STYLE_SHADER
+            borderSize                1
+            foreColor                 1 1 1 0.275
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            textScale                 0.55
+            exp                       material ( ( dvarstring( "g_TeamIcon_Allies" ) ) );
+            visible                   when ( ( team( "name" ) == "TEAM_FREE" && localvarstring( "ui_team" ) == "marines" && dvarint( "sles_oldschool" ) == 1 ) )
+            decoration                
+        }
+        itemDef
+        {
+            rect                      10 58 128 128 HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_TOP
+            style                     WINDOW_STYLE_SHADER
+            borderSize                1
+            foreColor                 1 1 1 0.275
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            textScale                 0.55
+            exp                       material ( ( dvarstring( "g_TeamIcon_Axis" ) ) );
+            visible                   when ( ( team( "name" ) == "TEAM_FREE" && localvarstring( "ui_team" ) == "opfor" && dvarint( "sles_oldschool" ) == 1 ) )
+            decoration                
+        }
+        itemDef
+        {
+            rect                      10 196 128 128 HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_TOP
+            borderSize                1
+            foreColor                 1 1 1 0.2
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            textFont                  UI_FONT_OBJECTIVE
+            textScale                 0.4583
+            textStyle                 ITEM_TEXTSTYLE_SHADOWEDMORE
+            exp                       text ( ( "@" + dvarstring( "g_TeamName_Allies" ) ) );
+            visible                   when ( ( team( "name" ) == "TEAM_ALLIES" && dvarint( "sles_oldschool" ) == 1 ) )
+            decoration                
+        }
+        itemDef
+        {
+            rect                      10 196 128 128 HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_TOP
+            borderSize                1
+            foreColor                 1 1 1 0.2
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            textFont                  UI_FONT_OBJECTIVE
+            textScale                 0.4583
+            textStyle                 ITEM_TEXTSTYLE_SHADOWEDMORE
+            exp                       text ( ( "@" + dvarstring( "g_TeamName_Allies" ) ) );
+            visible                   when ( ( team( "name" ) == "TEAM_FREE" && localvarstring( "ui_team" ) == "marines" && dvarint( "sles_oldschool" ) == 1 ) )
+            decoration                
+        }
+        itemDef
+        {
+            rect                      10 196 128 128 HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_TOP
+            borderSize                1
+            foreColor                 1 1 1 0.2
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            textFont                  UI_FONT_OBJECTIVE
+            textScale                 0.4583
+            textStyle                 ITEM_TEXTSTYLE_SHADOWEDMORE
+            exp                       text ( ( "@" + dvarstring( "g_TeamName_Axis" ) ) );
+            visible                   when ( ( team( "name" ) == "TEAM_AXIS" && dvarint( "sles_oldschool" ) == 1 ) )
+            decoration                
+        }
+        itemDef
+        {
+            rect                      10 196 128 128 HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_TOP
+            borderSize                1
+            foreColor                 1 1 1 0.2
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            textFont                  UI_FONT_OBJECTIVE
+            textScale                 0.4583
+            textStyle                 ITEM_TEXTSTYLE_SHADOWEDMORE
+            exp                       text ( ( "@" + dvarstring( "g_TeamName_Axis" ) ) );
+            visible                   when ( ( team( "name" ) == "TEAM_FREE" && localvarstring( "ui_team" ) == "opfor" && dvarint( "sles_oldschool" ) == 1 ) )
+            decoration                
+        }
+        itemDef
+        {
+            rect                      -320 204 214.5 22 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_TOP
+            style                     WINDOW_STYLE_SHADER
+            borderSize                2
+            foreColor                 0.9 0.95 1 0.35
+            backColor                 0 0 0 0
+            borderColor               0.8 0.95 1 0.4
+            outlineColor              0 0 0 0
+            background                "gradient_fadein"
+            textScale                 0.55
+            visible                   when ( ( localvarint( "ui_highlight" ) == 1 && localvarstring( "ui_choicegroup" ) == "" ) )
+            decoration                
+        }
+        itemDef
+        {
+            rect                      -105.5 204 5.5 22 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_TOP
+            style                     WINDOW_STYLE_SHADER
+            borderSize                1
+            foreColor                 0.9 0.95 1 0.35
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            background                "button_highlight_end"
+            textScale                 0.55
+            visible                   when ( ( localvarint( "ui_highlight" ) == 1 && localvarstring( "ui_choicegroup" ) == "" ) )
+            decoration                
+        }
+        itemDef
+        {
+            rect                      -320 204 220 22 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_TOP
+            borderSize                1
+            foreColor                 0.69 0.69 0.69 1
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            type                      ITEM_TYPE_BUTTON
+            textFont                  UI_FONT_NORMAL
+            textAlign                 ITEM_ALIGN_MIDDLE_RIGHT
+            textAlignX                -10
+            textScale                 0.4
+            textStyle                 ITEM_TEXTSTYLE_SHADOWEDMORE
+            action                    { play mouse_click ; play mouse_click ; scriptMenuResponse allies ; ;  }
+            onFocus                   { play mouse_over ; setLocalVarInt ui_highlight 1 ; setLocalVarString ui_choicegroup  ; ;  }
+            leaveFocus                { setLocalVarInt ui_highlight 0 ; ;  }
+            exp                       text ( ( "1^1. ^7Attack" ) );
+            visible                   when ( ( team( "name" ) != "TEAM_ALLIES" && dvarint( "sles_oldschool" ) == 1 ) )
+        }
+        itemDef
+        {
+            rect                      -320 204 220 22 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_TOP
+            borderSize                1
+            foreColor                 0.5 0.5 0.5 0.5
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            textFont                  UI_FONT_NORMAL
+            textAlign                 ITEM_ALIGN_MIDDLE_RIGHT
+            textAlignX                -10
+            textScale                 0.4
+            textStyle                 ITEM_TEXTSTYLE_SHADOWEDMORE
+            exp                       text ( ( "1^1. ^7Attack" ) );
+            visible                   when ( ( team( "name" ) == "TEAM_ALLIES" && dvarint( "sles_oldschool" ) == 1 ) )
+            decoration                
+        }
+        itemDef
+        {
+            rect                      -320 228 214.5 22 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_TOP
+            style                     WINDOW_STYLE_SHADER
+            borderSize                2
+            foreColor                 0.9 0.95 1 0.35
+            backColor                 0 0 0 0
+            borderColor               0.8 0.95 1 0.4
+            outlineColor              0 0 0 0
+            background                "gradient_fadein"
+            textScale                 0.55
+            visible                   when ( ( localvarint( "ui_highlight" ) == 2 && localvarstring( "ui_choicegroup" ) == "" ) )
+            decoration                
+        }
+        itemDef
+        {
+            rect                      -105.5 228 5.5 22 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_TOP
+            style                     WINDOW_STYLE_SHADER
+            borderSize                1
+            foreColor                 0.9 0.95 1 0.35
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            background                "button_highlight_end"
+            textScale                 0.55
+            visible                   when ( ( localvarint( "ui_highlight" ) == 2 && localvarstring( "ui_choicegroup" ) == "" ) )
+            decoration                
+        }
+        itemDef
+        {
+            rect                      -320 228 220 22 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_TOP
+            borderSize                1
+            foreColor                 0.69 0.69 0.69 1
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            type                      ITEM_TYPE_BUTTON
+            textFont                  UI_FONT_NORMAL
+            textAlign                 ITEM_ALIGN_MIDDLE_RIGHT
+            textAlignX                -10
+            textScale                 0.4
+            textStyle                 ITEM_TEXTSTYLE_SHADOWEDMORE
+            action                    { play mouse_click ; play mouse_click ; scriptMenuResponse axis ; ;  }
+            onFocus                   { play mouse_over ; setLocalVarInt ui_highlight 2 ; setLocalVarString ui_choicegroup  ; ;  }
+            leaveFocus                { setLocalVarInt ui_highlight 0 ; ;  }
+            exp                       text ( ( "2^1. ^7Defence" ) );
+            visible                   when ( ( team( "name" ) != "TEAM_AXIS" && dvarint( "sles_oldschool" ) == 1 ) )
+        }
+        itemDef
+        {
+            rect                      -320 228 220 22 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_TOP
+            borderSize                1
+            foreColor                 0.5 0.5 0.5 0.5
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            textFont                  UI_FONT_NORMAL
+            textAlign                 ITEM_ALIGN_MIDDLE_RIGHT
+            textAlignX                -10
+            textScale                 0.4
+            textStyle                 ITEM_TEXTSTYLE_SHADOWEDMORE
+            exp                       text ( ( "2^1. ^7Defence" ) );
+            visible                   when ( ( team( "name" ) == "TEAM_AXIS" && dvarint( "sles_oldschool" ) == 1 ) )
+            decoration                
+        }
+        itemDef
+        {
+            rect                      -320 252 214.5 22 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_TOP
+            style                     WINDOW_STYLE_SHADER
+            borderSize                2
+            foreColor                 0.9 0.95 1 0.35
+            backColor                 0 0 0 0
+            borderColor               0.8 0.95 1 0.4
+            outlineColor              0 0 0 0
+            background                "gradient_fadein"
+            textScale                 0.55
+            visible                   when ( ( localvarint( "ui_highlight" ) == 3 && localvarstring( "ui_choicegroup" ) == "" ) )
+            decoration                
+        }
+        itemDef
+        {
+            rect                      -105.5 252 5.5 22 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_TOP
+            style                     WINDOW_STYLE_SHADER
+            borderSize                1
+            foreColor                 0.9 0.95 1 0.35
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            background                "button_highlight_end"
+            textScale                 0.55
+            visible                   when ( ( localvarint( "ui_highlight" ) == 3 && localvarstring( "ui_choicegroup" ) == "" ) )
+            decoration                
+        }
+        itemDef
+        {
+            rect                      -320 252 220 22 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_TOP
+            borderSize                1
+            foreColor                 0.69 0.69 0.69 1
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            type                      ITEM_TYPE_BUTTON
+            textFont                  UI_FONT_NORMAL
+            textAlign                 ITEM_ALIGN_MIDDLE_RIGHT
+            textAlignX                -10
+            textScale                 0.4
+            textStyle                 ITEM_TEXTSTYLE_SHADOWEDMORE
+            action                    { play mouse_click ; play mouse_click ; scriptMenuResponse autoassign ; ;  }
+            onFocus                   { play mouse_over ; setLocalVarInt ui_highlight 3 ; setLocalVarString ui_choicegroup  ; ;  }
+            leaveFocus                { setLocalVarInt ui_highlight 0 ; ;  }
+            exp                       text ( ( "3^1. ^7Auto-Assign" ) );
+            visible                   when ( ( dvarint( "sles_oldschool" ) == 1 ) )
+        }
+        itemDef
+        {
+            rect                      -320 286 214.5 22 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_TOP
+            style                     WINDOW_STYLE_SHADER
+            borderSize                2
+            foreColor                 0.9 0.95 1 0.35
+            backColor                 0 0 0 0
+            borderColor               0.8 0.95 1 0.4
+            outlineColor              0 0 0 0
+            background                "gradient_fadein"
+            textScale                 0.55
+            visible                   when ( ( localvarint( "ui_highlight" ) == 4 && localvarstring( "ui_choicegroup" ) == "" ) )
+            decoration                
+        }
+        itemDef
+        {
+            rect                      -105.5 286 5.5 22 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_TOP
+            style                     WINDOW_STYLE_SHADER
+            borderSize                1
+            foreColor                 0.9 0.95 1 0.35
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            background                "button_highlight_end"
+            textScale                 0.55
+            visible                   when ( ( localvarint( "ui_highlight" ) == 4 && localvarstring( "ui_choicegroup" ) == "" ) )
+            decoration                
+        }
+        itemDef
+        {
+            rect                      -320 286 220 22 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_TOP
+            borderSize                1
+            foreColor                 0.69 0.69 0.69 1
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            type                      ITEM_TYPE_BUTTON
+            textFont                  UI_FONT_NORMAL
+            textAlign                 ITEM_ALIGN_MIDDLE_RIGHT
+            textAlignX                -10
+            textScale                 0.4
+            textStyle                 ITEM_TEXTSTYLE_SHADOWEDMORE
+            action                    { play mouse_click ; play mouse_click ; scriptMenuResponse shoutcast ; ;  }
+            onFocus                   { play mouse_over ; setLocalVarInt ui_highlight 4 ; setLocalVarString ui_choicegroup  ; ;  }
+            leaveFocus                { setLocalVarInt ui_highlight 0 ; ;  }
+            exp                       text ( ( "4^1. ^7Shoutcaster" ) );
+            visible                   when ( ( team( "name" ) != "TEAM_SPECTATOR" && dvarint( "sles_oldschool" ) == 1 ) )
+        }
+        itemDef
+        {
+            rect                      -320 286 220 22 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_TOP
+            borderSize                1
+            foreColor                 0.5 0.5 0.5 0.5
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            textFont                  UI_FONT_NORMAL
+            textAlign                 ITEM_ALIGN_MIDDLE_RIGHT
+            textAlignX                -10
+            textScale                 0.4
+            textStyle                 ITEM_TEXTSTYLE_SHADOWEDMORE
+            exp                       text ( ( "4^1. ^7Shoutcaster" ) );
+            visible                   when ( ( team( "name" ) == "TEAM_SPECTATOR" && dvarint( "sles_oldschool" ) == 1 ) )
+            decoration                
+        }
+        itemDef
+        {
+            rect                      -320 310 214.5 22 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_TOP
+            style                     WINDOW_STYLE_SHADER
+            borderSize                2
+            foreColor                 0.9 0.95 1 0.35
+            backColor                 0 0 0 0
+            borderColor               0.8 0.95 1 0.4
+            outlineColor              0 0 0 0
+            background                "gradient_fadein"
+            textScale                 0.55
+            visible                   when ( ( localvarint( "ui_highlight" ) == 5 && localvarstring( "ui_choicegroup" ) == "" ) )
+            decoration                
+        }
+        itemDef
+        {
+            rect                      -105.5 310 5.5 22 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_TOP
+            style                     WINDOW_STYLE_SHADER
+            borderSize                1
+            foreColor                 0.9 0.95 1 0.35
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            background                "button_highlight_end"
+            textScale                 0.55
+            visible                   when ( ( localvarint( "ui_highlight" ) == 5 && localvarstring( "ui_choicegroup" ) == "" ) )
+            decoration                
+        }
+        itemDef
+        {
+            rect                      -320 310 220 22 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_TOP
+            borderSize                1
+            foreColor                 0.69 0.69 0.69 1
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            type                      ITEM_TYPE_BUTTON
+            textFont                  UI_FONT_NORMAL
+            textAlign                 ITEM_ALIGN_MIDDLE_RIGHT
+            textAlignX                -10
+            textScale                 0.4
+            textStyle                 ITEM_TEXTSTYLE_SHADOWEDMORE
+            action                    { play mouse_click ; open popup_endgame ;  }
+            onFocus                   { play mouse_over ; setLocalVarInt ui_highlight 5 ; setLocalVarString ui_choicegroup  ; ;  }
+            leaveFocus                { setLocalVarInt ui_highlight 0 ; ;  }
+            exp                       text ( ( "@MPUI_LEAVE_GAME" ) );
+            visible                   when ( ( team( "name" ) == "TEAM_FREE" && dvarint( "sles_oldschool" ) == 1 ) )
+        }
+		
+		//////////// SLeS NEW MENU ////////////
+		
+		itemDef
+		{
+			visible			1
+			rect			-315 15 278 68 HORIZONTAL_ALIGN_RIGHT VERTICAL_ALIGN_TOP
+			forecolor		1 1 1 1
+			style			WINDOW_STYLE_SHADER
+			background		"logo_cod2"
+			visible 		when ( ( dvarint( "sles_oldschool" ) != 1 ) )
+			decoration
+		}
+		itemDef 
+		{
+			rect		-147 92 1 1 HORIZONTAL_ALIGN_RIGHT VERTICAL_ALIGN_TOP
+			origin		0 0
+			forecolor		1 1 1 0.5
+			exp text	( "^3R E M A S T E R E D" );
+			textfont	UI_FONT_OBJECTIVE
+			textscale	0.35
+			textalign	ITEM_ALIGN_CENTER
+			textstyle	ITEM_TEXTSTYLE_SHADOWEDMORE
+			visible 	when ( ( dvarint( "sles_oldschool" ) != 1 ) )
+			decoration 
+		}
+		
+		
+		itemDef
+		{
+			rect			-5 320 300 150 HORIZONTAL_ALIGN_SUBLEFT VERTICAL_ALIGN_SUBTOP
+			forecolor		1 1 1 0.9
+			style			WINDOW_STYLE_SHADER
+			background		"sles_killcam_logo_yellow"
+			visible 		when ( ( dvarint( "sles_oldschool" ) != 1 ) )
+			decoration
+		}
+		
+		itemDef 
+		{
+			rect		135 335 1 1 HORIZONTAL_ALIGN_SUBLEFT VERTICAL_ALIGN_SUBTOP
+			origin		0 0
+			exp text	( "^7SL^1e^7SPORTS GAMING COMMUNITY" );
+			textfont	UI_FONT_OBJECTIVE
+			textscale	0.35
+			textalign	ITEM_ALIGN_CENTER
+			textstyle	ITEM_TEXTSTYLE_SHADOWEDMORE
+			visible 	when ( ( dvarint( "sles_oldschool" ) != 1 ) )
+			decoration 
+		}
+		itemDef 
+		{
+			rect		145 355 1 1 HORIZONTAL_ALIGN_SUBLEFT VERTICAL_ALIGN_SUBTOP
+			origin		0 0
+			exp text	( "^3PROMOD ^5SnD ^2SERVER" );
+			textfont	UI_FONT_OBJECTIVE
+			textscale	0.35
+			textalign	ITEM_ALIGN_CENTER
+			textstyle	ITEM_TEXTSTYLE_SHADOWEDMORE
+			visible 	when ( ( dvarint( "sles_oldschool" ) != 1 ) )
+			decoration 
+		}
+		
+		//////////// SLeS OLD MENU ////////////
+		
+		itemDef
+		{
+			rect			-250 45 280 140 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_TOP
+			forecolor		1 1 1 0.9
+			style			WINDOW_STYLE_SHADER
+			background		"sles_killcam_logo_yellow"
+			visible 		when ( ( dvarint( "sles_oldschool" ) == 1 ) )
+			decoration
+		}
+		
+		itemDef 
+		{
+			rect		-90 90 1 1 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_TOP
+			origin		0 0
+			exp text	( "^7SL^1e^7SPORTS GAMING COMMUNITY" );
+			textfont	UI_FONT_OBJECTIVE
+			textscale	0.55
+			textalign	ITEM_ALIGN_CENTER
+			textstyle	ITEM_TEXTSTYLE_SHADOWEDMORE
+			visible 	when ( ( dvarint( "sles_oldschool" ) == 1 ) )
+			decoration 
+		}
+		
+		itemDef 
+		{
+			rect		-135 -60 1 1 HORIZONTAL_ALIGN_RIGHT VERTICAL_ALIGN_BOTTOM
+			origin		0 0
+			forecolor	1 1 1 0.8
+			exp text	( "^7Join with Us : www.slescod4.tk" );
+			textfont	UI_FONT_OBJECTIVE
+			textscale	0.24
+			textalign	ITEM_ALIGN_CENTER
+			textstyle	ITEM_TEXTSTYLE_SHADOWEDMORE
+			visible 	when ( ( dvarint( "sles_oldschool" ) == 1 ) )
+			decoration 
+		}
+		
+		itemDef 
+		{
+			rect		-135 -50 1 1 HORIZONTAL_ALIGN_RIGHT VERTICAL_ALIGN_BOTTOM
+			origin		0 0
+			forecolor	1 1 1 0.8
+			exp text	( "^7(C) 2018" );
+			textfont	UI_FONT_OBJECTIVE
+			textscale	0.16
+			textalign	ITEM_ALIGN_CENTER
+			textstyle	ITEM_TEXTSTYLE_SHADOWEDMORE
+			visible 	when ( ( dvarint( "sles_oldschool" ) == 1 ) )
+			decoration 
+		}
+		
+		// Rank & name Background
+		itemDef 
+		{
+			rect			-200 30 150 50 HORIZONTAL_ALIGN_RIGHT VERTICAL_ALIGN_TOP
+			origin			0 0
+			forecolor		0 0 0 0.9 
+			style			WINDOW_STYLE_SHADER
+			exp				material( "line_horizontal" )
+			//background		"uidr_header"
+			visible			when ( ( dvarint( "sles_oldschool" ) == 1 ) )
+			decoration
+		}
+		
+		// rank icon
+		itemDef 
+		{
+			rect			-150 33 32 32 HORIZONTAL_ALIGN_RIGHT VERTICAL_ALIGN_TOP
+			origin			0 0
+			style			WINDOW_STYLE_SHADER
+			exp				material( tablelookup( "mp/rankIconTable.csv", 0, stat(252), stat(2326)+1 ) )
+			//background		"uidr_header"
+			visible			when ( ( dvarint( "sles_oldschool" ) == 1 ) )
+			decoration
+		}
+
+		// rank name
+		itemDef
+		{
+			rect			-135 77 1 1 HORIZONTAL_ALIGN_RIGHT VERTICAL_ALIGN_TOP
+			origin			0 0
+			forecolor		0.95 0.95 0.95 1
+			exp				text( "@"+tablelookup("mp/ranktable.csv",0,stat(252)+1,5) )
+			textfont		UI_FONT_NORMAL
+			textalign		ITEM_ALIGN_CENTER
+			textscale		0.26
+			visible			when ( ( dvarint( "sles_oldschool" ) == 1 ) )
+			decoration
+		}
+		
+		// nickname
+		itemDef 
+		{
+			rect		-116 57 1 1 HORIZONTAL_ALIGN_RIGHT VERTICAL_ALIGN_TOP
+			origin		0 0
+			exp text	( dvarString( "name" ) )
+			textfont	UI_FONT_NORMAL
+			textscale	0.35
+			textalign	ITEM_ALIGN_LEFT
+			textstyle	ITEM_TEXTSTYLE_SHADOWEDMORE
+			visible 	when ( ( dvarint( "sles_oldschool" ) == 1 ) )
+			decoration 
+		}
+		
+		///////////////////////////// Custom MSG /////////////////////////////////
+		
+		itemDef
+        {
+            rect                      300 385 300 18 HORIZONTAL_ALIGN_SUBLEFT VERTICAL_ALIGN_SUBTOP
+            borderSize                1
+            foreColor                 1 1 1 1
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            textFont                  UI_FONT_OBJECTIVE
+            textAlign                 ITEM_ALIGN_TOP_LEFT
+            textScale                 0.25
+            textStyle                 ITEM_TEXTSTYLE_SHADOWED
+            exp                       text ( "> ^3This server offered new features for improve your gaming experience."  );
+            visible                   when ( ( ( dvarint( "sles_oldschool" ) != 1 ) ) )
+            decoration                
+        }
+		
+		itemDef
+        {
+            rect                      300 400 300 18 HORIZONTAL_ALIGN_SUBLEFT VERTICAL_ALIGN_SUBTOP
+            borderSize                1
+            foreColor                 1 1 1 1
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            textFont                  UI_FONT_OBJECTIVE
+            textAlign                 ITEM_ALIGN_TOP_LEFT
+            textScale                 0.25
+            textStyle                 ITEM_TEXTSTYLE_SHADOWED
+            exp                       text ( "> ^7Type ^1!reg ^7to register ^2then ^1^1!xlr ^7to view stats."  );
+            visible                   when ( ( ( dvarint( "sles_oldschool" ) != 1 ) ) )
+            decoration                
+        }
+		
+		itemDef
+        {
+            rect                      300 415 300 18 HORIZONTAL_ALIGN_SUBLEFT VERTICAL_ALIGN_SUBTOP
+            borderSize                1
+            foreColor                 1 1 1 1
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            textFont                  UI_FONT_OBJECTIVE
+            textAlign                 ITEM_ALIGN_TOP_LEFT
+            textScale                 0.25
+            textStyle                 ITEM_TEXTSTYLE_SHADOWED
+            exp                       text ( "> ^7Type ^1!ss <player_name> ^7to take player's ^3screenshots."  );
+            visible                   when ( ( ( dvarint( "sles_oldschool" ) != 1 ) ) )
+            decoration                
+        }
+		
+		itemDef
+        {
+            rect                      300 430 300 18 HORIZONTAL_ALIGN_SUBLEFT VERTICAL_ALIGN_SUBTOP
+            borderSize                1
+            foreColor                 1 1 1 1
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            textFont                  UI_FONT_OBJECTIVE
+            textAlign                 ITEM_ALIGN_TOP_LEFT
+            textScale                 0.25
+            textStyle                 ITEM_TEXTSTYLE_SHADOWED
+            exp                       text ( "> ^7Type ^1!h ^7to view your ^3commands."  );
+            visible                   when ( ( ( dvarint( "sles_oldschool" ) != 1 ) ) )
+            decoration                
+        }
+		
+		itemDef
+        {
+            rect                      300 445 300 18 HORIZONTAL_ALIGN_SUBLEFT VERTICAL_ALIGN_SUBTOP
+            borderSize                1
+            foreColor                 1 1 1 1
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            textFont                  UI_FONT_OBJECTIVE
+            textAlign                 ITEM_ALIGN_TOP_LEFT
+            textScale                 0.25
+            textStyle                 ITEM_TEXTSTYLE_SHADOWED
+            exp                       text ( "> ^7Join our TeamSpeak3 ^1slescod4.tk"  );
+            visible                   when ( ( ( dvarint( "sles_oldschool" ) != 1 ) ) )
+            decoration                
+        }
+    }
+}

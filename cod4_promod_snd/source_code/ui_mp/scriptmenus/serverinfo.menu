@@ -1,0 +1,238 @@
+//******************************************************************************
+//  _____                  _    _             __
+// |  _  |                | |  | |           / _|
+// | | | |_ __   ___ _ __ | |  | | __ _ _ __| |_ __ _ _ __ ___
+// | | | | '_ \ / _ \ '_ \| |/\| |/ _` | '__|  _/ _` | '__/ _ \
+// \ \_/ / |_) |  __/ | | \  /\  / (_| | |  | || (_| | | |  __/
+//  \___/| .__/ \___|_| |_|\/  \/ \__,_|_|  |_| \__,_|_|  \___|
+//       | |               We don't make the game you play.
+//       |_|                 We make the game you play BETTER.
+//
+//            Website: http://openwarfaremod.com/
+//******************************************************************************
+
+#include "ui/menudef.h"
+#include "ui_mp/common_macro.inc"
+
+#include "ui_mp/menustyle.inc"
+#include "ui_mp/choices_setup_teams.menu"
+
+{
+
+
+	menuDef
+	{
+		name			"serverinfo"
+		rect			0 0 640 480
+		focuscolor		COLOR_FOCUSED
+		style			WINDOW_STYLE_EMPTY
+		blurWorld		7.0
+		onEsc
+		{
+			play "mouse_click";
+			close self;
+			open "team_marinesopfor";
+		}
+
+		// background overlay
+		itemDef
+		{
+			style			WINDOW_STYLE_FILLED
+			rect			0 0 640 480 HORIZONTAL_ALIGN_FULLSCREEN VERTICAL_ALIGN_FULLSCREEN
+			backcolor		0 0 0 0.75 //0 0.05 0.15 0.5
+			visible			1
+			decoration
+		}
+
+		// gradient_top
+		itemDef
+		{
+			style			WINDOW_STYLE_SHADER
+			rect			0 0 854 75 HORIZONTAL_ALIGN_FULLSCREEN 0
+			background		"gradient_top"
+			visible			1
+			decoration
+		}
+
+		// gradient_bottom
+		itemDef
+		{
+			style			WINDOW_STYLE_SHADER
+			rect			0 405 854 75 HORIZONTAL_ALIGN_FULLSCREEN 0
+			background		"gradient_bottom"
+			visible			1
+			decoration
+		}
+
+		#define ORIGIN_BANNER		108 48
+
+		itemDef	{
+			style			WINDOW_STYLE_SHADER
+			rect			ORIGIN_BANNER 400 0.5
+			background		"line_horizontal"
+			forecolor		1 1 1 0.85
+			visible			1	decoration	}
+		itemDef	{
+			style			WINDOW_STYLE_SHADER
+			rect			ORIGIN_BANNER 340 10
+			origin			30 1
+			background		"line_horizontal"
+			forecolor		OBJECTIVE_COLOR_MARINES
+			visible			1
+			decoration	}
+		itemDef	{
+			style			WINDOW_STYLE_SHADER
+			rect			ORIGIN_BANNER 400 0.5
+			origin			0 12
+			background		"line_horizontal"
+			forecolor		1 1 1 0.85
+			visible			1	decoration	}
+
+		itemDef	{
+			rect			-400 64 800 0 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_TOP
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			textscale		TEXTSIZE_TITLE
+			textalign		ITEM_ALIGN_CENTER
+			forecolor		COLOR_FOCUSED
+			exp					text( dvarstring(ui_welcome_title) );
+			visible			1	decoration	}
+
+		// ------------------ TREE TITLE ------------------
+
+		CHOICE_MENU_TITLE( "@PL_SERVER_INFO" )
+
+		// ------------------ buttons ---------------------
+		#define BACK_OPEN open "team_marinesopfor";
+		#define BACK_CLOSE "@MENU_CLOSE";
+		#include "ui_mp/navcontrols.inc"
+
+		// PC widescreen fix
+		#undef	CHOICE_HORIZONTAL_ALIGN
+		#define CHOICE_HORIZONTAL_ALIGN HORIZONTAL_ALIGN_CENTER
+
+		#undef TEXTSIZE_SMALL
+		#define TEXTSIZE_SMALL 0.3
+
+		itemDef
+		{
+			type			ITEM_TYPE_TEXT
+			rect			50 125 590 0 HORIZONTAL_ALIGN_DEFAULT VERTICAL_ALIGN_DEFAULT
+			exp				text( dvarstring(ui_welcome_line_0) );
+			textfont		UI_FONT_NORMAL
+			textscale		TEXTSIZE_SMALL
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			textAlign		ITEM_ALIGN_MIDDLE_LEFT
+			forecolor		COLOR_FOCUSED
+			visible			1
+			decoration	
+		}
+		itemDef
+		{
+			type			ITEM_TYPE_TEXT
+			rect			50 155 590 0 HORIZONTAL_ALIGN_DEFAULT VERTICAL_ALIGN_DEFAULT
+			exp				text( dvarstring(ui_welcome_line_1) );
+			textfont		UI_FONT_NORMAL
+			textscale		TEXTSIZE_SMALL
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			textAlign		ITEM_ALIGN_MIDDLE_LEFT
+			forecolor		COLOR_FOCUSED
+			visible			1
+			decoration	
+		}
+		itemDef
+		{
+			type			ITEM_TYPE_TEXT
+			rect			50 185 590 0 HORIZONTAL_ALIGN_DEFAULT VERTICAL_ALIGN_DEFAULT
+			exp				text( dvarstring(ui_welcome_line_2) );
+			textfont		UI_FONT_NORMAL
+			textscale		TEXTSIZE_SMALL
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			textAlign		ITEM_ALIGN_MIDDLE_LEFT
+			forecolor		COLOR_FOCUSED
+			visible			1
+			decoration		
+		}
+		itemDef
+		{
+			type			ITEM_TYPE_TEXT
+			rect			50 215 590 0 HORIZONTAL_ALIGN_DEFAULT VERTICAL_ALIGN_DEFAULT
+			exp				text( dvarstring(ui_welcome_line_3) );
+			textfont		UI_FONT_NORMAL
+			textscale		TEXTSIZE_SMALL
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			textAlign		ITEM_ALIGN_MIDDLE_LEFT
+			forecolor		COLOR_FOCUSED
+			visible			1
+			decoration		
+		}
+		itemDef
+		{
+			type			ITEM_TYPE_TEXT
+			rect			50 245 590 0 HORIZONTAL_ALIGN_DEFAULT VERTICAL_ALIGN_DEFAULT
+			exp				text( dvarstring(ui_welcome_line_4) );
+			textfont		UI_FONT_NORMAL
+			textscale		TEXTSIZE_SMALL
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			textAlign		ITEM_ALIGN_MIDDLE_LEFT
+			forecolor		COLOR_FOCUSED
+			visible			1
+			decoration		
+		}
+		itemDef
+		{
+			type			ITEM_TYPE_TEXT
+			rect			50 275 590 0 HORIZONTAL_ALIGN_DEFAULT VERTICAL_ALIGN_DEFAULT
+			exp				text( dvarstring(ui_welcome_line_5) );
+			textfont		UI_FONT_NORMAL
+			textscale		TEXTSIZE_SMALL
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			textAlign		ITEM_ALIGN_MIDDLE_LEFT
+			forecolor		COLOR_FOCUSED
+			visible			1
+			decoration		
+		}
+		itemDef
+		{
+			type			ITEM_TYPE_TEXT
+			rect			50 305 590 0 HORIZONTAL_ALIGN_DEFAULT VERTICAL_ALIGN_DEFAULT
+			exp				text( dvarstring(ui_welcome_line_6) );
+			textfont		UI_FONT_NORMAL
+			textscale		TEXTSIZE_SMALL
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			textAlign		ITEM_ALIGN_MIDDLE_LEFT
+			forecolor		COLOR_FOCUSED
+			visible			1
+			decoration		
+		}
+		itemDef
+		{
+			type			ITEM_TYPE_TEXT
+			rect			50 335 590 0 HORIZONTAL_ALIGN_DEFAULT VERTICAL_ALIGN_DEFAULT
+			exp				text( dvarstring(ui_welcome_line_7) );
+			textfont		UI_FONT_NORMAL
+			textscale		TEXTSIZE_SMALL
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			textAlign		ITEM_ALIGN_MIDDLE_LEFT
+			forecolor		COLOR_FOCUSED
+			visible			1
+			decoration		
+		}
+		itemDef
+		{
+			type			ITEM_TYPE_TEXT
+			rect			0 425 640 0 HORIZONTAL_ALIGN_DEFAULT VERTICAL_ALIGN_DEFAULT
+			exp				text( dvarstring(ui_welcome_modinfo) );
+			textfont		UI_FONT_NORMAL
+			textscale		TEXTSIZE_SMALL
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			textAlign		ITEM_ALIGN_CENTER
+			forecolor		COLOR_FOCUSED
+			visible			1
+			decoration		
+		}
+
+		#include "ui/safearea.menu"
+	}
+}
+
+

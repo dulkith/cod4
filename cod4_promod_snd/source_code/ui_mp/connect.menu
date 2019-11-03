@@ -1,0 +1,151 @@
+/*
+  Copyright (c) 2009-2017 Andreas Göransson <andreas.goransson@gmail.com>
+  Copyright (c) 2009-2017 Indrek Ardel <indrek@ardel.eu>
+
+  This file is part of Call of Duty 4 Promod.
+
+  Call of Duty 4 Promod is licensed under Promod Modder Ethical Public License.
+  Terms of license can be found in LICENSE.md document bundled with the project.
+*/
+
+#include "ui/menudef.h"
+{
+	menuDef
+	{
+		name			"connect"
+		style			WINDOW_STYLE_FILLED
+		fullScreen		MENU_FALSE
+		focusColor		COLOR_FOCUSED
+		visible			MENU_FALSE
+		backcolor		1 1 1 1
+		background		"$levelBriefing"
+		rect			FULLSCREEN_WIDE
+
+		itemDef
+		{
+			style			WINDOW_STYLE_FILLED
+			rect			-297 -40 598 4 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_BOTTOM
+			origin			107 0
+			backcolor		0 0 0 0.8
+			visible			1
+			decoration
+		}
+		itemDef
+		{
+			name			"loadbar"
+			style			WINDOW_STYLE_LOADBAR
+			rect			-298 -39 600 2 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_BOTTOM
+			origin			107 0
+			background		"white"
+			visible			1
+			decoration
+		}
+        itemDef
+        {
+            rect                      0 0 854 50 HORIZONTAL_ALIGN_FULLSCREEN VERTICAL_ALIGN_SUBTOP
+            style                     WINDOW_STYLE_SHADER
+            borderSize                1
+            foreColor                 1 1 1 0.4
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            background                "gradient_top"
+            textScale                 0.55
+            visible 1                 
+            decoration                
+        }
+        itemDef
+        {
+            rect                      0 405 854 75 HORIZONTAL_ALIGN_FULLSCREEN VERTICAL_ALIGN_SUBTOP
+            style                     WINDOW_STYLE_SHADER
+            borderSize                1
+            foreColor                 1 1 1 1
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            background                "gradient_bottom"
+            textScale                 0.55
+            visible 1                 
+            decoration                
+        }
+		itemDef
+        {
+            rect                      90 20 1 1 HORIZONTAL_ALIGN_RIGHT VERTICAL_ALIGN_TOP
+            borderSize                1
+            foreColor                 1 1 1 1
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            textAlign                 ITEM_ALIGN_LEGACY_RIGHT
+            textScale                 0.5
+            textStyle                 ITEM_TEXTSTYLE_SHADOWED
+            text                      "^5Managed By: ^7#YAKA_CREW "
+            visible 1                 
+            decoration                
+        }
+		itemDef
+        {
+            rect                      90 31 2 2 HORIZONTAL_ALIGN_RIGHT VERTICAL_ALIGN_TOP
+            borderSize                1
+            foreColor                 1 1 1 1
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            textAlign                 ITEM_ALIGN_LEGACY_RIGHT
+            textScale                 0.30
+            textStyle                 ITEM_TEXTSTYLE_SHADOWED
+            text                      "^5[^7Founders- ^7Duka^5]"
+            visible 1                 
+            decoration                
+        }
+		itemDef
+        {
+            rect                      -193 -18 10 100 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_BOTTOM
+            borderSize                1
+            foreColor                 1 0 0 1
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            textFont                  UI_FONT_OBJECTIVE
+            textScale                 0.2
+            textStyle                 ITEM_TEXTSTYLE_SHADOWED
+            text                      "v7.9 stable"
+            visible 1                 
+            decoration                
+        }
+        itemDef
+        {
+            rect                      392 -18 10 100 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_BOTTOM
+            borderSize                1
+            foreColor                 1 0 0 1
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            textFont                  UI_FONT_OBJECTIVE
+            textAlign                 ITEM_ALIGN_LEGACY_RIGHT
+            textScale                 0.2
+            textStyle                 ITEM_TEXTSTYLE_SHADOWED
+            text                      "(C) 2019"
+            visible 1                 
+            decoration                
+        }
+        itemDef
+        {
+            rect                      107 -16 10 100 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_BOTTOM
+            borderSize                1
+            foreColor                 1 1 1 1
+            backColor                 0 0 0 0
+            borderColor               0 0 0 0
+            outlineColor              0 0 0 0
+            textAlign                 ITEM_ALIGN_LEGACY_CENTER
+            textScale                 0.2
+            textStyle                 ITEM_TEXTSTYLE_SHADOWED
+            text                      "www.slescod4.tk"
+            visible 1                 
+            decoration                
+        }
+		
+		#include "ui/safearea.menu"
+		
+	}
+}

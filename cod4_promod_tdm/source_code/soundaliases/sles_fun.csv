@@ -1,0 +1,12 @@
+name,sequence,file,vol_min,vol_max,vol_mod,pitch_min,pitch_max,dist_min,dist_max,channel,type,probability,loop,masterslave,loadspec,subtitle,compression,secondaryaliasname,volumefalloffcurve,startdelay,speakermap,reverb,lfe percentage,center percentage,platform,envelop_min,envelop_max,envelop percentage
+
+# SleS Fun sounds,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+sles_fun_1_amarabaduRupasingha,,sles_fun/sles_fun_1_amarabaduRupasingha.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+sles_fun_2_thamaKapannaGaththeNaNe,,sles_fun/sles_fun_2_thamaKapannaGaththeNaNe.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+sles_fun_3_surpriceMotherFucker,,sles_fun/sles_fun_3_surpriceMotherFucker.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+sles_fun_4_danSapada,,sles_fun/sles_fun_4_danSapada.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+sles_fun_5_pissekVage,,sles_fun/sles_fun_5_pissekVage.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+sles_fun_6_iiiya,,sles_fun/sles_fun_6_iiiya.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+sles_fun_7_kalinKiyannaEpai,,sles_fun/sles_fun_7_kalinKiyannaEpai.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+sles_fun_8_OkaAragenaGahaGanin,,sles_fun/sles_fun_8_OkaAragenaGahaGanin.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+sles_fun_9_adukuleParahaththa,,sles_fun/sles_fun_9_adukuleParahaththa.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3

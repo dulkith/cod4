@@ -1,0 +1,72 @@
+//	Duka
+
+VERSION             "1"
+CONFIG              "C:\trees\cod3\cod3\bin\StringEd.cfg"
+FILENOTES           ""
+
+REFERENCE           EXE_AWAITINGGAMESTATE
+LANG_ENGLISH        "Get Ready for Battle!!^5"
+
+REFERENCE           EXE_PLAYERKICKED
+LANG_ENGLISH        "Player kicked."
+
+REFERENCE           EXE_SERVERQUIT
+LANG_ENGLISH        "Sorry for the inconvenience.\n\n^5[SL^1e^5S]^2Promod^3[S&D]^7 is ^1offline^7.\n\nWe are doing a Scheduled Maintenance.\n^0.^7\nvisit ^5slescod4.tk^7 to see server status.\n\n^1<DUKA>"
+
+REFERENCE           EXE_SERVERKILLED
+LANG_ENGLISH        "Sorry for the inconvenience.\n\n^5[SL^1e^5S]^2Promod^3[S&D]^7 is ^1offline^7.\n\nWe are doing a Scheduled Maintenance.\n^0.^7\nvisit ^5slescod4.tk^7 to see server status.\n\n^1<DUKA>"
+
+REFERENCE           ROUND_BEGINS_IN
+LANG_ENGLISH        "Round begins in..."
+
+REFERENCE           WAITING_FOR_PLAYERS
+LANG_ENGLISH        "Waiting for more players to start round..."
+
+REFERENCE           OW_RANK_PRESTIGE_1
+LANG_ENGLISH        "Advanced Level I"
+
+REFERENCE           OW_RANK_PRESTIGE_2
+LANG_ENGLISH        "Advanced Level II"
+
+REFERENCE           OW_RANK_PRESTIGE_3
+LANG_ENGLISH        "Advanced Level III"
+
+REFERENCE           OW_RANK_PRESTIGE_4
+LANG_ENGLISH        "Advanced Level IV"
+
+REFERENCE           OW_RANK_PRESTIGE_5
+LANG_ENGLISH        "Advanced Level V"
+
+REFERENCE           OW_RANK_PRESTIGE_6
+LANG_ENGLISH        "Advanced Level VI"
+
+REFERENCE           OW_RANK_PRESTIGE_7
+LANG_ENGLISH        "Advanced Level VII"
+
+REFERENCE           OW_RANK_PRESTIGE_8
+LANG_ENGLISH        "Advanced Level VIII"
+
+REFERENCE           OW_RANK_PRESTIGE_9
+LANG_ENGLISH        "Advanced Level IX"
+
+REFERENCE           OW_RANK_PRESTIGE_10
+LANG_ENGLISH        "Advanced Level X"
+
+REFERENCE           OW_RANK_PRESTIGE_11
+LANG_ENGLISH        "Advanced Level XI"
+
+REFERENCE           OW_RANK_PRESTIGE_12
+LANG_ENGLISH        "Advanced Level XII"
+
+REFERENCE           OW_RANK_PRESTIGE_13
+LANG_ENGLISH        "Advanced Level XIII"
+
+REFERENCE           OW_RANK_PRESTIGE_14
+LANG_ENGLISH        "Advanced Level XIV"
+
+REFERENCE           OW_RANK_PRESTIGE_15
+LANG_ENGLISH        "Advanced Level XV"
+
+ENDMARKER
+
+

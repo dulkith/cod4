@@ -8,7 +8,7 @@ Big Brother Bot (B3) is a complete and total server administration package for o
 
 B3 is designed primarily to keep your server free from the derelicts of online gaming, but offers more, much more. With the stock configuration files, B3 will keep your server free from offensive language, and team killers alike. A completely automated and customizable warning system will warn the offending players that this type of behavior is not allowed on your server, and ultimately kick, and or ban them for a predetermined time limit.
 
-Source: http://www.bigbrotherbot.net)
+Source: http://www.bigbrotherbot.net
 
 ### Features
 

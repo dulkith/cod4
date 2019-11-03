@@ -1,0 +1,17 @@
+name,sequence,file,vol_min,vol_max,vol_mod,pitch_min,pitch_max,dist_min,dist_max,channel,type,probability,loop,masterslave,loadspec,subtitle,compression,secondaryaliasname,volumefalloffcurve,startdelay,speakermap,reverb,lfe percentage,center percentage,platform,envelop_min,envelop_max,envelop percentage
+
+# Unreal sounds,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+dominating,,unreal/dominating.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+doublekill,,unreal/doublekill.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+firstblood,,unreal/firstblood.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+godlike,,unreal/godlike.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+headshot,,unreal/headshot.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+holyshit,,unreal/holyshit.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+killingspree,,unreal/killingspree.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+monsterkill,,unreal/monsterkill.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+rampage,,unreal/rampage.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+triplekill,,unreal/triplekill.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+ultrakill,,unreal/ultrakill.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+unreal,,unreal/unreal.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+unstoppable,,unreal/unstoppable.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+whyami,,unreal/whyami.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3

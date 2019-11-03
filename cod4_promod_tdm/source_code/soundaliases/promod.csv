@@ -1,0 +1,53 @@
+name,sequence,file,vol_min,vol_max,vol_mod,pitch_min,pitch_max,dist_min,dist_max,channel,type,probability,loop,masterslave,loadspec,subtitle,compression,secondaryaliasname,volumefalloffcurve,startdelay,speakermap,reverb,lfe percentage,center percentage,platform,envelop_min,envelop_max,envelop percentage
+
+promod_defused,,promod/defused.wav,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,wav
+promod_destroyed,,promod/destroyed.wav,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,wav
+promod_planted,,promod/planted.wav,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,wav
+dogtag_kc_pickup,,kc/dogtag_kc_pickup.wav,0.6,0.8,,,,120,1000,auto,,,,0.7,all_mp,,,,
+
+wtf,,promod/wtf.wav,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,wav
+welcome,,promod/welcome.wav,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,wav
+
+nuke_warning,,promod/nuke_warning.wav,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,wav
+nuke_detonate,,promod/nuke_detonate.wav,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,wav
+nuke_aftermath,,promod/nuke_aftermath.wav,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,wav
+geiger,,promod/geiger.wav,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,wav
+ticking,,promod/ticking.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+
+
+endround1,,promod/endround1.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+endround2,,promod/endround2.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+endround3,,promod/endround3.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+endround4,,promod/endround4.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+endround5,,promod/endround5.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+endround6,,promod/endround6.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+endround7,,promod/endround7.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+endround8,,promod/endround8.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+endround9,,promod/endround9.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+endround10,,promod/endround10.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+endround11,,promod/endround11.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+endround12,,promod/endround12.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+endround13,,promod/endround13.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+endround14,,promod/endround14.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+endround15,,promod/endround15.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+endround16,,promod/endround16.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+endround17,,promod/endround17.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+endround18,,promod/endround18.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+endround19,,promod/endround19.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+endround20,,promod/endround20.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+endround21,,promod/endround21.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+endround22,,promod/endround22.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+endround23,,promod/endround23.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+endround24,,promod/endround24.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+endround25,,promod/endround25.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+end,,promod/end.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+
+
+beep_01,,promod/beep_01.wav,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,wav
+HGW_Gameshell_v10,,music/HGW_Gameshell_v10.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+
+kniferound1,,promod/kniferound1.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+kniferound2,,promod/kniferound2.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+kniferound3,,promod/kniferound3.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+kniferound4,,promod/kniferound4.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3
+kniferound5,,promod/kniferound5.mp3,1,,music,,,,,auto2d,streamed,,,master,all_mp,,,,,,music,nowetlevel fulldrylevel,,,,,,,mp3

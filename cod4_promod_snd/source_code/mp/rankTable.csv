@@ -1,0 +1,71 @@
+0,pfc1,0,30,RANK_PFC,RANK_PFC_FULL,rank_pfc1,30,;,;,;,;,;,1,1,;,RANK_PFC_FULL
+1,pfc2,30,90,RANK_PFC,RANK_PFC_FULL2,rank_pfc2,120,;,;,;,;,;,2,2,feature_demolitions,RANK_PFC_FULL_N
+2,pfc3,120,150,RANK_PFC,RANK_PFC_FULL3,rank_pfc3,270,;,;,;,;,;,3,3,feature_sniper,RANK_PFC_FULL_N
+3,lcpl1,270,210,RANK_LCPL,RANK_LCPL_FULL,rank_lcpl1,480,;,;,;,;,;,4,4,feature_cac,RANK_LCPL_FULL
+4,lcpl2,480,270,RANK_LCPL,RANK_LCPL_FULL2,rank_lcpl2,750,;,;,tier_1_a;tier_2_a;tier_3_a;tier_4_a;tier_5_a,;,;,5,5,feature_challenges,RANK_LCPL_FULL_N
+5,lcpl3,750,330,RANK_LCPL,RANK_LCPL_FULL3,rank_lcpl3,1080,;,;,;,;,;,6,6,;,RANK_LCPL_FULL_N
+6,cpl1,1080,390,RANK_CPL,RANK_CPL_FULL,rank_cpl1,1470,m21,;,ch_marksman_m21;ch_expert_m21_1,m21 camo_brockhaurd;m21 camo_bushdweller,;,7,7,;,RANK_CPL_FULL
+7,cpl2,1470,450,RANK_CPL,RANK_CPL_FULL2,rank_cpl2,1920,;,specialty_pistoldeath,;,;,;,8,8,;,RANK_CPL_FULL_N
+8,cpl3,1920,510,RANK_CPL,RANK_CPL_FULL3,rank_cpl3,2430,;,;,tier_6_a,;,;,9,9,;,RANK_CPL_FULL_N
+9,sgt1,2430,570,RANK_SGT,RANK_SGT_FULL,rank_sgt1,3000,m4,;,ch_marksman_m4_1;ch_expert_m4_1,m4 camo_brockhaurd;m4 camo_bushdweller,m4 gl,10,10,;,RANK_SGT_FULL
+10,sgt2,3000,650,RANK_SGT,RANK_SGT_FULL2,rank_sgt2,3650,;,specialty_gpsjammer,;,;,;,11,11,;,RANK_SGT_FULL_N
+11,sgt3,3650,730,RANK_SGT,RANK_SGT_FULL3,rank_sgt3,4380,;,;,tier_6_b,;,;,12,12,;,RANK_SGT_FULL_N
+12,ssgt1,4380,810,RANK_SSGT,RANK_SSGT_FULL,rank_ssgt1,5190,uzi,;,ch_marksman_uzi_1;ch_expert_uzi_1,uzi camo_brockhaurd;uzi camo_bushdweller,;,13,13,;,RANK_SSGT_FULL
+13,ssgt2,5190,890,RANK_SSGT,RANK_SSGT_FULL2,rank_ssgt2,6080,;,specialty_detectexplosive,;,;,;,14,14,;,RANK_SSGT_FULL_N
+14,ssgt3,6080,970,RANK_SSGT,RANK_SSGT_FULL3,rank_ssgt3,7050,;,;,tier_6_c,;,;,15,15,;,RANK_SSGT_FULL_N
+15,gysgt1,7050,1050,RANK_GYSGT,RANK_GYSGT_FULL,rank_gysgt1,8100,colt45,;,;,;,colt45 silencer,16,16,;,RANK_GYSGT_FULL
+16,gysgt2,8100,1130,RANK_GYSGT,RANK_GYSGT_FULL2,rank_gysgt2,9230,;,specialty_grenadepulldeath,;,;,;,17,17,;,RANK_GYSGT_FULL_N
+17,gysgt3,9230,1210,RANK_GYSGT,RANK_GYSGT_FULL3,rank_gysgt3,10440,;,;,tier_6_d,;,;,18,18,;,RANK_GYSGT_FULL_N
+18,msgt1,10440,1290,RANK_MSGT,RANK_MSGT_FULL,rank_msgt1,11730,m60e4,;,ch_marksman_m60e4_1;ch_expert_m60e4_1,m60e4 camo_brockhaurd;m60e4 camo_bushdweller,;,19,19,;,RANK_MSGT_FULL
+19,msgt2,11730,1370,RANK_MSGT,RANK_MSGT_FULL2,rank_msgt2,13100,;,specialty_fastreload,;,;,;,20,20,;,RANK_MSGT_FULL_N
+20,msgt3,13100,1450,RANK_MSGT,RANK_MSGT_FULL3,rank_msgt3,14550,;,;,tier_7_a,;,;,21,21,;,RANK_MSGT_FULL_N
+21,mgysgt1,14550,1530,RANK_MGYSGT,RANK_MGYSGT_FULL,rank_mgysgt1,16080,dragunov,;,ch_marksman_dragunov;ch_expert_dragunov_1,dragunov camo_brockhaurd;dragunov camo_bushdweller,;,22,22,;,RANK_MGYSGT_FULL
+22,mgysgt2,16080,1610,RANK_MGYSGT,RANK_MGYSGT_FULL2,rank_mgysgt2,17690,;,claymore_mp,;,;,;,23,23,;,RANK_MGYSGT_FULL_N23,mgysgt3,17690,1690,RANK_MGYSGT,RANK_MGYSGT_FULL3,rank_mgysgt3,19380,;,;,tier_7_b,;,;,24,24,;,RANK_MGYSGT_FULL_N
+23,mgysgt3,17690,1690,RANK_MGYSGT,RANK_MGYSGT_FULL3,rank_mgysgt3,19380,;,;,tier_7_b,;,;,24,24,;,RANK_MGYSGT_FULL_N
+24,2ndlt1,19380,1770,RANK_2NDLT,RANK_2NDLT_FULL,rank_2ndlt1,21150,g3,;,ch_marksman_g3_1;ch_expert_g3_1,g3 camo_brockhaurd;g3 camo_bushdweller,g3 gl,25,25,;,RANK_2NDLT_FULL
+25,2ndlt2,21150,1850,RANK_2NDLT,RANK_2NDLT_FULL2,rank_2ndlt2,23000,;,specialty_holdbreath,;,;,;,26,26,;,RANK_2NDLT_FULL_N
+26,2ndlt3,23000,1930,RANK_2NDLT,RANK_2NDLT_FULL3,rank_2ndlt3,24930,;,;,tier_7_c,;,;,27,27,;,RANK_2NDLT_FULL_N
+27,1stlt1,24930,2010,RANK_1STLT,RANK_1STLT_FULL,rank_1stlt1,26940,ak74u,;,ch_marksman_ak74u_1;ch_expert_ak74u_1,ak74u camo_brockhaurd;ak74u camo_bushdweller,;,28,28,;,RANK_1STLT_FULL
+28,1stlt2,26940,2090,RANK_1STLT,RANK_1STLT_FULL2,rank_1stlt2,29030,;,specialty_rof,;,;,;,29,29,;,RANK_1STLT_FULL_N
+29,1stlt3,29030,2210,RANK_1STLT,RANK_1STLT_FULL3,rank_1stlt3,31240,;,;,tier_8_a,;,;,30,30,;,RANK_1STLT_FULL_N
+30,capt1,31240,2330,RANK_CAPT,RANK_CAPT_FULL,rank_capt1,33570,m1014,;,ch_marksman_m1014_1;ch_expert_m1014_1,m1014 camo_brockhaurd;m1014 camo_bushdweller,;,31,31,;,RANK_CAPT_FULL
+31,capt2,33570,2450,RANK_CAPT,RANK_CAPT_FULL2,rank_capt2,36020,;,specialty_extraammo,;,;,;,32,32,;,RANK_CAPT_FULL_N
+32,capt3,36020,2570,RANK_CAPT,RANK_CAPT_FULL3,rank_capt3,38590,;,;,tier_8_b,;,;,33,33,;,RANK_CAPT_FULL_N
+33,maj1,38590,2690,RANK_MAJ,RANK_MAJ_FULL,rank_maj1,41280,remington700,;,ch_marksman_remington700;ch_expert_remington700_1,remington700 camo_brockhaurd;remington700 camo_bushdweller,;,34,34,;,RANK_MAJ_FULL
+34,maj2,41280,2810,RANK_MAJ,RANK_MAJ_FULL2,rank_maj2,44090,;,specialty_parabolic,;,;,;,35,35,;,RANK_MAJ_FULL_N
+35,maj3,44090,2930,RANK_MAJ,RANK_MAJ_FULL3,rank_maj3,47020,;,;,tier_8_c,;,;,36,36,;,RANK_MAJ_FULL_N
+36,ltcol1,47020,3050,RANK_LTCOL,RANK_LTCOL_FULL,rank_ltcol1,50070,g36c,;,ch_marksman_g36c_1;ch_expert_g36c_1,g36c camo_brockhaurd;g36c camo_bushdweller,g36c gl,37,37,;,RANK_LTCOL_FULL
+37,ltcol2,50070,3170,RANK_LTCOL,RANK_LTCOL_FULL2,rank_ltcol2,53240,;,specialty_twoprimaries,;,;,;,38,38,;,RANK_LTCOL_FULL_N
+38,ltcol3,53240,3290,RANK_LTCOL,RANK_LTCOL_FULL3,rank_ltcol3,56530,;,;,tier_8_d,;,;,39,39,;,RANK_LTCOL_FULL_N
+39,col1,56530,3410,RANK_COL,RANK_COL_FULL,rank_col1,59940,p90,;,ch_marksman_p90_1;ch_expert_p90_1,p90 camo_brockhaurd;p90 camo_bushdweller,;,40,40,;,RANK_COL_FULL
+40,col2,59940,3530,RANK_COL,RANK_COL_FULL2,rank_col2,63470,;,specialty_fraggrenade,;,;,;,41,41,;,RANK_COL_FULL_N
+41,col3,63470,3650,RANK_COL,RANK_COL_FULL3,rank_col3,67120,;,;,tier_9_a,;,;,42,42,;,RANK_COL_FULL_N
+42,bgen1,67120,3770,RANK_BGEN,RANK_BGEN_FULL,rank_bgen1,70890,deserteagle,;,;,;,;,43,43,;,RANK_BGEN_FULL
+43,bgen2,70890,3890,RANK_BGEN,RANK_BGEN_FULL2,rank_bgen2,74780,;,specialty_quieter,;,;,;,44,44,;,RANK_BGEN_FULL_N
+44,bgen3,74780,4010,RANK_BGEN,RANK_BGEN_FULL3,rank_bgen3,78790,;,;,tier_9_b,;,;,45,45,;,RANK_BGEN_FULL_N
+45,majgen1,78790,4130,RANK_MAJGEN,RANK_MAJGEN_FULL,rank_majgen1,82920,m14,;,ch_marksman_m14_1;ch_expert_m14_1,m14 camo_brockhaurd;m14 camo_bushdweller,m14 gl,46,46,;,RANK_MAJGEN_FULL
+46,majgen2,82920,4250,RANK_MAJGEN,RANK_MAJGEN_FULL2,rank_majgen2,87170,;,;,tier_9_c,;,;,47,47,;,RANK_MAJGEN_FULL_N
+47,majgen3,87170,4370,RANK_MAJGEN,RANK_MAJGEN_FULL3,rank_majgen3,91540,;,;,tier_9_d,;,;,48,48,;,RANK_MAJGEN_FULL_N
+48,ltgen1,91540,4490,RANK_LTGEN,RANK_LTGEN_FULL,rank_ltgen1,96030,barrett,;,ch_marksman_barrett;ch_expert_barrett_1,barrett camo_brockhaurd;barrett camo_bushdweller,;,49,49,;,RANK_LTGEN_FULL
+49,ltgen2,96030,4610,RANK_LTGEN,RANK_LTGEN_FULL2,rank_ltgen2,100640,;,;,tier_9_e,;,;,50,50,;,RANK_LTGEN_FULL_N
+50,ltgen3,100640,4730,RANK_LTGEN,RANK_LTGEN_FULL3,rank_ltgen3,105370,;,;,tier_10_a,;,;,51,51,;,RANK_LTGEN_FULL_N
+51,gen1,105370,4850,RANK_GEN,RANK_GEN_FULL,rank_gen1,110220,mp44,;,ch_expert_mp44_1,mp44 camo_brockhaurd;mp44 camo_bushdweller,;,52,52,;,RANK_GEN_FULL
+52,gen2,110220,4970,RANK_GEN,RANK_GEN_FULL2,rank_gen2,115190,;,;,tier_10_b,;,;,53,53,;,RANK_GEN_FULL_N
+53,gen3,115190,5090,RANK_GEN,RANK_GEN_FULL3,rank_gen3,120280,;,;,tier_10_c,;,;,54,54,;,RANK_GEN_FULL_N
+54,comm1,120280,5210,RANK_COMM,RANK_COMM_FULL,rank_comm1,125490,deserteaglegold,;,;,;,;,55,55,;,RANK_COMM_FULL
+55,1_stprestige1,125490,100000,OW_RANK_PRESTIGE_1,OW_RANK_PRESTIGE_1,rank_prestige_1,225490,;,;,;,;,;,56,56,;,OW_RANK_PRESTIGE_1
+56,2_ndprestige1,225490,100000,OW_RANK_PRESTIGE_2,OW_RANK_PRESTIGE_2,rank_prestige_2,325490,;,;,;,;,;,57,57,;,OW_RANK_PRESTIGE_2
+57,3_rdprestige1,325490,100000,OW_RANK_PRESTIGE_3,OW_RANK_PRESTIGE_3,rank_prestige_3,425490,;,;,;,;,;,58,58,;,OW_RANK_PRESTIGE_3
+58,4_thprestige1,425490,100000,OW_RANK_PRESTIGE_4,OW_RANK_PRESTIGE_4,rank_prestige_4,525490,;,;,;,;,;,59,59,;,OW_RANK_PRESTIGE_4
+59,5_thprestige1,525490,100000,OW_RANK_PRESTIGE_5,OW_RANK_PRESTIGE_5,rank_prestige_5,625490,;,;,;,;,;,60,60,;,OW_RANK_PRESTIGE_5
+60,6_thprestige1,625490,100000,OW_RANK_PRESTIGE_6,OW_RANK_PRESTIGE_6,rank_prestige_6,725490,;,;,;,;,;,,61,61,;,OW_RANK_PRESTIGE_6
+61,7_thprestige1,725490,100000,OW_RANK_PRESTIGE_7,OW_RANK_PRESTIGE_7,rank_prestige_7,925490,;,;,;,;,;,62,62,;,OW_RANK_PRESTIGE_7
+62,8_thprestige1,925490,100000,OW_RANK_PRESTIGE_8,OW_RANK_PRESTIGE_8,rank_prestige_8,1025490,;,;,;,;,;,,63,63,;,OW_RANK_PRESTIGE_8
+63,9_thprestige1,1025490,100000,OW_RANK_PRESTIGE_9,OW_RANK_PRESTIGE_9,rank_prestige_9,1125490,;,;,;,;,;,64,64,;,OW_RANK_PRESTIGE_9
+64,10_thprestige1,1125490,100000,OW_RANK_PRESTIGE_10,OW_RANK_PRESTIGE_10,rank_prestige_10,1225490,;,;,;,;,;,65,65,;,OW_RANK_PRESTIGE_10
+65,11_thprestige1,1225490,100000,OW_RANK_PRESTIGE_11,OW_RANK_PRESTIGE_11,rank_prestige_11,1325490,;,;,;,;,;,66,66,;,OW_RANK_PRESTIGE_11
+66,12_thprestige1,1325490,100000,OW_RANK_PRESTIGE_12,OW_RANK_PRESTIGE_12,rank_prestige_12,1425490,;,;,;,;,;,67,67,;,OW_RANK_PRESTIGE_12
+67,13_thprestige1,1425490,100000,OW_RANK_PRESTIGE_13,OW_RANK_PRESTIGE_13,rank_prestige_13,1525490,;,;,;,;,;,68,68,;,OW_RANK_PRESTIGE_13
+68,14_thprestige1,1525490,100000,OW_RANK_PRESTIGE_14,OW_RANK_PRESTIGE_14,rank_prestige_14,1625490,;,;,;,;,;,69,69,;,OW_RANK_PRESTIGE_14
+69,15_thprestige1,1625490,100000,OW_RANK_PRESTIGE_15,OW_RANK_PRESTIGE_15,rank_prestige_15,1725490,;,;,;,;,;,70,70,;,OW_RANK_PRESTIGE_15
+maxrank,69
