@@ -1,0 +1,165 @@
+body {padding-top:80px;background:#fff;}
+.form-signin
+{
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+}
+.form-signin .form-signin-heading, .form-signin
+{
+    margin-bottom: 10px;
+}
+.form-signin
+{
+    font-weight: normal;
+}
+.form-signin .form-control
+{
+    position: relative;
+    font-size: 16px;
+    height: auto;
+    padding: 10px;
+}
+.form-signin .form-control:focus
+{
+    z-index: 2;
+}
+.form-signin input[type="text"]
+{
+    margin-bottom: -1px;
+}
+.form-signin input[type="password"]
+{
+    margin-bottom: 10px;
+}
+.account-wall
+{
+    margin: 80px auto;
+    padding: 20px 0px 20px 0px;
+    background-color: #f7f7f7;
+    border:1px solid #ccc;
+    border-radius:2px;
+}
+.login-title
+{
+    color: #555;
+    font-size: 18px;
+    font-weight: 400;
+    display: block;
+    margin:15px 0 15px 0;
+    padding:0;
+}
+.profile-img
+{
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 10px;
+    display: block;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+.new-account
+{
+    margin-top: 10px;
+}
+.m-l-20
+{
+	margin-left:20px;
+}
+.checkbox {cursor:pointer;}
+.main-container {
+  padding: 40px 15px;
+}
+.skyblue {
+    background-color: #22c8ff;
+}
+.deepskyblue {
+    background-color: #00bfff;
+}
+.darkerskyblue {
+    background-color: #00a6dd;
+}
+.carousel-indicators {
+    bottom: 0;
+}
+.carousel-control.right,
+.carousel-control.left {
+    background-image: none;
+}
+.carousel .item {
+    min-height: 350px; 
+    height: 100%;
+    width:100%; 
+}
+.carousel-caption h3,
+.carousel .icon-container,
+.carousel-caption button {
+    background-color: #09c;
+}
+.carousel-caption h3 {
+    padding: .5em;
+}
+.carousel .icon-container {
+    display: inline-block;
+    font-size: 25px;
+    line-height: 25px;
+    padding: 1em;
+    text-align: center;
+    
+    border-radius: 50%;
+}
+.carousel-caption button {
+    border-color: #00bfff;
+    margin-top: 1em; 
+}
+
+/* Animation delays */
+.carousel-caption h3:first-child {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+.carousel-caption h3:nth-child(2) {
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+}
+.carousel-caption button {
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s;
+}
+/* CSS used here will be applied after bootstrap.css *//* Skills Progess Bar */
+section#skills-pgr{
+    padding: 3px 10px 0;
+}
+div.progress {
+    font-weight: bolder;
+    color: #fff;
+    background-color: #f3f3f3;
+    border: 0px none;
+    box-shadow: none;
+    height: 12px;
+}
+.progress{margin-bottom:0;padding:0;
+}
+div.progress-bar > span{
+    float: left;
+    position: relative;
+    top: 9px;
+    left: 2%;
+    font-size: 14px;
+}
+
+.progress-bar {
+    -webkit-transition:all 0.8s ease-in-out;
+    -moz-transition:all 0.8s ease-in-out;  
+    -o-transition:all 0.8s ease-in-out;         
+    transition:all 0.8s ease-in-out;  
+}
+
+.top5 { margin-top:5px; }
+.top7 { margin-top:7px; }
+.top10 { margin-top:10px; }
+.top15 { margin-top:15px; }
+.top17 { margin-top:17px; }
+.top30 { margin-top:30px; }
+.top50 { margin-top:50px; }
