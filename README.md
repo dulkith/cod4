@@ -27,3 +27,4 @@ WhatsApp - +94 77 2088 783
 [![](https://github.com/dulkith/cod4/blob/master/screenshots/img%20(9).jpg?raw=true)](https://github.com/dulkith/cod4/blob/master/screenshots/img%20(9).jpg?raw=true)
 [![](https://github.com/dulkith/cod4/blob/master/screenshots/img%20(10).jpg?raw=true)](https://github.com/dulkith/cod4/blob/master/screenshots/img%20(10).jpg?raw=true)
 [![](https://github.com/dulkith/cod4/blob/master/screenshots/img%20(11).jpg?raw=true)](https://github.com/dulkith/cod4/blob/master/screenshots/img%20(11).jpg?raw=true)
+[![](https://github.com/dulkith/cod4/blob/master/screenshots/img%20(12).png?raw=true)](https://github.com/dulkith/cod4/blob/master/screenshots/img%20(12).png?raw=true)
