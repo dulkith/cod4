@@ -15,7 +15,7 @@ Promod also does not have any soundtrack or music playing, does not have victory
 ## What is this:
 In here i include some modifications for cod4 stock and promod. If there any problem please contact me.
 Facebook - https://www.facebook.com/dulkith
-WhatsApp - +94 77 2088 783
+WhatsApp Group - Cod4 mod & b3 help join link >>> https://chat.whatsapp.com/H3gJBa6FhcF1pUcDhamBHp
 
 ## Screenshots:
 [![](https://github.com/dulkith/cod4/blob/master/screenshots/img%20(4).png?raw=true)](https://github.com/dulkith/cod4/blob/master/screenshots/img%20(4).png?raw=true)
